@@ -1,0 +1,13 @@
+{
+    "Home": {
+        "welcome": "Bienvenue sur mon site",
+        "description": "Ceci est la page d'accueil"
+    },
+    "PMRSidebarMenu": {
+        "about": "À propos",
+        "skills": "Compétences",
+        "experiences": "Expériences professionnelles",
+        "education": "Parcours scolaire",
+        "portfolio": "Portfolio"
+    }
+}
