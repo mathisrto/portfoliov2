@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "title": "about",
+            "url": "/about",
+            "icon": "user"
+        },
+        {
+            "id": 2,
+            "title": "skills",
+            "url": "/skills",
+            "icon": "zap"
+        },
+        {
+            "id": 3,
+            "title": "experiences",
+            "url": "/experiences",
+            "icon": "calendar"
+        },
+        {
+            "id": 4,
+            "title": "education",
+            "url": "/education",
+            "icon": "bookopen"
+        },
+        {
+            "id": 5,
+            "title": "portfolio",
+            "url": "/portfolio",
+            "icon": "briefcasebusiness"
+        }
+    ]
+}
