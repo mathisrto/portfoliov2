@@ -8,6 +8,20 @@
         "skills": "Skills",
         "experiences": "Work Experiences",
         "education": "Education",
-        "portfolio": "Portfolio"
+        "portfolio": "Portfolio",
+        "section": "Sections",
+        "settings": "Settings",
+        "title": "Mathis Ratron's Portfolio"
+    },
+    "PMRSelectLanguage": {
+        "select_language": "Select Language",
+        "fr": "🇫🇷 French",
+        "en": "🇬🇧 English"
+    },
+    "PMRSwitchTheme": {
+        "select_theme": "Select Theme",
+        "light": "Light Mode",
+        "dark": "Dark Mode",
+        "system": "System Mode"
     }
 }

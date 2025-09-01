@@ -20,3 +20,5 @@ export const icons: { [key: string]: React.ElementType } = {
     bookopen: BookOpenIcon,
     briefcasebusiness: BriefcaseBusinessIcon,
 };
+
+export const locales = ["fr", "en"];
