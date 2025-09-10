@@ -8,6 +8,7 @@ import { useLocale } from "./PMRLocaleContext";
 
 type SidebarContextType = {
     sidebarItems: PMRSidebarMenuProps[];
+    footerLinks: PMRSidebarMenuProps[];
 };
 
 const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
@@ -24,6 +25,7 @@ import { useEffect, useState } from "react";
 export function SidebarProviderClient({ children }: { children: ReactNode }) {
     const { locale } = useLocale();
     const [sidebarItems, setSidebarItems] = useState<PMRSidebarMenuProps[]>([]);
+    const [footerLinks, setFooterLinks] = useState<PMRSidebarMenuProps[]>([]);
 
     useEffect(() => {
         async function fetchItems() {
@@ -31,12 +33,16 @@ export function SidebarProviderClient({ children }: { children: ReactNode }) {
                 locale
             ).loadItems();
             setSidebarItems(sidebar);
+            const footer = await new PMRSidebarMenuController(
+                locale
+            ).loadFooterLinks();
+            setFooterLinks(footer);
         }
         fetchItems();
     }, [locale]);
 
     return (
-        <SidebarContext.Provider value={{ sidebarItems }}>
+        <SidebarContext.Provider value={{ sidebarItems, footerLinks }}>
             {children}
         </SidebarContext.Provider>
     );

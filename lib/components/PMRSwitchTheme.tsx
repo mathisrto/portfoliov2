@@ -18,7 +18,7 @@ const PMRSwitchTheme: React.FC = () => {
 
     const handleChange = (value: string) => {
         setTheme(value);
-        document.cookie = `theme=${value}; path=/; max-age=31536000`;
+        localStorage.setItem("theme", value);
     };
 
     return (
@@ -28,15 +28,15 @@ const PMRSwitchTheme: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
                 <SelectItem value="system">
-                    <Monitor className="mr-2 h-5 w-5 text-primary" />
+                    <Monitor className="mr-2" />
                     {t("system")}
                 </SelectItem>
                 <SelectItem value="light">
-                    <Sun className="mr-2 h-5 w-5 text-primary" />
+                    <Sun className="mr-2" />
                     {t("light")}
                 </SelectItem>
                 <SelectItem value="dark">
-                    <Moon className="mr-2 h-5 w-5 text-primary" />
+                    <Moon className="mr-2" />
                     {t("dark")}
                 </SelectItem>
             </SelectContent>

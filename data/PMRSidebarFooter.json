@@ -1,0 +1,22 @@
+{
+    "links": [
+        {
+            "id": 1,
+            "title": "Instagram",
+            "url": "https://www.instagram.com/mathis.rto_/",
+            "mode": { "light": "instagram", "dark": "instagram" }
+        },
+        {
+            "id": 2,
+            "title": "GitHub",
+            "url": "https://github.com/mathisrto",
+            "mode": { "light": "githubLight", "dark": "githubDark" }
+        },
+        {
+            "id": 3,
+            "title": "LinkedIn",
+            "url": "https://www.linkedin.com/in/mathis-ratron",
+            "mode": { "light": "linkedin", "dark": "linkedin" }
+        }
+    ]
+}

@@ -11,7 +11,9 @@
         "portfolio": "Portfolio",
         "section": "Sections",
         "settings": "Paramètres",
-        "title": "Portfolio de Mathis Ratron"
+        "title": "Portfolio de Mathis Ratron",
+        "links": "Retrouvez-moi sur",
+        "copyright": "© 2025 Tous droits réservés"
     },
     "PMRSelectLanguage": {
         "select_language": "Choisir la langue",

@@ -3,6 +3,7 @@
 import {
     Sidebar,
     SidebarContent,
+    SidebarFooter,
     SidebarGroup,
     SidebarGroupContent,
     SidebarGroupLabel,
@@ -21,7 +22,7 @@ import PMRSelectLanguage from "./PMRSelectLanguage";
 import PMRSwitchTheme from "./PMRSwitchTheme";
 
 export default function PMRSidebarMenu() {
-    const { sidebarItems } = useSidebar();
+    const { sidebarItems, footerLinks } = useSidebar();
     const t = useTranslations("PMRSidebarMenu");
 
     return (
@@ -31,20 +32,20 @@ export default function PMRSidebarMenu() {
                     <Image
                         src={me}
                         alt="Photo de Mathis Ratron"
-                        className="w-3/4 h-auto rounded-full border-primary border-2"
+                        className="w-1/2 h-auto rounded-full border-primary border-2 my-4"
                         priority
                     />
-                    <h1 className="font-bold">{t("title")}</h1>
+                    <h1 className="font-bold text-lg">{t("title")}</h1>
                 </div>
+            </SidebarHeader>
+            <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel>{t("settings")}</SidebarGroupLabel>
-                    <SidebarGroupContent className="space-y-2">
+                    <SidebarGroupContent className="space-y-3 py-2">
                         <PMRSwitchTheme />
                         <PMRSelectLanguage />
                     </SidebarGroupContent>
                 </SidebarGroup>
-            </SidebarHeader>
-            <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel>{t("section")}</SidebarGroupLabel>
                     <SidebarGroupContent>
@@ -53,8 +54,10 @@ export default function PMRSidebarMenu() {
                                 <SidebarMenuItem key={item.id}>
                                     <SidebarMenuButton asChild>
                                         <Link href={item.url}>
-                                            <item.icon />
-                                            <span>{t(item.title)}</span>
+                                            <item.icon className="!h-5 !w-5" />
+                                            <span className="text-base">
+                                                {t(item.title)}
+                                            </span>
                                         </Link>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>
@@ -63,6 +66,23 @@ export default function PMRSidebarMenu() {
                     </SidebarGroupContent>
                 </SidebarGroup>
             </SidebarContent>
+            <SidebarFooter>
+                <div className="flex justify-center items-center space-x-4">
+                    {footerLinks.map((link) => (
+                        <Link
+                            key={link.id}
+                            href={link.url}
+                            className="flex flex-col items-center space-y-1"
+                        >
+                            <link.icon />
+                            <span className="font-bold">{link.title}</span>
+                        </Link>
+                    ))}
+                </div>
+                <div className="flex justify-center">
+                    <p className="text-xs">{t("copyright")}</p>
+                </div>
+            </SidebarFooter>
         </Sidebar>
     );
 }

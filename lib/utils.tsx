@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import PMRBrandIcon from "./components/PMRBrandIcon";
 import { icons } from "./constants";
 
 export function cn(...inputs: ClassValue[]) {
@@ -19,5 +20,14 @@ export function getLocalizedItems(items: any[], locale: string) {
     return items.map((item) => {
         const url = `/${locale}${item.url}`;
         return { ...item, url };
+    });
+}
+
+export function getBrandIconsFromItems(items: any[]) {
+    return items.map((item) => {
+        const iconComponent = (
+            <PMRBrandIcon name={item.title} mode={item.mode} />
+        );
+        return { ...item, icon: () => iconComponent };
     });
 }

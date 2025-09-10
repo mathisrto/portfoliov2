@@ -2,7 +2,7 @@
 
 import { Slot } from "@radix-ui/react-slot";
 import { cva, VariantProps } from "class-variance-authority";
-import { ArrowLeftToLineIcon, ArrowRightToLineIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import * as React from "react";
 
 import { Button } from "@/components/ui/button";
@@ -287,15 +287,7 @@ function SidebarTrigger({
             }}
             {...props}
         >
-            {open ? (
-                <ArrowLeftToLineIcon
-                    className={cn(isMobile ? "!h-8 !w-8" : "!h-6 !w-6")}
-                />
-            ) : (
-                <ArrowRightToLineIcon
-                    className={cn(isMobile ? "!h-8 !w-8" : "!h-6 !w-6")}
-                />
-            )}
+            <MenuIcon />
             <span className="sr-only">Toggle Sidebar</span>
         </Button>
     );
