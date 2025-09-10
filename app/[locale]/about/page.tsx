@@ -5,6 +5,7 @@ import {
 } from "@/components/ui/popover";
 import me from "@/data/images/me.webp";
 import PMRTypewriter from "@/lib/components/PMRTypeWriter";
+import { HomeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -40,11 +41,35 @@ export default function Home() {
                         certification PIX.
                     </p>
                     <Popover>
-                        <PopoverTrigger className="px-4 py-2 rounded-md bg-secondary text-white font-medium shadow hover:bg-primary transition">
+                        <PopoverTrigger className="px-4 py-2 rounded-md bg-secondary text-primary font-medium shadow hover:bg-tertiary hover:cursor-pointer transition">
                             A propos de moi
                         </PopoverTrigger>
-                        <PopoverContent className="bg-white dark:bg-slate-900 p-4 rounded-md shadow-lg text-black dark:text-white">
-                            Place content for the popover here.
+                        <PopoverContent className="bg-background p-4 rounded-md shadow-lg text-primary">
+                            <div>
+                                <p className="font-semibold mb-3">
+                                    Mes informations de contact :
+                                </p>
+                                <div className="flex flex-col gap-2">
+                                    <div className="flex items-center gap-2 text-base">
+                                        <PhoneIcon className="h-5 w-5 text-secondary" />
+                                        <span className="font-medium">
+                                            07 83 62 86 27
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-base">
+                                        <HomeIcon className="h-5 w-5 text-secondary" />
+                                        <span className="font-medium">
+                                            13280 Arles
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-base">
+                                        <MailIcon className="h-5 w-5 text-secondary" />
+                                        <span className="font-medium">
+                                            ratronmathis@gmail.com
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </PopoverContent>
                     </Popover>
                 </div>
