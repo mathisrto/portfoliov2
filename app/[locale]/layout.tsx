@@ -54,7 +54,7 @@ export default async function LocaleLayout({
                                 <SidebarProviderClient>
                                     <PMRSidebarMenu />
                                 </SidebarProviderClient>
-                                <main>
+                                <main className="flex flex-1 flex-col transition-all">
                                     <SidebarTrigger />
                                     {children}
                                 </main>
