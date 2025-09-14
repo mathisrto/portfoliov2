@@ -4,6 +4,7 @@ import PMRSidebarMenu from "@/lib/components/PMRSideMenu";
 import { PMRThemeProvider } from "@/lib/components/PMRThemeProvider";
 import { LocaleProvider } from "@/lib/contexts/PMRLocaleContext";
 import { SidebarProviderClient } from "@/lib/contexts/PMRSidebarContext";
+import { SkillsProviderClient } from "@/lib/contexts/PMRSkillsContext";
 import ThemeScript from "@/lib/themeScript";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
@@ -51,13 +52,15 @@ export default async function LocaleLayout({
                     <LocaleProvider initialLocale={locale}>
                         <PMRThemeProvider>
                             <SidebarProvider>
-                                <SidebarProviderClient>
-                                    <PMRSidebarMenu />
-                                </SidebarProviderClient>
-                                <main className="flex flex-1 flex-col transition-all">
-                                    <SidebarTrigger />
-                                    {children}
-                                </main>
+                                <SkillsProviderClient>
+                                    <SidebarProviderClient>
+                                        <PMRSidebarMenu />
+                                    </SidebarProviderClient>
+                                    <main className="flex flex-1 flex-col transition-all">
+                                        <SidebarTrigger />
+                                        {children}
+                                    </main>
+                                </SkillsProviderClient>
                             </SidebarProvider>
                         </PMRThemeProvider>
                     </LocaleProvider>

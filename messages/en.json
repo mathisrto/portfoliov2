@@ -33,6 +33,14 @@
         "contact": "Contact Me"
     },
     "Skills": {
+        "title": "My Skills",
+        "description": "Here are some of my skills and areas of expertise in the field of computer science:",
+        "programming_languages": "Programming Languages",
+        "frameworks_libraries": "Frameworks & Libraries",
+        "database": "Databases",
+        "devops_tools": "DevOps Tools",
+        "management_tools": "Management Tools",
+        "UX_UI_tools": "UX/UI Tools",
         "algorithmic_development": {
             "title": "Development & Algorithmics",
             "items": [

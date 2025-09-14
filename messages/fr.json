@@ -33,6 +33,14 @@
         "contact": "Contactez-moi"
     },
     "Skills": {
+        "title": "Mes Compétences",
+        "description": "Voici quelques-unes de mes compétences et domaines d'expertise dans le domaine de l'informatique :",
+        "programming_languages": "Langages de programmation",
+        "frameworks_libraries": "Frameworks & Bibliothèques",
+        "database": "Bases de données",
+        "devops_tools": "Outils DevOps",
+        "management_tools": "Outils de gestion",
+        "UX_UI_tools": "Outils UX/UI",
         "algorithmic_development": {
             "title": "Développement & Algorithmie",
             "items": [

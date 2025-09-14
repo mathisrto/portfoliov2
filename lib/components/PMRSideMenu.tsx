@@ -16,7 +16,7 @@ import me from "@/data/images/me.webp";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { PMRSidebarMenuProps } from "../constants";
+import { PMRMenuProps, PMRMenuPropsBrand } from "../constants";
 import { useSidebar } from "../contexts/PMRSidebarContext";
 import PMRSelectLanguage from "./PMRSelectLanguage";
 import PMRSwitchTheme from "./PMRSwitchTheme";
@@ -50,32 +50,36 @@ export default function PMRSidebarMenu() {
                     <SidebarGroupLabel>{t("section")}</SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
-                            {sidebarItems.map((item: PMRSidebarMenuProps) => (
-                                <SidebarMenuItem key={item.id}>
-                                    <SidebarMenuButton asChild>
-                                        <Link href={item.url}>
-                                            <item.icon className="!h-5 !w-5" />
-                                            <span className="text-base">
-                                                {t(item.title)}
-                                            </span>
-                                        </Link>
-                                    </SidebarMenuButton>
-                                </SidebarMenuItem>
-                            ))}
+                            {sidebarItems.map(
+                                (
+                                    item: PMRMenuProps<React.ElementType, true>
+                                ) => (
+                                    <SidebarMenuItem key={item.id}>
+                                        <SidebarMenuButton asChild>
+                                            <Link href={item.url}>
+                                                <item.icon className="!h-5 !w-5" />
+                                                <span className="text-base">
+                                                    {t(item.name)}
+                                                </span>
+                                            </Link>
+                                        </SidebarMenuButton>
+                                    </SidebarMenuItem>
+                                )
+                            )}
                         </SidebarMenu>
                     </SidebarGroupContent>
                 </SidebarGroup>
             </SidebarContent>
             <SidebarFooter>
                 <div className="flex justify-center items-center space-x-4">
-                    {footerLinks.map((link) => (
+                    {footerLinks.map((link: PMRMenuPropsBrand<true>) => (
                         <Link
                             key={link.id}
                             href={link.url}
                             className="flex flex-col items-center space-y-1"
                         >
                             <link.icon />
-                            <span className="font-bold">{link.title}</span>
+                            <span className="font-bold">{link.name}</span>
                         </Link>
                     ))}
                 </div>

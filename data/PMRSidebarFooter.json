@@ -2,21 +2,24 @@
     "links": [
         {
             "id": 1,
-            "title": "Instagram",
+            "name": "Instagram",
             "url": "https://www.instagram.com/mathis.rto_/",
-            "mode": { "light": "instagram", "dark": "instagram" }
+            "mode": { "light": "instagram", "dark": "instagram" },
+            "size": 24
         },
         {
             "id": 2,
-            "title": "GitHub",
+            "name": "GitHub",
             "url": "https://github.com/mathisrto",
-            "mode": { "light": "githubLight", "dark": "githubDark" }
+            "mode": { "light": "githubLight", "dark": "githubDark" },
+            "size": 24
         },
         {
             "id": 3,
-            "title": "LinkedIn",
+            "name": "LinkedIn",
             "url": "https://www.linkedin.com/in/mathis-ratron",
-            "mode": { "light": "linkedin", "dark": "linkedin" }
+            "mode": { "light": "linkedin", "dark": "linkedin" },
+            "size": 24
         }
     ]
 }

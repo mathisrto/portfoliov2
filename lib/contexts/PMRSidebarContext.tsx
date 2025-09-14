@@ -2,13 +2,13 @@
 
 import { PMRSidebarMenuController } from "@/lib/controllers/PMRSidebarMenuController";
 import type { ReactNode } from "react";
-import { createContext, useContext } from "react";
-import { PMRSidebarMenuProps } from "../constants";
+import React, { createContext, useContext } from "react";
+import { PMRMenuProps, PMRMenuPropsBrand } from "../constants";
 import { useLocale } from "./PMRLocaleContext";
 
 type SidebarContextType = {
-    sidebarItems: PMRSidebarMenuProps[];
-    footerLinks: PMRSidebarMenuProps[];
+    sidebarItems: PMRMenuProps<React.ElementType, true>[];
+    footerLinks: PMRMenuPropsBrand<true>[];
 };
 
 const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
@@ -24,8 +24,12 @@ import { useEffect, useState } from "react";
 
 export function SidebarProviderClient({ children }: { children: ReactNode }) {
     const { locale } = useLocale();
-    const [sidebarItems, setSidebarItems] = useState<PMRSidebarMenuProps[]>([]);
-    const [footerLinks, setFooterLinks] = useState<PMRSidebarMenuProps[]>([]);
+    const [sidebarItems, setSidebarItems] = useState<
+        PMRMenuProps<React.ElementType, true>[]
+    >([]);
+    const [footerLinks, setFooterLinks] = useState<PMRMenuPropsBrand<true>[]>(
+        []
+    );
 
     useEffect(() => {
         async function fetchItems() {
@@ -35,7 +39,7 @@ export function SidebarProviderClient({ children }: { children: ReactNode }) {
             setSidebarItems(sidebar);
             const footer = await new PMRSidebarMenuController(
                 locale
-            ).loadFooterLinks();
+            ).loadBrandItems();
             setFooterLinks(footer);
         }
         fetchItems();

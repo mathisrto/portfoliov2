@@ -1,9 +1,15 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { brandIcons, PMRBrandIconProps } from "../constants";
+import { brandIcons } from "../constants";
 
-const PMRBrandIcon = ({ name, mode, size = 24 }: PMRBrandIconProps) => {
+type PMRBrandIconProps = {
+    name: string;
+    mode: { [key: string]: string };
+    size: number;
+};
+
+const PMRBrandIcon = ({ name, mode, size }: PMRBrandIconProps) => {
     const { theme } = useTheme();
     const [url, setUrl] = useState<string>("");
 
