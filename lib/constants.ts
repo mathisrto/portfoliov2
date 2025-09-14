@@ -14,6 +14,12 @@ export type PMRSidebarMenuProps = {
     color?: string;
 };
 
+export type PMRSkillsToolsProps = {
+    id: number;
+    name: string;
+    icon: string;
+};
+
 export const icons: { [key: string]: React.ElementType } = {
     user: UserIcon,
     zap: ZapIcon,

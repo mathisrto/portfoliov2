@@ -1,0 +1,154 @@
+{
+    "programming_languages": [
+        {
+            "id": 1,
+            "name": "JavaScript",
+            "icon": "javascript"
+        },
+        {
+            "id": 2,
+            "name": "TypeScript",
+            "icon": "typescript"
+        },
+        {
+            "id": 3,
+            "name": "Python",
+            "icon": "python"
+        },
+        {
+            "id": 4,
+            "name": "Java",
+            "icon": "java"
+        },
+        {
+            "id": 6,
+            "name": "C++",
+            "icon": "cpp"
+        },
+        {
+            "id": 7,
+            "name": "HTML",
+            "icon": "html"
+        },
+        {
+            "id": 8,
+            "name": "CSS",
+            "icon": "css"
+        },
+        {
+            "id": 9,
+            "name": "PHP",
+            "icon": "php"
+        }
+    ],
+    "frameworks_libraries": [
+        {
+            "id": 1,
+            "name": "React",
+            "icon": "react"
+        },
+        {
+            "id": 2,
+            "name": "Next.js",
+            "icon": "nextjs"
+        },
+        {
+            "id": 3,
+            "name": "Node.js",
+            "icon": "nodejs"
+        },
+        {
+            "id": 4,
+            "name": "Tailwind CSS",
+            "icon": "tailwindcss"
+        },
+        {
+            "id": 5,
+            "name": "Electron",
+            "icon": "electron"
+        },
+        {
+            "id": 6,
+            "name": "QT",
+            "icon": "qt"
+        },
+        {
+            "id": 7,
+            "name": "Laravel",
+            "icon": "laravel"
+        }
+    ],
+    "database": [
+        {
+            "id": 1,
+            "name": "MySQL",
+            "icon": "mysql"
+        },
+        {
+            "id": 2,
+            "name": "PostgreSQL",
+            "icon": "postgresql"
+        },
+        {
+            "id": 3,
+            "name": "SQLite",
+            "icon": "sqlite"
+        },
+        {
+            "id": 4,
+            "name": "MongoDB",
+            "icon": "mongodb"
+        },
+        {
+            "id": 5,
+            "name": "PLPGSQL",
+            "icon": "plpgsql"
+        }
+    ],
+    "devops_tools": [
+        {
+            "id": 1,
+            "name": "Git",
+            "icon": "git"
+        },
+        {
+            "id": 2,
+            "name": "GitHub",
+            "icon": "github"
+        },
+        {
+            "id": 3,
+            "name": "Docker",
+            "icon": "docker"
+        },
+        {
+            "id": 4,
+            "name": "Linux",
+            "icon": "linux"
+        },
+        {
+            "id": 5,
+            "name": "Vercel",
+            "icon": "vercel"
+        }
+    ],
+    "management_tools": [
+        {
+            "id": 1,
+            "name": "Trello",
+            "icon": "trello"
+        },
+        {
+            "id": 2,
+            "name": "Jira",
+            "icon": "jira"
+        }
+    ],
+    "UX_UI_tools": [
+        {
+            "id": 1,
+            "name": "Figma",
+            "icon": "figma"
+        }
+    ]
+}

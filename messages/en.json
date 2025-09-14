@@ -1,10 +1,6 @@
 {
-    "Home": {
-        "welcome": "Welcome to my site",
-        "description": "This is the home page"
-    },
     "PMRSidebarMenu": {
-        "about": "About",
+        "about": "About me",
         "skills": "Skills",
         "experiences": "Work Experiences",
         "education": "Education",
@@ -25,5 +21,74 @@
         "light": "Light Mode",
         "dark": "Dark Mode",
         "system": "System Mode"
+    },
+    "About": {
+        "hello": "Hello, I am ",
+        "name": "Mathis Ratron",
+        "description": "I am a ",
+        "developer": "developer",
+        "student": "student",
+        "about_me": "I am currently in my 3rd year of a Bachelor's degree in Computer Science at Arles. Passionate about video games, programming, and sports, I practice boxing and weight training. I hold a category B driving license, the BIA (Brevet d'Initiation Aéronautique), as well as the PIX certification.",
+        "about_me_btn": "About Me",
+        "contact": "Contact Me"
+    },
+    "Skills": {
+        "algorithmic_development": {
+            "title": "Development & Algorithmics",
+            "items": [
+                "Asynchronous programming and multithreading",
+                "Algorithms: graphs, sorting, algorithmic complexity, cryptography"
+            ]
+        },
+        "databases_architecture": {
+            "title": "Databases & Architecture",
+            "items": [
+                "Database design and management",
+                "Architecture: assembler, logic gates, components"
+            ]
+        },
+        "cybersecurity_networks": {
+            "title": "Cybersecurity & Networks",
+            "items": [
+                "Unix systems and command line scripts",
+                "Encryption and data security"
+            ]
+        },
+        "artificial_intelligence": {
+            "title": "Artificial Intelligence",
+            "items": [
+                "Deep learning and gradient descent",
+                "Matrix manipulation and optimization"
+            ]
+        },
+        "methodologies_management": {
+            "title": "Methodologies & Management",
+            "items": [
+                "Classical and agile methods (SCRUM, Kanban)",
+                "Unit and integration testing",
+                "Version control"
+            ]
+        },
+        "ui_ux_design": {
+            "title": "UI & UX Design",
+            "items": [
+                "Responsive and adaptive design",
+                "Graphic design tools and prototyping"
+            ]
+        },
+        "communication_languages": {
+            "title": "Communication & Languages",
+            "items": [
+                "Teamwork and writing skills",
+                "Oral and written communication in English (B2 level)"
+            ]
+        },
+        "economics_digital_law": {
+            "title": "Economics & Digital Law",
+            "items": [
+                "Understanding economic principles",
+                "Knowledge of digital regulations"
+            ]
+        }
     }
 }

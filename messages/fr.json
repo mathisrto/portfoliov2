@@ -1,10 +1,6 @@
 {
-    "Home": {
-        "welcome": "Bienvenue sur mon site",
-        "description": "Ceci est la page d'accueil"
-    },
     "PMRSidebarMenu": {
-        "about": "À propos",
+        "about": "À propos de moi",
         "skills": "Compétences",
         "experiences": "Expériences professionnelles",
         "education": "Parcours scolaire",
@@ -25,5 +21,74 @@
         "light": "Mode clair",
         "dark": "Mode sombre",
         "system": "Mode système"
+    },
+    "About": {
+        "hello": "Bonjour, je suis ",
+        "name": "Mathis Ratron",
+        "description": "Je suis un ",
+        "developer": "développeur",
+        "student": "étudiant",
+        "about_me": "Je poursuis actuellement ma 3ème année de BUT Informatique à Arles. Passionné par les jeux vidéo, la programmation et le sport, je pratique la boxe et la musculation. Je possède le permis B, le BIA (Brevet d'Initiation Aéronautique) ainsi que la certification PIX.",
+        "about_me_btn": "À propos de moi",
+        "contact": "Contactez-moi"
+    },
+    "Skills": {
+        "algorithmic_development": {
+            "title": "Développement & Algorithmie",
+            "items": [
+                "Programmation asynchrone et multithreading",
+                "Algorithmie : graphes, tri, complexité algorithmique, cryptographie"
+            ]
+        },
+        "databases_architecture": {
+            "title": "Bases de données & Architecture",
+            "items": [
+                "Conception et gestion de bases de données",
+                "Architecture : assembleur, portes logiques, composants"
+            ]
+        },
+        "cybersecurity_networks": {
+            "title": "Cybersécurité & Réseaux",
+            "items": [
+                "Systèmes Unix et scripts en ligne de commande",
+                "Chiffrement et sécurité des données"
+            ]
+        },
+        "artificial_intelligence": {
+            "title": "Intelligence Artificielle",
+            "items": [
+                "Apprentissage profond et descente de gradient",
+                "Manipulation de matrices et optimisation"
+            ]
+        },
+        "methodologies_management": {
+            "title": "Méthodologies & Gestion",
+            "items": [
+                "Méthodes classiques et agiles (SCRUM, Kanban)",
+                "Tests unitaires et d’intégration",
+                "Gestion de versions"
+            ]
+        },
+        "ui_ux_design": {
+            "title": "UI & UX Design",
+            "items": [
+                "Conception responsive et adaptative",
+                "Outils de conception graphique et prototypage"
+            ]
+        },
+        "communication_languages": {
+            "title": "Communication & Langues",
+            "items": [
+                "Travail en équipe et compétences rédactionnelles",
+                "Communication orale et écrite en anglais (niveau B2)"
+            ]
+        },
+        "economics_digital_law": {
+            "title": "Économie & Droit du numérique",
+            "items": [
+                "Compréhension des principes économiques",
+                "Connaissance des réglementations numériques"
+            ]
+        }
     }
 }
