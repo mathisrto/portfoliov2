@@ -272,7 +272,7 @@ function SidebarTrigger({
     onClick,
     ...props
 }: React.ComponentProps<typeof Button>) {
-    const { open, isMobile, toggleSidebar } = useSidebar();
+    const { toggleSidebar } = useSidebar();
 
     return (
         <Button
