@@ -1,36 +1,28 @@
-import { PMRMenuPropsBrand } from "../constants";
+import { JSONProps } from "../constants";
 import PMRController from "./PMRController";
 
 const URL_REQUIRED = false;
 
 export class PMRSkillsController extends PMRController {
-    constructor(locale: string) {
+    constructor(locale: PMRController["locale"]) {
         super(locale);
     }
 
-    async loadSkills(): Promise<string[]> {
-        const importedModule: Record<string, unknown> = await import(
-            "@/data/PMRSkills.json"
-        );
-        return importedModule.skills as string[];
+    /**
+     * Charge les compétences (JSONProps)
+     */
+    async loadSkills(): Promise<JSONProps[]> {
+        const importedModule = await import("@/data/PMRSkills.json");
+        const items: JSONProps[] = await this.loadRawData(importedModule);
+        return this.loadJSONData(items, URL_REQUIRED);
     }
 
-    async loadSkillsTools(): Promise<
-        Record<string, PMRMenuPropsBrand<typeof URL_REQUIRED>[]>
-    > {
-        const items: Record<string, PMRMenuPropsBrand<typeof URL_REQUIRED>[]> =
-            {};
-        const importedModule: Record<string, unknown> = await import(
-            "@/data/PMRSkillsTools.json"
-        );
-        for (const key in importedModule) {
-            if (importedModule[key] && Array.isArray(importedModule[key])) {
-                const datas = await this.loadRawData(importedModule, key);
-                items[key] = await this.loadJSONData<
-                    PMRMenuPropsBrand<typeof URL_REQUIRED>[]
-                >(datas, URL_REQUIRED, true);
-            }
-        }
-        return items;
+    /**
+     * Charge les outils par catégorie (brand icons)
+     */
+    async loadSkillsTools(): Promise<JSONProps[]> {
+        const importedModule = await import("@/data/PMRSkillsTools.json");
+        const items: JSONProps[] = await this.loadRawData(importedModule);
+        return this.loadJSONData(items, URL_REQUIRED);
     }
 }

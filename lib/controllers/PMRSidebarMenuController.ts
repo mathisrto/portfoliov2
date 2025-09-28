@@ -1,4 +1,4 @@
-import { PMRMenuProps, PMRMenuPropsBrand } from "../constants";
+import { JSONProps } from "../constants";
 import PMRController from "./PMRController";
 
 const URL_REQUIRED = true;
@@ -8,23 +8,21 @@ export class PMRSidebarMenuController extends PMRController {
         super(locale);
     }
 
-    async loadItems(): Promise<
-        PMRMenuProps<React.ElementType, typeof URL_REQUIRED>[]
-    > {
+    /**
+     * Charge les items du sidebar menu (icônes classiques)
+     */
+    async loadItems(): Promise<JSONProps[]> {
         const importedModule = await import("@/data/PMRSidebarMenu.json");
-        const items = await this.loadRawData(importedModule, "items");
-        return this.loadJSONData<
-            PMRMenuProps<React.ElementType, typeof URL_REQUIRED>[]
-        >(items, URL_REQUIRED, false);
+        const items: JSONProps[] = await this.loadRawData(importedModule);
+        return this.loadJSONData(items, URL_REQUIRED);
     }
 
-    async loadBrandItems(): Promise<PMRMenuPropsBrand<typeof URL_REQUIRED>[]> {
+    /**
+     * Charge les liens du footer (brand icons)
+     */
+    async loadBrandItems(): Promise<JSONProps[]> {
         const importedModule = await import("@/data/PMRSidebarFooter.json");
-        const items = await this.loadRawData(importedModule, "links");
-        return this.loadJSONData<PMRMenuPropsBrand<typeof URL_REQUIRED>[]>(
-            items,
-            URL_REQUIRED,
-            true
-        );
+        const items: JSONProps[] = await this.loadRawData(importedModule);
+        return this.loadJSONData(items, URL_REQUIRED);
     }
 }

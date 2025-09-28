@@ -2,12 +2,12 @@
 
 import type { ReactNode } from "react";
 import { createContext, useContext } from "react";
-import { PMRMenuPropsBrand } from "../constants";
+import { JSONProps } from "../constants";
 import { useLocale } from "./PMRLocaleContext";
 
 type SkillsContextType = {
-    skills: string[];
-    skillsTools: Record<string, PMRMenuPropsBrand<false>[]>;
+    skills: JSONProps[];
+    skillsTools: JSONProps[];
 };
 
 const SkillsContext = createContext<SkillsContextType | undefined>(undefined);
@@ -24,10 +24,8 @@ import { PMRSkillsController } from "../controllers/PMRSkillsController";
 
 export function SkillsProviderClient({ children }: { children: ReactNode }) {
     const { locale } = useLocale();
-    const [skills, setSkills] = useState<string[]>([]);
-    const [skillsTools, setSkillsTools] = useState<
-        Record<string, PMRMenuPropsBrand<false>[]>
-    >({});
+    const [skills, setSkills] = useState<JSONProps[]>([]);
+    const [skillsTools, setSkillsTools] = useState<JSONProps[]>([]);
 
     useEffect(() => {
         async function fetchItems() {

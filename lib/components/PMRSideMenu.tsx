@@ -16,7 +16,7 @@ import me from "@/data/images/me.webp";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { PMRMenuProps, PMRMenuPropsBrand } from "../constants";
+import { JSONBrandIconProps, JSONProps } from "../constants";
 import { useSidebar } from "../contexts/PMRSidebarContext";
 import PMRSelectLanguage from "./PMRSelectLanguage";
 import PMRSwitchTheme from "./PMRSwitchTheme";
@@ -50,21 +50,19 @@ export default function PMRSidebarMenu() {
                     <SidebarGroupLabel>{t("section")}</SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
-                            {sidebarItems.map(
-                                (
-                                    item: PMRMenuProps<React.ElementType, true>
-                                ) => (
+                            {sidebarItems.map((item: JSONProps) =>
+                                item.url && item.icon ? (
                                     <SidebarMenuItem key={item.id}>
                                         <SidebarMenuButton asChild>
                                             <Link href={item.url}>
-                                                <item.icon className="!h-5 !w-5" />
+                                                <item.icon.elm className="!h-5 !w-5" />
                                                 <span className="text-base">
-                                                    {t(item.name)}
+                                                    {t(item.id)}
                                                 </span>
                                             </Link>
                                         </SidebarMenuButton>
                                     </SidebarMenuItem>
-                                )
+                                ) : null
                             )}
                         </SidebarMenu>
                     </SidebarGroupContent>
@@ -72,16 +70,20 @@ export default function PMRSidebarMenu() {
             </SidebarContent>
             <SidebarFooter>
                 <div className="flex justify-center items-center space-x-4">
-                    {footerLinks.map((link: PMRMenuPropsBrand<true>) => (
-                        <Link
-                            key={link.id}
-                            href={link.url}
-                            className="flex flex-col items-center space-y-1"
-                        >
-                            <link.icon />
-                            <span className="font-bold">{link.name}</span>
-                        </Link>
-                    ))}
+                    {footerLinks.map((link: JSONProps) =>
+                        link.url && link.icon ? (
+                            <Link
+                                key={link.id}
+                                href={link.url}
+                                className="flex flex-col items-center space-y-1"
+                            >
+                                <link.icon.elm className="!h-5 !w-5" />
+                                <span className="font-bold">
+                                    {(link.icon as JSONBrandIconProps).title}
+                                </span>
+                            </Link>
+                        ) : null
+                    )}
                 </div>
                 <div className="flex justify-center">
                     <p className="text-xs">{t("copyright")}</p>

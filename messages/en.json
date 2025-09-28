@@ -1,4 +1,38 @@
 {
+    "PMRIcons": {
+        "javascript": "JavaScript Logo",
+        "typescript": "TypeScript Logo",
+        "python": "Python Logo",
+        "java": "Java Logo",
+        "cpp": "C++ Logo",
+        "html": "HTML Logo",
+        "css": "CSS Logo",
+        "php": "PHP Logo",
+        "react": "React Logo",
+        "nextjs": "Next.js Logo",
+        "nodejs": "Node.js Logo",
+        "tailwindcss": "Tailwind CSS Logo",
+        "electron": "Electron Logo",
+        "qt": "Qt Logo",
+        "laravel": "Laravel Logo",
+        "mysql": "MySQL Logo",
+        "postgresql": "PostgreSQL Logo",
+        "sqlite": "SQLite Logo",
+        "mongodb": "MongoDB Logo",
+        "git": "Git Logo",
+        "github": "GitHub Logo",
+        "docker": "Docker Logo",
+        "linux": "Linux Logo",
+        "vercel": "Vercel Logo",
+        "trello": "Trello Logo",
+        "jira": "Jira Logo",
+        "figma": "Figma Logo",
+        "instagram": "Instagram Logo",
+        "linkedin": "LinkedIn Logo",
+        "mcdonald": "McDonald's Logo",
+        "cpam": "CPAM Logo",
+        "weekera": "Weekera Logo"
+    },
     "PMRSidebarMenu": {
         "about": "About me",
         "skills": "Skills",
@@ -22,7 +56,7 @@
         "dark": "Dark Mode",
         "system": "System Mode"
     },
-    "About": {
+    "PMRAbout": {
         "hello": "Hello, I am ",
         "name": "Mathis Ratron",
         "description": "I am a ",
@@ -32,7 +66,7 @@
         "about_me_btn": "About Me",
         "contact": "Contact Me"
     },
-    "Skills": {
+    "PMRSkills": {
         "title": "My Skills",
         "description": "Here are some of my skills and areas of expertise in the field of computer science:",
         "programming_languages": "Programming Languages",
@@ -96,6 +130,71 @@
             "items": [
                 "Understanding economic principles",
                 "Knowledge of digital regulations"
+            ]
+        }
+    },
+    "PMRExperiences": {
+        "title": "My Professional Experiences",
+        "description": "Here is an overview of my professional experiences in the field of computer science and beyond:",
+        "missions_title": "Missions",
+        "skills_title": "Skills",
+        "mcdonald": {
+            "title": "Crew Member",
+            "company": "McDonald's",
+            "duration": "August 2024",
+            "location": "Saint-Martin-de-Crau, France",
+            "skills": [
+                "Adaptability",
+                "Communication",
+                "Time management",
+                "Customer service",
+                "Teamwork"
+            ],
+            "missions": [
+                "Welcoming and cashiering customers at the counter",
+                "Preparing orders, drinks, desserts",
+                "Counter and dining room service",
+                "Dishwashing and cleaning",
+                "Participating in some closing shifts"
+            ]
+        },
+        "cpam": {
+            "title": "IT Service Assistant (internship)",
+            "company": "CPAM of Hérault",
+            "duration": "April 2025 - June 2025",
+            "location": "Béziers, France",
+            "skills": [
+                "User support",
+                "Communication",
+                "Development",
+                "Time management",
+                "Maintenance",
+                "Teamwork"
+            ],
+            "missions": [
+                "Maintenance and replacement of equipment (monitors, RAM sticks, etc.)",
+                "Preparing workstations for remote work",
+                "Developing an internal application in PowerShell/XAML",
+                "Using administration tools such as GLPI",
+                "Assisting staff in resolving their IT issues"
+            ]
+        },
+        "weekera": {
+            "title": "Web Developer (apprenticeship)",
+            "company": "Weekera",
+            "duration": "September 2025 - Present",
+            "location": "Nîmes, France",
+            "skills": [
+                "Adaptability",
+                "Communication",
+                "Development",
+                "Time management",
+                "Teamwork"
+            ],
+            "missions": [
+                "Participating in the creation of a web application",
+                "Development with Svelte and PostgreSQL database",
+                "Using a WQL query language similar to GraphQL"
             ]
         }
     }

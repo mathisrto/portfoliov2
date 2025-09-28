@@ -1,21 +1,8 @@
-import { PMRMenuProps, PMRMenuPropsBrand } from "@/lib/constants";
-import {
-    getBrandIconsFromItems,
-    getIconsFromItems,
-    getLocalizedItems,
-} from "@/lib/utils";
-
-// Types pour une meilleure lisibilité
-type MenuDataInput =
-    | PMRMenuProps<string, boolean>[]
-    | PMRMenuPropsBrand<boolean>[];
-type MenuDataOutput =
-    | PMRMenuProps<React.ElementType, boolean>[]
-    | PMRMenuProps<React.ComponentType, boolean>[]
-    | PMRMenuPropsBrand<boolean>[];
+import { JSONBrandIconProps, JSONProps } from "@/lib/constants";
+import { localizeItems, mapIcons } from "@/lib/utils";
 
 /**
- * Classe de base pour le chargement et la transformation des données de menu JSON
+ * Classe de base pour le chargement et la transformation des données JSON
  */
 class PMRController {
     protected locale: string;
@@ -25,61 +12,69 @@ class PMRController {
     }
 
     /**
-     * Charge et transforme les données JSON de menu
-     * Pipeline : Chargement -> Localisation (si URL obligatoire) -> Conversion des icônes
-     *
-     * @param fileName - Nom du fichier JSON dans /data/
-     * @param key - Clé des données dans le JSON
-     * @param urlRequired - Si true, localise les URLs avec la locale
-     * @param brandIcons - Si true, utilise getBrandIconsFromItems, sinon getIconsFromItems
-     * @returns Données transformées
+     * Étape 1: Chargement des données brutes depuis un module JSON
      */
-    protected async loadJSONData<T extends MenuDataOutput>(
-        items: MenuDataInput,
-        urlRequired: boolean,
-        brandIcons: boolean
-    ): Promise<T> {
-        // 1. Localisation des URLs si nécessaire
-        if (urlRequired) {
-            items = this.localizeItems(items);
-        }
-
-        // 3. Conversion des icônes
-        const finalItems = this.convertIcons(items, brandIcons);
-
-        return finalItems as T;
-    }
-
-    /**
-     * Étape 1: Chargement des données brutes depuis le JSON
-     */
-    protected async loadRawData(
-        importedModule: { [key: string]: unknown },
-        key: string
-    ): Promise<MenuDataInput> {
-        if (!key?.trim()) {
-            throw new Error("key must be a non-empty string");
-        }
-
-        const data = importedModule[key];
+    protected async loadRawData(importedModule: {
+        [key: string]: unknown;
+    }): Promise<JSONProps[]> {
+        const data = importedModule["items"];
 
         if (!data) {
-            throw new Error(`Key "${key}" not found in imported module`);
+            throw new Error(`Key "items" not found in imported module`);
         }
 
         if (!Array.isArray(data)) {
             throw new Error(
-                `Expected array for key "${key}" but got ${typeof data}`
+                `Expected "items" to be an array but got ${typeof data}`
             );
         }
 
-        return data;
+        // Validation minimale de structure
+        const validatedItems = (data as JSONProps[]).map((item) => {
+            if (!item.id) {
+                throw new Error("Each JSON item must have an 'id' property");
+            }
+
+            if (item.icon?.isBrand) {
+                if (
+                    !(item.icon as JSONBrandIconProps).light ||
+                    !(item.icon as JSONBrandIconProps).dark
+                ) {
+                    throw new Error(
+                        `Brand icon for item "${item.id}" must have 'light' and 'dark' properties`
+                    );
+                }
+            }
+
+            return item;
+        });
+
+        return validatedItems;
     }
 
     /**
-     * Étape 2: Localisation des URLs avec vos fonctions utils
+     * Charge et transforme les données JSON
+     * Pipeline : Localisation -> Conversion des icônes
      */
-    private localizeItems(items: MenuDataInput): MenuDataInput {
+    async loadJSONData(
+        items: JSONProps[],
+        urlRequired: boolean = true
+    ): Promise<JSONProps[]> {
+        let processedItems = items;
+
+        if (urlRequired) {
+            processedItems = this.localizeItems(processedItems);
+        }
+
+        processedItems = this.mapIcons(processedItems);
+
+        return processedItems;
+    }
+
+    /**
+     * Localise les URLs des items
+     */
+    private localizeItems(items: JSONProps[]): JSONProps[] {
         if (!this.locale?.trim()) {
             throw new Error(
                 "Locale is required for URL localization but is empty"
@@ -87,7 +82,7 @@ class PMRController {
         }
 
         try {
-            return getLocalizedItems(items, this.locale);
+            return localizeItems(items, this.locale);
         } catch (error) {
             throw new Error(
                 `URL localization failed: ${
@@ -98,55 +93,14 @@ class PMRController {
     }
 
     /**
-     * Étape 3: Conversion des icônes avec vos fonctions utils
+     * Transforme les icônes pour qu’elles soient prêtes à être rendues
      */
-    private convertIcons(
-        items: MenuDataInput,
-        brandIcons: boolean
-    ): MenuDataOutput {
+    private mapIcons(items: JSONProps[]): JSONProps[] {
         try {
-            if (brandIcons) {
-                // Validation pour brand icons
-                const brandItems = items as PMRMenuPropsBrand<boolean>[];
-                const invalidItems = brandItems.filter(
-                    (item) => !item.mode || !item.name
-                );
-
-                if (invalidItems.length > 0) {
-                    throw new Error(
-                        `Brand icons conversion failed: ${invalidItems.length} items missing required "mode" or "name" property. ` +
-                            `Items: ${invalidItems
-                                .map((item) => item.id || "unknown")
-                                .join(", ")}`
-                    );
-                }
-
-                // Utilisation de votre fonction utils
-                return getBrandIconsFromItems(
-                    brandItems as PMRMenuPropsBrand<true>[]
-                );
-            } else {
-                // Validation pour icônes régulières
-                const menuItems = items as PMRMenuProps<string, boolean>[];
-                const invalidItems = menuItems.filter(
-                    (item) => !item.icon || typeof item.icon !== "string"
-                );
-
-                if (invalidItems.length > 0) {
-                    throw new Error(
-                        `Regular icons conversion failed: ${invalidItems.length} items missing or invalid "icon" property. ` +
-                            `Items: ${invalidItems
-                                .map((item) => item.id || "unknown")
-                                .join(", ")}`
-                    );
-                }
-
-                // Utilisation de votre fonction utils
-                return getIconsFromItems(menuItems);
-            }
+            return mapIcons(items);
         } catch (error) {
             throw new Error(
-                `Icon conversion failed: ${
+                `Icon mapping failed: ${
                     error instanceof Error ? error.message : String(error)
                 }`
             );

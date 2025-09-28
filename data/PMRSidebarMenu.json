@@ -1,34 +1,49 @@
 {
     "items": [
         {
-            "id": 1,
-            "name": "about",
+            "id": "about",
             "url": "/about",
-            "icon": "user"
+            "icon": {
+                "isBrand": false,
+                "icon": "user",
+                "size": 24
+            }
         },
         {
-            "id": 2,
-            "name": "skills",
+            "id": "skills",
             "url": "/skills",
-            "icon": "zap"
+            "icon": {
+                "isBrand": false,
+                "icon": "zap",
+                "size": 24
+            }
         },
         {
-            "id": 3,
-            "name": "experiences",
+            "id": "experiences",
             "url": "/experiences",
-            "icon": "calendar"
+            "icon": {
+                "isBrand": false,
+                "icon": "calendar",
+                "size": 24
+            }
         },
         {
-            "id": 4,
-            "name": "education",
+            "id": "education",
             "url": "/education",
-            "icon": "bookopen"
+            "icon": {
+                "isBrand": false,
+                "icon": "bookopen",
+                "size": 24
+            }
         },
         {
-            "id": 5,
-            "name": "portfolio",
+            "id": "portfolio",
             "url": "/portfolio",
-            "icon": "briefcasebusiness"
+            "icon": {
+                "isBrand": false,
+                "icon": "briefcasebusiness",
+                "size": 24
+            }
         }
     ]
 }

@@ -1,0 +1,25 @@
+{
+    "items": [
+        {
+            "id": "college",
+            "icon": {
+                "light": "college",
+                "dark": "college"
+            }
+        },
+        {
+            "id": "lycee",
+            "icon": {
+                "light": "lycee",
+                "dark": "lycee"
+            }
+        },
+        {
+            "id": "university",
+            "icon": {
+                "light": "university",
+                "dark": "university"
+            }
+        }
+    ]
+}

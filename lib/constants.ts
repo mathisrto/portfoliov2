@@ -8,23 +8,27 @@ import {
 
 export const locales = ["fr", "en"];
 
-export type PMRMenuProps<IconType, UrlRequired extends boolean = false> = {
-    id: number;
-    name: string;
-    icon: IconType;
-} & (UrlRequired extends true ? { url: string } : { url?: string });
+export type JSONProps = {
+    id: string;
+    icon?: JSONIconProps | JSONBrandIconProps;
+    category?: string;
+    url?: string;
+};
 
-export type PMRMenuPropsBrand<UrlRequired extends boolean = false> = {
-    id: number;
-    name: string;
-    mode: PMRThemeProps;
-    size: number;
-    icon: React.ElementType;
-} & (UrlRequired extends true ? { url: string } : { url?: string });
+export type JSONIconProps = {
+    isBrand: boolean;
+    icon: string;
+    size?: number;
+    elm: React.ElementType;
+};
 
-export type PMRThemeProps = {
+export type JSONBrandIconProps = {
+    isBrand: true;
     light: string;
     dark: string;
+    size?: number;
+    title?: string;
+    elm: React.ElementType;
 };
 
 export const icons: { [key: string]: React.ElementType } = {
@@ -36,6 +40,7 @@ export const icons: { [key: string]: React.ElementType } = {
 };
 
 // Import de tous les fichiers SVG des marques
+import CPAMIcon from "@/data/icons/cpam.svg";
 import CPPIcon from "@/data/icons/cpp.svg";
 import CSSIcon from "@/data/icons/css.svg";
 import DockerIcon from "@/data/icons/docker.svg";
@@ -52,6 +57,7 @@ import JiraIcon from "@/data/icons/jira.svg";
 import LaravelIcon from "@/data/icons/laravel.svg";
 import LinkedinIcon from "@/data/icons/linkedin.svg";
 import LinuxIcon from "@/data/icons/linux.svg";
+import McDonaldIcon from "@/data/icons/mcdonald.svg";
 import MongoDBIcon from "@/data/icons/mongodb.svg";
 import MySQLIcon from "@/data/icons/mysql.svg";
 import NextJSIcon from "@/data/icons/nextjs.svg";
@@ -66,6 +72,7 @@ import TailwindCSSIcon from "@/data/icons/tailwindcss.svg";
 import TrelloIcon from "@/data/icons/trello.svg";
 import TypescriptIcon from "@/data/icons/typescript.svg";
 import VercelIcon from "@/data/icons/vercel.svg";
+import WeekeraIcon from "@/data/icons/weekera.jpeg";
 
 export const brandIcons = {
     instagram: InstagramIcon,
@@ -98,4 +105,7 @@ export const brandIcons = {
     trello: TrelloIcon,
     jira: JiraIcon,
     figma: FigmaIcon,
+    mcdonald: McDonaldIcon,
+    cpam: CPAMIcon,
+    weekera: WeekeraIcon,
 };

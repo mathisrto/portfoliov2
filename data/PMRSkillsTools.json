@@ -1,176 +1,274 @@
 {
-    "programming_languages": [
+    "items": [
         {
-            "id": 1,
-            "name": "JavaScript",
-            "mode": { "light": "javascript", "dark": "javascript" },
-            "size": 32
+            "id": "javascript",
+            "category": "programming_languages",
+            "icon": {
+                "isBrand": true,
+                "light": "javascript",
+                "dark": "javascript",
+                "title": "JavaScript"
+            }
         },
         {
-            "id": 2,
-            "name": "TypeScript",
-            "mode": { "light": "typescript", "dark": "typescript" },
-            "size": 32
+            "id": "typescript",
+            "category": "programming_languages",
+            "icon": {
+                "isBrand": true,
+                "light": "typescript",
+                "dark": "typescript",
+                "title": "TypeScript"
+            }
         },
         {
-            "id": 3,
-            "name": "Python",
-            "mode": { "light": "python", "dark": "python" },
-            "size": 32
+            "id": "python",
+            "category": "programming_languages",
+            "icon": {
+                "isBrand": true,
+                "light": "python",
+                "dark": "python",
+                "title": "Python"
+            }
         },
         {
-            "id": 4,
-            "name": "Java",
-            "mode": { "light": "java", "dark": "java" },
-            "size": 32
+            "id": "java",
+            "category": "programming_languages",
+            "icon": {
+                "isBrand": true,
+                "light": "java",
+                "dark": "java",
+                "title": "Java"
+            }
         },
         {
-            "id": 6,
-            "name": "C++",
-            "mode": { "light": "cpp", "dark": "cpp" },
-            "size": 32
+            "id": "cpp",
+            "category": "programming_languages",
+            "icon": {
+                "isBrand": true,
+                "light": "cpp",
+                "dark": "cpp",
+                "title": "C++"
+            }
         },
         {
-            "id": 7,
-            "name": "HTML",
-            "mode": { "light": "html", "dark": "html" },
-            "size": 32
+            "id": "html",
+            "category": "programming_languages",
+            "icon": {
+                "isBrand": true,
+                "light": "html",
+                "dark": "html",
+                "title": "HTML"
+            }
         },
         {
-            "id": 8,
-            "name": "CSS",
-            "mode": { "light": "css", "dark": "css" },
-            "size": 32
+            "id": "css",
+            "category": "programming_languages",
+            "icon": {
+                "isBrand": true,
+                "light": "css",
+                "dark": "css",
+                "title": "CSS"
+            }
         },
         {
-            "id": 9,
-            "name": "PHP",
-            "mode": { "light": "php", "dark": "php" },
-            "size": 32
-        }
-    ],
-    "frameworks_libraries": [
-        {
-            "id": 1,
-            "name": "React",
-            "mode": { "light": "react", "dark": "react" },
-            "size": 32
+            "id": "php",
+            "category": "programming_languages",
+            "icon": {
+                "isBrand": true,
+                "light": "php",
+                "dark": "php",
+                "title": "PHP"
+            }
         },
         {
-            "id": 2,
-            "name": "Next.js",
-            "mode": { "light": "nextjs", "dark": "nextjs" },
-            "size": 32
+            "id": "react",
+            "category": "frameworks_libraries",
+            "icon": {
+                "isBrand": true,
+                "light": "react",
+                "dark": "react",
+                "title": "React"
+            }
         },
         {
-            "id": 3,
-            "name": "Node.js",
-            "mode": { "light": "nodejs", "dark": "nodejs" },
-            "size": 32
+            "id": "nextjs",
+            "category": "frameworks_libraries",
+            "icon": {
+                "isBrand": true,
+                "light": "nextjs",
+                "dark": "nextjs",
+                "title": "Next.js"
+            }
         },
         {
-            "id": 4,
-            "name": "Tailwind CSS",
-            "mode": { "light": "tailwindcss", "dark": "tailwindcss" },
-            "size": 32
+            "id": "nodejs",
+            "category": "frameworks_libraries",
+            "icon": {
+                "isBrand": true,
+                "light": "nodejs",
+                "dark": "nodejs",
+                "title": "Node.js"
+            }
         },
         {
-            "id": 5,
-            "name": "Electron",
-            "mode": { "light": "electron", "dark": "electron" },
-            "size": 32
+            "id": "tailwindcss",
+            "category": "frameworks_libraries",
+            "icon": {
+                "isBrand": true,
+                "light": "tailwindcss",
+                "dark": "tailwindcss",
+                "title": "Tailwind CSS"
+            }
         },
         {
-            "id": 6,
-            "name": "QT",
-            "mode": { "light": "qt", "dark": "qt" },
-            "size": 32
+            "id": "electron",
+            "category": "frameworks_libraries",
+            "icon": {
+                "isBrand": true,
+                "light": "electron",
+                "dark": "electron",
+                "title": "Electron"
+            }
         },
         {
-            "id": 7,
-            "name": "Laravel",
-            "mode": { "light": "laravel", "dark": "laravel" },
-            "size": 32
-        }
-    ],
-    "database": [
-        {
-            "id": 1,
-            "name": "MySQL",
-            "mode": { "light": "mysql", "dark": "mysql" },
-            "size": 32
+            "id": "qt",
+            "category": "frameworks_libraries",
+            "icon": {
+                "isBrand": true,
+                "light": "qt",
+                "dark": "qt",
+                "title": "Qt"
+            }
         },
         {
-            "id": 2,
-            "name": "PostgreSQL",
-            "mode": { "light": "postgresql", "dark": "postgresql" },
-            "size": 32
+            "id": "laravel",
+            "category": "frameworks_libraries",
+            "icon": {
+                "isBrand": true,
+                "light": "laravel",
+                "dark": "laravel",
+                "title": "Laravel"
+            }
         },
         {
-            "id": 3,
-            "name": "SQLite",
-            "mode": { "light": "sqlite", "dark": "sqlite" },
-            "size": 32
+            "id": "mysql",
+            "category": "database",
+            "icon": {
+                "isBrand": true,
+                "light": "mysql",
+                "dark": "mysql",
+                "title": "MySQL"
+            }
         },
         {
-            "id": 4,
-            "name": "MongoDB",
-            "mode": { "light": "mongodb", "dark": "mongodb" },
-            "size": 32
-        }
-    ],
-    "devops_tools": [
-        {
-            "id": 1,
-            "name": "Git",
-            "mode": { "light": "git", "dark": "git" },
-            "size": 32
+            "id": "postgresql",
+            "category": "database",
+            "icon": {
+                "isBrand": true,
+                "light": "postgresql",
+                "dark": "postgresql",
+                "title": "PostgreSQL"
+            }
         },
         {
-            "id": 2,
-            "name": "GitHub",
-            "mode": { "light": "githubLight", "dark": "githubDark" },
-            "size": 32
+            "id": "sqlite",
+            "category": "database",
+            "icon": {
+                "isBrand": true,
+                "light": "sqlite",
+                "dark": "sqlite",
+                "title": "SQLite"
+            }
         },
         {
-            "id": 3,
-            "name": "Docker",
-            "mode": { "light": "docker", "dark": "docker" },
-            "size": 32
+            "id": "mongodb",
+            "category": "database",
+            "icon": {
+                "isBrand": true,
+                "light": "mongodb",
+                "dark": "mongodb",
+                "title": "MongoDB"
+            }
         },
         {
-            "id": 4,
-            "name": "Linux",
-            "mode": { "light": "linux", "dark": "linux" },
-            "size": 32
+            "id": "git",
+            "category": "devops_tools",
+            "icon": {
+                "isBrand": true,
+                "light": "git",
+                "dark": "git",
+                "title": "Git"
+            }
         },
         {
-            "id": 5,
-            "name": "Vercel",
-            "mode": { "light": "vercel", "dark": "vercel" },
-            "size": 32
-        }
-    ],
-    "management_tools": [
-        {
-            "id": 1,
-            "name": "Trello",
-            "mode": { "light": "trello", "dark": "trello" },
-            "size": 32
+            "id": "github",
+            "category": "devops_tools",
+            "icon": {
+                "isBrand": true,
+                "light": "githubLight",
+                "dark": "githubDark",
+                "title": "GitHub"
+            }
         },
         {
-            "id": 2,
-            "name": "Jira",
-            "mode": { "light": "jira", "dark": "jira" },
-            "size": 32
-        }
-    ],
-    "UX_UI_tools": [
+            "id": "docker",
+            "category": "devops_tools",
+            "icon": {
+                "isBrand": true,
+                "light": "docker",
+                "dark": "docker",
+                "title": "Docker"
+            }
+        },
         {
-            "id": 1,
-            "name": "Figma",
-            "mode": { "light": "figma", "dark": "figma" },
-            "size": 32
+            "id": "linux",
+            "category": "devops_tools",
+            "icon": {
+                "isBrand": true,
+                "light": "linux",
+                "dark": "linux",
+                "title": "Linux"
+            }
+        },
+        {
+            "id": "vercel",
+            "category": "devops_tools",
+            "icon": {
+                "isBrand": true,
+                "light": "vercel",
+                "dark": "vercel",
+                "title": "Vercel"
+            }
+        },
+        {
+            "id": "trello",
+            "category": "management_tools",
+            "icon": {
+                "isBrand": true,
+                "light": "trello",
+                "dark": "trello",
+                "title": "Trello"
+            }
+        },
+        {
+            "id": "jira",
+            "category": "management_tools",
+            "icon": {
+                "isBrand": true,
+                "light": "jira",
+                "dark": "jira",
+                "title": "Jira"
+            }
+        },
+        {
+            "id": "figma",
+            "category": "UX_UI_tools",
+            "icon": {
+                "isBrand": true,
+                "light": "figma",
+                "dark": "figma",
+                "title": "Figma"
+            }
         }
     ]
 }

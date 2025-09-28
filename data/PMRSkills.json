@@ -1,12 +1,28 @@
 {
-    "skills": [
-        "algorithmic_development",
-        "databases_architecture",
-        "cybersecurity_networks",
-        "artificial_intelligence",
-        "methodologies_management",
-        "ui_ux_design",
-        "communication_languages",
-        "economics_digital_law"
+    "items": [
+        {
+            "id": "algorithmic_development"
+        },
+        {
+            "id": "databases_architecture"
+        },
+        {
+            "id": "cybersecurity_networks"
+        },
+        {
+            "id": "artificial_intelligence"
+        },
+        {
+            "id": "methodologies_management"
+        },
+        {
+            "id": "ui_ux_design"
+        },
+        {
+            "id": "communication_languages"
+        },
+        {
+            "id": "economics_digital_law"
+        }
     ]
 }

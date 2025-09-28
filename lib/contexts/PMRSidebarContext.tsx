@@ -2,13 +2,13 @@
 
 import { PMRSidebarMenuController } from "@/lib/controllers/PMRSidebarMenuController";
 import type { ReactNode } from "react";
-import React, { createContext, useContext } from "react";
-import { PMRMenuProps, PMRMenuPropsBrand } from "../constants";
+import { createContext, useContext } from "react";
+import { JSONProps } from "../constants";
 import { useLocale } from "./PMRLocaleContext";
 
 type SidebarContextType = {
-    sidebarItems: PMRMenuProps<React.ElementType, true>[];
-    footerLinks: PMRMenuPropsBrand<true>[];
+    sidebarItems: JSONProps[];
+    footerLinks: JSONProps[];
 };
 
 const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
@@ -24,12 +24,8 @@ import { useEffect, useState } from "react";
 
 export function SidebarProviderClient({ children }: { children: ReactNode }) {
     const { locale } = useLocale();
-    const [sidebarItems, setSidebarItems] = useState<
-        PMRMenuProps<React.ElementType, true>[]
-    >([]);
-    const [footerLinks, setFooterLinks] = useState<PMRMenuPropsBrand<true>[]>(
-        []
-    );
+    const [sidebarItems, setSidebarItems] = useState<JSONProps[]>([]);
+    const [footerLinks, setFooterLinks] = useState<JSONProps[]>([]);
 
     useEffect(() => {
         async function fetchItems() {

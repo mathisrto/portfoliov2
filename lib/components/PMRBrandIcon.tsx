@@ -1,41 +1,51 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { brandIcons } from "../constants";
+import { useCallback, useEffect, useState } from "react";
+import { brandIcons, JSONBrandIconProps, JSONProps } from "../constants";
 
-type PMRBrandIconProps = {
-    name: string;
-    mode: { [key: string]: string };
-    size: number;
+type PMRBrandIconProps = JSONProps & {
+    size?: number;
 };
 
-const PMRBrandIcon = ({ name, mode, size }: PMRBrandIconProps) => {
+const PMRBrandIcon = ({ id, icon, size = 32 }: PMRBrandIconProps) => {
     const { theme } = useTheme();
     const [url, setUrl] = useState<string>("");
+    const t = useTranslations("PMRIcons");
 
-    const updateIconUrl = (currentTheme: string | undefined) => {
-        let resolvedTheme = currentTheme;
+    const updateIconUrl = useCallback(
+        (currentTheme: string | undefined) => {
+            if (!icon || !icon.isBrand) {
+                console.error(
+                    `PMRBrandIcon: l'icon de l'item "${id}" n'est pas une icône de marque (isBrand: true).`
+                );
+                return;
+            }
 
-        if (currentTheme === "system") {
-            const mq = window.matchMedia("(prefers-color-scheme: dark)");
-            resolvedTheme = mq.matches ? "dark" : "light";
-        }
+            let resolvedTheme = currentTheme;
+            if (currentTheme === "system") {
+                const mq = window.matchMedia("(prefers-color-scheme: dark)");
+                resolvedTheme = mq.matches ? "dark" : "light";
+            }
 
-        const themeKey = resolvedTheme === "dark" ? "dark" : "light";
-        const logo = mode?.[themeKey];
-        const iconUrl = brandIcons[logo as keyof typeof brandIcons];
+            const themeKey = resolvedTheme === "dark" ? "dark" : "light";
+            const iconName = (icon as JSONBrandIconProps)[themeKey];
+            const iconUrl = brandIcons[iconName as keyof typeof brandIcons];
 
-        setUrl(iconUrl);
-    };
+            setUrl(iconUrl);
+        },
+        [icon, id]
+    );
 
     useEffect(() => {
         updateIconUrl(theme);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [theme, mode]);
+    }, [theme, updateIconUrl]);
 
     if (!url) return null;
 
-    return <Image src={url} alt={name} width={size} height={size} />;
+    return <Image src={url} alt={t(id)} width={size} height={size} />;
 };
 
 export default PMRBrandIcon;

@@ -1,4 +1,39 @@
 {
+    "PMRIcons": {
+        "javascript": "Logo JavaScript",
+        "typescript": "Logo TypeScript",
+        "python": "Logo Python",
+        "java": "Logo Java",
+        "cpp": "Logo C++",
+        "html": "Logo HTML",
+        "css": "Logo CSS",
+        "php": "Logo PHP",
+        "react": "Logo React",
+        "nextjs": "Logo Next.js",
+        "nodejs": "Logo Node.js",
+        "tailwindcss": "Logo Tailwind CSS",
+        "electron": "Logo Electron",
+        "qt": "Logo Qt",
+        "laravel": "Logo Laravel",
+        "mysql": "Logo MySQL",
+        "postgresql": "Logo PostgreSQL",
+        "sqlite": "Logo SQLite",
+        "mongodb": "Logo MongoDB",
+        "git": "Logo Git",
+        "github": "Logo GitHub",
+        "docker": "Logo Docker",
+        "linux": "Logo Linux",
+        "vercel": "Logo Vercel",
+        "trello": "Logo Trello",
+        "jira": "Logo Jira",
+        "figma": "Logo Figma",
+        "instagram": "Logo Instagram",
+        "linkedin": "Logo LinkedIn",
+        "mcdonald": "Logo McDonald's",
+        "cpam": "Logo CPAM",
+        "weekera": "Logo Weekera"
+    },
+
     "PMRSidebarMenu": {
         "about": "À propos de moi",
         "skills": "Compétences",
@@ -22,7 +57,7 @@
         "dark": "Mode sombre",
         "system": "Mode système"
     },
-    "About": {
+    "PMRAbout": {
         "hello": "Bonjour, je suis ",
         "name": "Mathis Ratron",
         "description": "Je suis un ",
@@ -32,7 +67,7 @@
         "about_me_btn": "À propos de moi",
         "contact": "Contactez-moi"
     },
-    "Skills": {
+    "PMRSkills": {
         "title": "Mes Compétences",
         "description": "Voici quelques-unes de mes compétences et domaines d'expertise dans le domaine de l'informatique :",
         "programming_languages": "Langages de programmation",
@@ -96,6 +131,71 @@
             "items": [
                 "Compréhension des principes économiques",
                 "Connaissance des réglementations numériques"
+            ]
+        }
+    },
+    "PMRExperiences": {
+        "title": "Mes Expériences Professionnelles",
+        "description": "Voici un aperçu de mes expériences professionnelles dans le domaine de l'informatique et au-delà :",
+        "missions_title": "Missions",
+        "skills_title": "Compétences",
+        "mcdonald": {
+            "title": "Employé polyvalent",
+            "company": "McDonald's",
+            "duration": "Août 2024",
+            "location": "Saint-Martin-de-Crau, France",
+            "skills": [
+                "Adaptabilité",
+                "Communication",
+                "Gestion du temps",
+                "Service client",
+                "Travail en équipe"
+            ],
+            "missions": [
+                "Accueil et encaissement des clients au comptoir",
+                "Préparation des commandes, boissons, desserts",
+                "Service au comptoir et en salle",
+                "Plonge et nettoyage",
+                "Participation à certaines fermetures (close)"
+            ]
+        },
+        "cpam": {
+            "title": "Assistant service informatique (stage)",
+            "company": "CPAM de l'Hérault",
+            "duration": "Avril 2025 - Juin 2025",
+            "location": "Béziers, France",
+            "skills": [
+                "Assistance aux agents",
+                "Communication",
+                "Développement",
+                "Gestion du temps",
+                "Maintenance",
+                "Travail en équipe"
+            ],
+            "missions": [
+                "Maintenance et remplacement de matériel (écrans, barrettes RAM, etc.)",
+                "Préparation de postes pour le télétravail",
+                "Développement d’une application interne en PowerShell/XAML",
+                "Utilisation d’outils d’administration comme GLPI",
+                "Assistance aux agents pour la résolution de leurs problèmes informatiques"
+            ]
+        },
+        "weekera": {
+            "title": "Développeur web (alternance)",
+            "company": "Weekera",
+            "duration": "Septembre 2025 - Présent",
+            "location": "Nîmes, France",
+            "skills": [
+                "Adaptabilité",
+                "Communication",
+                "Développement",
+                "Gestion du temps",
+                "Travail en équipe"
+            ],
+            "missions": [
+                "Participation à la création d’une application web",
+                "Développement avec Svelte et base de données PostgreSQL",
+                "Utilisation d’un langage de requête WQL similaire à GraphQL"
             ]
         }
     }

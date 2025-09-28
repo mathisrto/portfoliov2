@@ -1,25 +1,37 @@
 {
-    "links": [
+    "items": [
         {
-            "id": 1,
-            "name": "Instagram",
+            "id": "instagram",
             "url": "https://www.instagram.com/mathis.rto_/",
-            "mode": { "light": "instagram", "dark": "instagram" },
-            "size": 24
+            "icon": {
+                "isBrand": true,
+                "light": "instagram",
+                "dark": "instagram",
+                "size": 24,
+                "title": "Instagram"
+            }
         },
         {
-            "id": 2,
-            "name": "GitHub",
+            "id": "github",
             "url": "https://github.com/mathisrto",
-            "mode": { "light": "githubLight", "dark": "githubDark" },
-            "size": 24
+            "icon": {
+                "isBrand": true,
+                "light": "githubLight",
+                "dark": "githubDark",
+                "size": 24,
+                "title": "GitHub"
+            }
         },
         {
-            "id": 3,
-            "name": "LinkedIn",
+            "id": "linkedin",
             "url": "https://www.linkedin.com/in/mathis-ratron",
-            "mode": { "light": "linkedin", "dark": "linkedin" },
-            "size": 24
+            "icon": {
+                "isBrand": true,
+                "light": "linkedin",
+                "dark": "linkedin",
+                "size": 24,
+                "title": "LinkedIn"
+            }
         }
     ]
 }

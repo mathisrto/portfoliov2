@@ -1,0 +1,31 @@
+{
+    "items": [
+        {
+            "id": "mcdonald",
+            "icon": {
+                "isBrand": true,
+                "light": "mcdonald",
+                "dark": "mcdonald",
+                "size": 64
+            }
+        },
+        {
+            "id": "cpam",
+            "icon": {
+                "isBrand": true,
+                "light": "cpam",
+                "dark": "cpam",
+                "size": 64
+            }
+        },
+        {
+            "id": "weekera",
+            "icon": {
+                "isBrand": true,
+                "light": "weekera",
+                "dark": "weekera",
+                "size": 64
+            }
+        }
+    ]
+}
