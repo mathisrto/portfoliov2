@@ -31,7 +31,10 @@
         "linkedin": "LinkedIn Logo",
         "mcdonald": "McDonald's Logo",
         "cpam": "CPAM Logo",
-        "weekera": "Weekera Logo"
+        "weekera": "Weekera Logo",
+        "college": "Saint-Charles Middle School Logo",
+        "lycee": "Saint-Charles High School Logo",
+        "university": "IUT of Arles Logo"
     },
     "PMRSidebarMenu": {
         "about": "About me",
@@ -196,6 +199,35 @@
                 "Development with Svelte and PostgreSQL database",
                 "Using a WQL query language similar to GraphQL"
             ]
+        }
+    },
+    "PMREducation": {
+        "title": "My Education",
+        "description": "Here is an overview of my educational background and degrees obtained:",
+        "speciality_title": "Specialty",
+        "mention_title": "Honors",
+        "college": {
+            "title": "Saint-Charles Middle School",
+            "duration": "2016 - 2020",
+            "location": "Arles, France",
+            "degree": "Diplôme National du Brevet (DNB)",
+            "mention": "High Honors"
+        },
+        "lycee": {
+            "title": "Saint-Charles High School",
+            "duration": "2020 - 2023",
+            "location": "Saint-Martin-de-Crau, France",
+            "degree": "General Baccalaureate",
+            "speciality": "Mathematics, Computer Science",
+            "mention": "High Honors"
+        },
+        "university": {
+            "title": "IUT of Arles",
+            "duration": "2023 - Ongoing",
+            "location": "Arles, France",
+            "degree": "BUT Computer Science (Bachelor of Technology)",
+            "speciality": "Digital Imaging",
+            "mention": "In progress"
         }
     }
 }

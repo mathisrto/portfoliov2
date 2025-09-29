@@ -51,6 +51,7 @@ import GithubDarkIcon from "@/data/icons/github-dark.svg";
 import GithubLightIcon from "@/data/icons/github-light.svg";
 import HTMLIcon from "@/data/icons/html.svg";
 import InstagramIcon from "@/data/icons/instagram.svg";
+import IUTIcon from "@/data/icons/iut.png";
 import JavaIcon from "@/data/icons/java.svg";
 import JavascriptIcon from "@/data/icons/javascript.svg";
 import JiraIcon from "@/data/icons/jira.svg";
@@ -68,6 +69,7 @@ import PythonIcon from "@/data/icons/python.svg";
 import QtIcon from "@/data/icons/qt.svg";
 import ReactIcon from "@/data/icons/react.svg";
 import SQLiteIcon from "@/data/icons/sqlite.svg";
+import SaintCharlesIcon from "@/data/icons/stcharles.jpeg";
 import TailwindCSSIcon from "@/data/icons/tailwindcss.svg";
 import TrelloIcon from "@/data/icons/trello.svg";
 import TypescriptIcon from "@/data/icons/typescript.svg";
@@ -108,4 +110,7 @@ export const brandIcons = {
     mcdonald: McDonaldIcon,
     cpam: CPAMIcon,
     weekera: WeekeraIcon,
+    college: SaintCharlesIcon,
+    lycee: SaintCharlesIcon,
+    university: IUTIcon,
 };

@@ -3,22 +3,28 @@
         {
             "id": "college",
             "icon": {
+                "isBrand": true,
                 "light": "college",
-                "dark": "college"
+                "dark": "college",
+                "size": 64
             }
         },
         {
             "id": "lycee",
             "icon": {
+                "isBrand": true,
                 "light": "lycee",
-                "dark": "lycee"
+                "dark": "lycee",
+                "size": 64
             }
         },
         {
             "id": "university",
             "icon": {
+                "isBrand": true,
                 "light": "university",
-                "dark": "university"
+                "dark": "university",
+                "size": 64
             }
         }
     ]

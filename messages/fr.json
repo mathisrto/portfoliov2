@@ -31,7 +31,10 @@
         "linkedin": "Logo LinkedIn",
         "mcdonald": "Logo McDonald's",
         "cpam": "Logo CPAM",
-        "weekera": "Logo Weekera"
+        "weekera": "Logo Weekera",
+        "college": "Logo Collège Saint-Charles",
+        "lycee": "Logo Lycée Saint-Charles",
+        "university": "Logo IUT d'Arles"
     },
 
     "PMRSidebarMenu": {
@@ -197,6 +200,35 @@
                 "Développement avec Svelte et base de données PostgreSQL",
                 "Utilisation d’un langage de requête WQL similaire à GraphQL"
             ]
+        }
+    },
+    "PMREducation": {
+        "title": "Mon Parcours Scolaire",
+        "description": "Voici un aperçu de mon parcours scolaire et de mes diplômes obtenus :",
+        "speciality_title": "Spécialité",
+        "mention_title": "Mention",
+        "college": {
+            "title": "Collège Saint-Charles",
+            "duration": "2016 - 2020",
+            "location": "Arles, France",
+            "degree": "Diplôme National du Brevet (DNB)",
+            "mention": "Mention Très Bien"
+        },
+        "lycee": {
+            "title": "Lycée Saint-Charles",
+            "duration": "2020 - 2023",
+            "location": "Saint-Martin-de-Crau, France",
+            "degree": "Baccalauréat Général",
+            "speciality": "Mathématiques, NSI",
+            "mention": "Mention Très Bien"
+        },
+        "university": {
+            "title": "IUT d'Arles",
+            "duration": "2023 - En cours",
+            "location": "Arles, France",
+            "degree": "BUT Informatique (Bachelor Universitaire de Technologie)",
+            "speciality": "Imagerie numérique",
+            "mention": "En cours"
         }
     }
 }

@@ -3,6 +3,7 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { FloatingBlob } from "@/lib/components/PMRFloattingBlob";
 import PMRSidebarMenu from "@/lib/components/PMRSideMenu";
 import { PMRThemeProvider } from "@/lib/components/PMRThemeProvider";
+import { EducationsProviderClient } from "@/lib/contexts/PMREducationContext";
 import { ExperiencesProviderClient } from "@/lib/contexts/PMRExperiencesContext";
 import { LocaleProvider } from "@/lib/contexts/PMRLocaleContext";
 import { SidebarProviderClient } from "@/lib/contexts/PMRSidebarContext";
@@ -93,13 +94,15 @@ export default async function LocaleLayout({
                             <SidebarProvider>
                                 <SkillsProviderClient>
                                     <ExperiencesProviderClient>
-                                        <SidebarProviderClient>
-                                            <PMRSidebarMenu />
-                                        </SidebarProviderClient>
-                                        <main className="flex flex-1 flex-col transition-all">
-                                            <SidebarTrigger />
-                                            {children}
-                                        </main>
+                                        <EducationsProviderClient>
+                                            <SidebarProviderClient>
+                                                <PMRSidebarMenu />
+                                            </SidebarProviderClient>
+                                            <main className="flex flex-1 flex-col transition-all">
+                                                <SidebarTrigger />
+                                                {children}
+                                            </main>
+                                        </EducationsProviderClient>
                                     </ExperiencesProviderClient>
                                 </SkillsProviderClient>
                             </SidebarProvider>
