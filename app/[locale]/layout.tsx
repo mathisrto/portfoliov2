@@ -6,6 +6,7 @@ import { PMRThemeProvider } from "@/lib/components/PMRThemeProvider";
 import { EducationsProviderClient } from "@/lib/contexts/PMREducationContext";
 import { ExperiencesProviderClient } from "@/lib/contexts/PMRExperiencesContext";
 import { LocaleProvider } from "@/lib/contexts/PMRLocaleContext";
+import { PortfolioProviderClient } from "@/lib/contexts/PMRPortfolio";
 import { SidebarProviderClient } from "@/lib/contexts/PMRSidebarContext";
 import { SkillsProviderClient } from "@/lib/contexts/PMRSkillsContext";
 import ThemeScript from "@/lib/themeScript";
@@ -95,13 +96,15 @@ export default async function LocaleLayout({
                                 <SkillsProviderClient>
                                     <ExperiencesProviderClient>
                                         <EducationsProviderClient>
-                                            <SidebarProviderClient>
-                                                <PMRSidebarMenu />
-                                            </SidebarProviderClient>
-                                            <main className="flex flex-1 flex-col transition-all">
-                                                <SidebarTrigger />
-                                                {children}
-                                            </main>
+                                            <PortfolioProviderClient>
+                                                <SidebarProviderClient>
+                                                    <PMRSidebarMenu />
+                                                </SidebarProviderClient>
+                                                <main className="flex flex-1 flex-col transition-all">
+                                                    <SidebarTrigger />
+                                                    {children}
+                                                </main>
+                                            </PortfolioProviderClient>
                                         </EducationsProviderClient>
                                     </ExperiencesProviderClient>
                                 </SkillsProviderClient>
