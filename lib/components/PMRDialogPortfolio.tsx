@@ -74,7 +74,7 @@ export default function PMRDialogPortfolio({
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2 }}
-                    className="fixed inset-0 z-10 flex items-center justify-center bg-card overflow-hidden"
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-card overflow-hidden"
                 >
                     <div className="fixed inset-0" onClick={handleClose} />
                     <div className="relative w-full h-full flex flex-col items-center justify-center overflow-hidden">

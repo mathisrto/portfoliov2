@@ -10,10 +10,13 @@ import { PortfolioProviderClient } from "@/lib/contexts/PMRPortfolio";
 import { SidebarProviderClient } from "@/lib/contexts/PMRSidebarContext";
 import { SkillsProviderClient } from "@/lib/contexts/PMRSkillsContext";
 import ThemeScript from "@/lib/themeScript";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import { ReactNode } from "react";
 
 const geistSans = Geist({
@@ -47,6 +50,85 @@ export default async function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <ThemeScript />
+                {/* Google Analytics */}
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=G-X3GSMWMV2F"
+                    strategy="afterInteractive"
+                />
+                <Script id="gtag-init" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-X3GSMWMV2F');
+                    `}
+                </Script>
+
+                <title>Mathis Ratron · Portfolio/CV</title>
+                <meta charSet="UTF-8" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                <meta name="robots" content="index, follow" />
+                <meta
+                    name="description"
+                    content="Je m'appelle Mathis Ratron et je suis étudiant en informatique. Explorez mes projets, compétences et réalisations en développement."
+                />
+                <meta
+                    name="keywords"
+                    content="Mathis Ratron, portfolio, CV, étudiant en informatique, projets de développement, compétences en programmation"
+                />
+                <meta
+                    httpEquiv="Content-Type"
+                    content="text/html;charset=UTF-8"
+                />
+
+                {/* Open Graph */}
+                <meta
+                    property="og:title"
+                    content="Mathis Ratron · Portfolio/CV"
+                />
+                <meta
+                    property="og:description"
+                    content="Je m'appelle Mathis Ratron et je suis étudiant en informatique. Explorez mes projets, compétences et réalisations en développement."
+                />
+                <meta
+                    property="og:image"
+                    content="https://www.mathis-ratron.fr/mathis-ratron.jpg"
+                />
+                <meta
+                    property="og:url"
+                    content="https://www.mathis-ratron.fr/"
+                />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:site_name"
+                    content="Mathis Ratron · Portfolio/CV"
+                />
+
+                <link
+                    rel="shortcut icon"
+                    href="/favicon.ico"
+                    type="image/x-icon"
+                />
+                <link rel="canonical" href="https://www.mathis-ratron.fr/" />
+
+                {/* Structured Data JSON-LD */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: `{
+                    "@context": "https://schema.org",
+                    "@type": "Person",
+                    "name": "Mathis Ratron",
+                    "jobTitle": "Développeur Informatique",
+                    "url": "https://www.mathis-ratron.fr/",
+                    "image": "https://www.mathis-ratron.fr/mathis-ratron.jpg",
+                    "description": "Je m'appelle Mathis Ratron et je suis étudiant en informatique. Explorez mes projets, compétences et réalisations en développement."
+                }`,
+                    }}
+                />
             </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased cursor-default w-full h-full flex bg-background text-foreground -z-20`}
@@ -113,6 +195,9 @@ export default async function LocaleLayout({
                         </PMRThemeProvider>
                     </LocaleProvider>
                 </NextIntlClientProvider>
+
+                <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     );

@@ -5,7 +5,6 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
-import me from "@/data/images/me.webp";
 import PMRTypewriter from "@/lib/components/PMRTypeWriter";
 import { easeOut, motion, type Variants } from "framer-motion";
 import { HomeIcon, MailIcon, PhoneIcon } from "lucide-react";
@@ -203,7 +202,7 @@ export default function Home() {
                             transition={{ duration: 0.3 }}
                         >
                             <Image
-                                src={me}
+                                src={"/images/mathis-ratron.webp"}
                                 alt="Photo Mathis Ratron"
                                 className="relative rounded-2xl shadow-2xl object-cover w-full h-auto border border-border/20"
                                 priority
