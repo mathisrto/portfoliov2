@@ -1,10 +1,13 @@
 {
     "items": [
         {
-            "id": "geoguide"
+            "id": "horaris"
         },
         {
-            "id": "planifEasy"
+            "id": "memoryGame"
+        },
+        {
+            "id": "geoguide"
         },
         {
             "id": "station"
@@ -16,10 +19,7 @@
             "id": "websiteSAE"
         },
         {
-            "id": "horaris"
-        },
-        {
-            "id": "memoryGame"
+            "id": "planifEasy"
         }
     ]
 }

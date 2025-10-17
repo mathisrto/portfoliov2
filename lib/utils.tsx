@@ -61,18 +61,27 @@ export function mapIcons(items: JSONProps[]): JSONProps[] {
 export function localizeItems(items: JSONProps[], locale: string): JSONProps[] {
     return items.map((item) => ({
         ...item,
-        url: item.url ? `/${locale}${item.url}` : item.url,
+        url:
+            item.url && !/^https?:\/\//.test(item.url)
+                ? `/${locale}${item.url}`
+                : item.url,
     }));
 }
 
-export const loadImage = async (
+export const loadImage = (
     projectId: string,
     imageName: string,
-    alt: string
+    alt: string,
+    options?: { width?: number; height?: number; className?: string }
 ) => {
     try {
         const url = imageMap[projectId]?.[imageName];
-        return <Image src={url} alt={alt} />;
+
+        return (
+            <div className="w-full h-full relative" style={{ ...options }}>
+                <Image src={url} alt={alt} fill className="object-contain" />
+            </div>
+        );
     } catch (error) {
         console.error("Error loading image:", error);
         return <></>;

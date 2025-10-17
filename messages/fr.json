@@ -235,6 +235,15 @@
     "PMRPortfolio": {
         "title": "Mon Portfolio",
         "description": "Voici quelques-uns de mes projets personnels et professionnels :",
+        "more_info_btn": "En savoir plus",
+        "role": "Rôle",
+        "languages": "Langages",
+        "tools": "Outils",
+        "challenges": "Défis rencontrés",
+        "solutions": "Solutions apportées",
+        "projectType": "Type de projet",
+        "individualProject": "Projet individuel",
+        "teamProject": "Projet en équipe",
         "geoguide": {
             "projectName": "Geoguide",
             "description": "Le but de ce projet était de concevoir un logiciel avec une interface graphique pour calculer le temps de conduite entre deux villes en France. Les consignes étaient d'utiliser des fichiers CSV contenant les temps de trajet entre certaines paires de villes afin de trouver le trajet le plus court. Ce projet a été réalisé dans le cadre d'une SAE durant ma première année de BUT Informatique.",
@@ -295,9 +304,9 @@
             "solutions": "Nous avons utilisé des structures de données adaptées et des fonctions de manipulation robustes pour ajouter, modifier et supprimer des informations.",
             "impactDescription": "L'application offre une solution complète pour la gestion administrative des étudiants et absences, simplifiant le travail des universités.",
             "images": [
-                "student_management1",
-                "student_management2",
-                "student_management3"
+                "studentManagement1",
+                "studentManagement2",
+                "studentManagement3"
             ]
         },
         "websiteSAE": {
@@ -313,11 +322,11 @@
             "solutions": "Nous avons utilisé des modèles de conception modernes et organisé les informations pour une navigation fluide.",
             "impactDescription": "Le site web offre une présentation complète et claire de l'IUT d'Aix-Marseille, facilitant la découverte de l'établissement.",
             "images": [
-                "website_SAE1",
-                "website_SAE2",
-                "website_SAE3",
-                "website_SAE4",
-                "website_SAE5"
+                "websiteSAE1",
+                "websiteSAE2",
+                "websiteSAE3",
+                "websiteSAE4",
+                "websiteSAE5"
             ]
         },
         "horaris": {

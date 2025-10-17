@@ -229,5 +229,138 @@
             "speciality": "Digital Imaging",
             "mention": "In progress"
         }
+    },
+    "PMRPortfolio": {
+        "title": "My Portfolio",
+        "description": "Here are some of my personal and professional projects:",
+        "more_info_btn": "Learn more",
+        "role": "Role",
+        "languages": "Languages",
+        "tools": "Tools",
+        "challenges": "Challenges encountered",
+        "solutions": "Solutions provided",
+        "projectType": "Project type",
+        "individualProject": "Individual project",
+        "teamProject": "Team project",
+        "geoguide": {
+            "projectName": "Geoguide",
+            "description": "The goal of this project was to design software with a graphical interface to calculate driving time between two cities in France. The instructions were to use CSV files containing travel times between certain pairs of cities to find the shortest route. This project was carried out as part of a SAE during my first year of the Computer Science Bachelor's degree.",
+            "isIndividual": true,
+            "role": "Designer and lead developer. I designed the user interface, developed the travel time calculation and mapping features, and integrated city data.",
+            "languages": ["C++", "Qt", "QML"],
+            "tools": ["GitLab", "Visual Studio Code", "Qt Creator"],
+            "toolsDescription": "I implemented the Floyd-Warshall algorithm to complete missing travel time information between other city pairs. I used GitLab for version control, Visual Studio Code for code editing, and Qt Creator for UI design.",
+            "visualDescription": "Below you can see screenshots of my application. The map is interactive: you can zoom, unzoom, and move around.",
+            "challenges": "The most difficult part of this SAE was setting up the interactive map with QML and the graphical aspect of the application. I really wanted my software to look aesthetically pleasing.",
+            "solutions": "The solutions that helped me overcome these difficulties were researching QML by watching videos and studying other developers' code on GitHub to understand how it works.",
+            "impactDescription": "Completing this project allowed me to develop my knowledge of Qt and QML, and deepen my mastery of C++. After the presentation, I received a grade of 18/20.",
+            "images": ["geoguide1", "geoguide2", "geoguide3", "geoguide4"]
+        },
+        "planifEasy": {
+            "projectName": "Planif'Easy",
+            "description": "Planif'Easy is a console-based application for managing personalized agendas. It also offers the possibility to export agendas as HTML pages for easy viewing in a browser.",
+            "isIndividual": true,
+            "role": "Lead developer and designer. I designed and developed the application from A to Z, handling requirements analysis, programming, and creating export features.",
+            "languages": ["C++"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "I used Visual Studio Code for editing and debugging code, and Git for version control and tracking changes.",
+            "visualDescription": "Below you will find screenshots of the application showing the different steps: creating an agenda, managing events, and exporting to HTML.",
+            "challenges": "The main challenge was designing an intuitive user interface despite the console format, as well as dynamically generating HTML files compatible with multiple browsers.",
+            "solutions": "For the user interface, I opted for simple navigation based on clear text menus. For HTML compatibility, I used predefined templates combined with C++ code generation.",
+            "impactDescription": "Planif'Easy simplifies agenda management for non-technical users, offering a lightweight and portable solution. HTML export allows great accessibility and easy sharing.",
+            "images": [
+                "planifEasy1",
+                "planifEasy2",
+                "planifEasy3",
+                "planifEasy4"
+            ]
+        },
+        "station": {
+            "projectName": "Gas Station Application",
+            "description": "This project involved creating a web application to locate the nearest gas stations from a given position. The application displays stations on an interactive map and provides detailed information about each one.",
+            "isIndividual": true,
+            "role": "Designer and lead developer. I designed the user interface, developed geolocation and mapping features, and integrated gas station data.",
+            "languages": ["HTML", "CSS", "JavaScript"],
+            "tools": ["Visual Studio Code", "Leaflet.js", "Webpack", "Git"],
+            "toolsDescription": "I used Visual Studio Code for coding, Leaflet.js for mapping, Webpack for module management, and Git for version control.",
+            "visualDescription": "The screenshots below show the application's interface with the interactive map displaying stations and their information.",
+            "challenges": "The main challenge was integrating gas station data via an external API and displaying them clearly on the map.",
+            "solutions": "I used the OpenDataSoft API to retrieve data and created custom markers to display them on the map.",
+            "impactDescription": "This application provides a simple and effective solution to quickly find the nearest gas stations.",
+            "images": ["station1", "station2", "station3"]
+        },
+        "studentManagement": {
+            "projectName": "Student Management",
+            "description": "The Student Management project involved creating an application for managing students at a university. It allows adding, editing, deleting students, managing absences, and viewing their information.",
+            "isIndividual": false,
+            "role": "Team project: UI design, development of student management features, and data integration.",
+            "languages": ["C++", "Qt"],
+            "tools": ["GitLab", "Visual Studio Code", "Qt Creator"],
+            "toolsDescription": "GitLab for version tracking, VS Code for code editing, and Qt Creator for graphical design.",
+            "visualDescription": "The screenshots below show the main features for managing students and absences.",
+            "challenges": "The main challenge was efficient data management and import/export in CSV/JSON.",
+            "solutions": "We used suitable data structures and robust manipulation functions to add, edit, and delete information.",
+            "impactDescription": "The application provides a complete solution for administrative management of students and absences, simplifying university work.",
+            "images": [
+                "studentManagement1",
+                "studentManagement2",
+                "studentManagement3"
+            ]
+        },
+        "websiteSAE": {
+            "projectName": "SAE Website",
+            "description": "This SAE project involved creating a website presenting the IUT of Aix-Marseille, Arles campus.",
+            "isIndividual": false,
+            "role": "Project carried out in a group of 3: UI design, development of presentation features, and integration of course data.",
+            "languages": ["HTML", "CSS", "JavaScript"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code was used for coding and Git for tracking changes.",
+            "visualDescription": "The screenshots show the website pages presenting the IUT and the courses offered.",
+            "challenges": "The main challenge was designing an aesthetic website while keeping a clear and hierarchical presentation.",
+            "solutions": "We used modern design templates and organized information for smooth navigation.",
+            "impactDescription": "The website provides a complete and clear presentation of the IUT of Aix-Marseille, making it easier to discover the institution.",
+            "images": [
+                "websiteSAE1",
+                "websiteSAE2",
+                "websiteSAE3",
+                "websiteSAE4",
+                "websiteSAE5"
+            ]
+        },
+        "horaris": {
+            "projectName": "Horaris",
+            "description": "Horaris is a meeting room management application for a company. It allows booking rooms, checking availability, and managing reservations. This project is under development and may be used for Arles Creative.",
+            "isIndividual": false,
+            "role": "Scrum Master and front-end developer in an Agile team. I am responsible for the interface and technical coordination.",
+            "languages": ["HTML", "CSS", "TypeScript", "React", "Electron"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code for development and Git for version control.",
+            "visualDescription": "The screenshots below show the main pages of the application, with booking and availability management features.",
+            "challenges": "The main challenge is designing an ergonomic and intuitive application while offering advanced features.",
+            "solutions": "We use modern design templates and a clear information hierarchy for smooth navigation.",
+            "impactDescription": "Horaris will provide a complete solution for meeting room management, simplifying planning and coordination.",
+            "images": [
+                "horaris1",
+                "horaris2",
+                "horaris3",
+                "horaris4",
+                "horaris5"
+            ]
+        },
+        "memoryGame": {
+            "projectName": "Memory Game",
+            "description": "Memory Game is a classic memory game where the player must flip cards to find matching pairs. This project was completed as part of a web development course.",
+            "link": "https://memory.mathis-ratron.fr",
+            "isIndividual": true,
+            "role": "Designer and lead developer. I designed the user interface, developed game features, and integrated the cards.",
+            "languages": ["HTML", "CSS", "TypeScript", "React"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "I used Visual Studio Code for coding and Git for version control.",
+            "visualDescription": "The screenshots below show the game interface, with cards to flip and pairs to find.",
+            "challenges": "The main challenge of this project was designing an interactive and smooth game while providing a pleasant user experience.",
+            "solutions": "I used CSS animations for transitions and implemented reactive game logic in React to manage pairs and scores.",
+            "impactDescription": "Memory Game offers a fun and challenging gaming experience, testing players' memory and concentration.",
+            "images": ["memoryGame1", "memoryGame2", "memoryGame3"]
+        }
     }
 }

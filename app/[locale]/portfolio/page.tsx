@@ -1,98 +1,80 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel";
+import PMRDialogPortfolio from "@/lib/components/PMRDialogPortfolio";
+import PMRProjectCard from "@/lib/components/PMRProjectCard";
 import { usePortfolio } from "@/lib/contexts/PMRPortfolio";
-import { loadImage } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function PortfolioPage() {
     const t = useTranslations("PMRPortfolio");
     const { projects } = usePortfolio();
+    const [dialogOpen, setDialogOpen] = useState(false);
+    const [dialogImages, setDialogImages] = useState<string[]>([]);
+    const [dialogProjectId, setDialogProjectId] = useState<string>("");
 
-    // Tu peux remplacer ces valeurs par des données dynamiques si besoin
-    const firstName = "Mathis";
-    const lastName = "Ratron";
+    const handleImageClick = (projectId: string, images: string[]) => {
+        setDialogProjectId(projectId);
+        setDialogImages(images);
+        setDialogOpen(true);
+    };
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2,
+            },
+        },
+    };
 
     return (
-        <div className="flex flex-col items-center gap-6 p-6">
-            <motion.h1
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="text-3xl font-bold text-center"
-            >
-                {t("title")} — {firstName} {lastName}
-            </motion.h1>
-
-            <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="text-center text-muted-foreground max-w-2xl"
-            >
-                {t("description")}
-            </motion.p>
-
-            {projects.map((project) => (
-                <Card
-                    key={project.id}
-                    className="w-full max-w-4xl shadow-lg rounded-2xl p-4"
-                >
-                    <CardContent>
-                        <h2 className="text-2xl font-semibold mb-2">
-                            {t(`${project.id}.projectName`)}
-                        </h2>
-                        <p className="text-sm text-muted-foreground mb-4">
-                            {t(`${project.id}.description`)}
+        <div className="flex relative min-h-screen">
+            {/* Contenu principal */}
+            <div className="flex-1">
+                <div className="flex flex-col items-center gap-12 p-10">
+                    <motion.div
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        className="text-center space-y-4"
+                    >
+                        <h1 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">
+                            {t("title")}
+                        </h1>
+                        <p className="text-muted-foreground max-w-2xl text-lg">
+                            {t("description")}
                         </p>
+                    </motion.div>
 
-                        {t.raw(`${project.id}.images`) &&
-                        t.raw(`${project.id}.images`).length > 0 ? (
-                            <Carousel className="w-full">
-                                <CarouselContent>
-                                    {t
-                                        .raw(`${project.id}.images`)
-                                        .map(
-                                            (
-                                                imageName: string,
-                                                index: number
-                                            ) => (
-                                                <CarouselItem
-                                                    key={index}
-                                                    className="flex justify-center"
-                                                >
-                                                    <div className="w-full max-h-[400px] flex justify-center items-center">
-                                                        {loadImage(
-                                                            project.id,
-                                                            imageName,
-                                                            `${t(
-                                                                `${project.id}.projectName`
-                                                            )} - Image ${
-                                                                index + 1
-                                                            }`
-                                                        )}
-                                                    </div>
-                                                </CarouselItem>
-                                            )
-                                        )}
-                                </CarouselContent>
-                                <CarouselPrevious />
-                                <CarouselNext />
-                            </Carousel>
-                        ) : (
-                            <p className="text-sm text-gray-500 italic">
-                                Aucune image disponible pour ce projet.
-                            </p>
-                        )}
-                    </CardContent>
-                </Card>
-            ))}
+                    <motion.div
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate="visible"
+                        className="w-full max-w-4xl space-y-12"
+                    >
+                        {projects.map((project) => {
+                            return (
+                                <PMRProjectCard
+                                    key={project.id}
+                                    project={project}
+                                    onImageClick={handleImageClick}
+                                />
+                            );
+                        })}
+                    </motion.div>
+                </div>
+            </div>
+
+            {/* Dialog plein écran pour les images */}
+            <PMRDialogPortfolio
+                open={dialogOpen}
+                onOpenChange={setDialogOpen}
+                images={dialogImages}
+                projectId={dialogProjectId}
+            />
         </div>
     );
 }
