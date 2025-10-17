@@ -203,6 +203,8 @@ export default function Home() {
                         >
                             <Image
                                 src={"/images/mathis-ratron.webp"}
+                                width={1024}
+                                height={1024}
                                 alt="Photo Mathis Ratron"
                                 className="relative rounded-2xl shadow-2xl object-cover w-full h-auto border border-border/20"
                                 priority

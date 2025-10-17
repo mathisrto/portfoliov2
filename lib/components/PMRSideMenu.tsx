@@ -30,6 +30,8 @@ export default function PMRSidebarMenu() {
                 <div className="flex flex-col justify-center items-center space-y-2">
                     <Image
                         src={"/images/mathis-ratron.webp"}
+                        width={1024}
+                        height={1024}
                         alt="Photo de Mathis Ratron"
                         className="w-1/2 h-auto rounded-full border-primary border-2 my-4"
                         priority
