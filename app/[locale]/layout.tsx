@@ -95,7 +95,7 @@ export default async function LocaleLayout({
                 />
                 <meta
                     property="og:image"
-                    content="https://www.mathis-ratron.fr/mathis-ratron.jpg"
+                    content="https://www.mathis-ratron.fr/images/mathis-ratron.webp"
                 />
                 <meta
                     property="og:url"
