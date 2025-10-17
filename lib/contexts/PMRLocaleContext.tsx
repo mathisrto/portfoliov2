@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import React, { createContext, useContext, useState } from "react";
 
 type LocaleContextType = {
@@ -22,14 +22,23 @@ export const LocaleProvider: React.FC<{
     children: React.ReactNode;
 }> = ({ initialLocale, children }) => {
     const [contextLocale, setContextLocale] = useState(initialLocale);
+    const searchParams = useSearchParams();
     const router = useRouter();
     const pathname = usePathname();
 
     const setLocale = (newLocale: string) => {
         const oldLocale = contextLocale;
-        const newPath = pathname.replace(`/${oldLocale}/`, `/${newLocale}/`);
+        const pathnameWithoutLocale = pathname.replace(
+            new RegExp(`^/${oldLocale}(/|$)`),
+            "/"
+        );
+        const newPath = `/${newLocale}${pathnameWithoutLocale}`;
+
+        const search = searchParams.toString();
+        const fullPath = search ? `${newPath}?${search}` : newPath;
+
         setContextLocale(newLocale);
-        router.push(newPath);
+        router.push(fullPath);
     };
 
     return (
