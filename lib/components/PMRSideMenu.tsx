@@ -12,7 +12,6 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import me from "@/data/images/me.webp";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,7 +29,7 @@ export default function PMRSidebarMenu() {
             <SidebarHeader>
                 <div className="flex flex-col justify-center items-center space-y-2">
                     <Image
-                        src={me}
+                        src={"/images/mathis-ratron.webp"}
                         alt="Photo de Mathis Ratron"
                         className="w-1/2 h-auto rounded-full border-primary border-2 my-4"
                         priority
