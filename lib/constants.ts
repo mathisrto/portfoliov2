@@ -6,7 +6,7 @@ import {
     ZapIcon,
 } from "lucide-react";
 
-export const locales = ["fr", "en"];
+export const locales = ["fr", "en", "es", "de", "it", "pt"];
 
 export type JSONProps = {
     id: string;
@@ -113,85 +113,4 @@ export const brandIcons = {
     college: SaintCharlesIcon,
     lycee: SaintCharlesIcon,
     university: IUTIcon,
-};
-
-// Import statique des images connues
-import geoguide1 from "@/data/images/geoguide/geoguide1.png";
-import geoguide2 from "@/data/images/geoguide/geoguide2.png";
-import geoguide3 from "@/data/images/geoguide/geoguide3.png";
-import geoguide4 from "@/data/images/geoguide/geoguide4.png";
-
-import planifEasy1 from "@/data/images/planifEasy/planifEasy1.png";
-import planifEasy2 from "@/data/images/planifEasy/planifEasy2.png";
-import planifEasy3 from "@/data/images/planifEasy/planifEasy3.png";
-import planifEasy4 from "@/data/images/planifEasy/planifEasy4.png";
-
-import station1 from "@/data/images/station/station1.png";
-import station2 from "@/data/images/station/station2.png";
-import station3 from "@/data/images/station/station3.png";
-
-import studentManagement1 from "@/data/images/studentManagement/studentManagement1.png";
-import studentManagement2 from "@/data/images/studentManagement/studentManagement2.png";
-import studentManagement3 from "@/data/images/studentManagement/studentManagement3.png";
-
-import websiteSAE1 from "@/data/images/websiteSAE/websiteSAE1.png";
-import websiteSAE2 from "@/data/images/websiteSAE/websiteSAE2.png";
-import websiteSAE3 from "@/data/images/websiteSAE/websiteSAE3.png";
-import websiteSAE4 from "@/data/images/websiteSAE/websiteSAE4.png";
-import websiteSAE5 from "@/data/images/websiteSAE/websiteSAE5.png";
-
-import horaris1 from "@/data/images/horaris/horaris1.png";
-import horaris2 from "@/data/images/horaris/horaris2.png";
-import horaris3 from "@/data/images/horaris/horaris3.png";
-import horaris4 from "@/data/images/horaris/horaris4.png";
-import horaris5 from "@/data/images/horaris/horaris5.png";
-
-import memoryGame1 from "@/data/images/memoryGame/memoryGame1.png";
-import memoryGame2 from "@/data/images/memoryGame/memoryGame2.png";
-import memoryGame3 from "@/data/images/memoryGame/memoryGame3.png";
-
-import { StaticImageData } from "next/image";
-
-export const imageMap: Record<string, Record<string, StaticImageData>> = {
-    geoguide: {
-        geoguide1,
-        geoguide2,
-        geoguide3,
-        geoguide4,
-    },
-    planifEasy: {
-        planifEasy1,
-        planifEasy2,
-        planifEasy3,
-        planifEasy4,
-    },
-    station: {
-        station1,
-        station2,
-        station3,
-    },
-    studentManagement: {
-        studentManagement1,
-        studentManagement2,
-        studentManagement3,
-    },
-    websiteSAE: {
-        websiteSAE1,
-        websiteSAE2,
-        websiteSAE3,
-        websiteSAE4,
-        websiteSAE5,
-    },
-    horaris: {
-        horaris1,
-        horaris2,
-        horaris3,
-        horaris4,
-        horaris5,
-    },
-    memoryGame: {
-        memoryGame1,
-        memoryGame2,
-        memoryGame3,
-    },
 };

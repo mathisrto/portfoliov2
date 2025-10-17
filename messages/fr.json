@@ -52,7 +52,11 @@
     "PMRSelectLanguage": {
         "select_language": "Choisir la langue",
         "fr": "🇫🇷 Français",
-        "en": "🇬🇧 Anglais"
+        "en": "🇬🇧 Anglais",
+        "es": "🇪🇸 Espagnol",
+        "de": "🇩🇪 Allemand",
+        "it": "🇮🇹 Italien",
+        "pt": "🇵🇹 Portugais"
     },
     "PMRSwitchTheme": {
         "select_theme": "Choisir un thème",
@@ -244,9 +248,11 @@
         "projectType": "Type de projet",
         "individualProject": "Projet individuel",
         "teamProject": "Projet en équipe",
+        "visitProject": "Visiter le projet",
         "geoguide": {
             "projectName": "Geoguide",
             "description": "Le but de ce projet était de concevoir un logiciel avec une interface graphique pour calculer le temps de conduite entre deux villes en France. Les consignes étaient d'utiliser des fichiers CSV contenant les temps de trajet entre certaines paires de villes afin de trouver le trajet le plus court. Ce projet a été réalisé dans le cadre d'une SAE durant ma première année de BUT Informatique.",
+            "link": "",
             "isIndividual": true,
             "role": "Concepteur et développeur principal. J'ai conçu l'interface utilisateur, développé les fonctionnalités de calcul des temps de trajet et de cartographie, et intégré les données des villes.",
             "languages": ["C++", "Qt", "QML"],
@@ -261,6 +267,7 @@
         "planifEasy": {
             "projectName": "Planif'Easy",
             "description": "Planif'Easy est une application en mode console permettant de gérer des agendas personnalisés. Elle offre également la possibilité d'exporter les agendas sous forme de pages HTML pour une consultation facile sur un navigateur.",
+            "link": "",
             "isIndividual": true,
             "role": "Développeur principal et concepteur. J'ai conçu et développé l'application de A à Z, en m'occupant de l'analyse des besoins, de la programmation et de la création des fonctionnalités d'exportation.",
             "languages": ["C++"],
@@ -280,6 +287,7 @@
         "station": {
             "projectName": "Application de Stations Essence",
             "description": "Ce projet consistait à créer une application web permettant de localiser les stations essence les plus proches d'une position donnée. L'application affiche les stations sur une carte interactive et propose des informations détaillées sur chacune d'elles.",
+            "link": "",
             "isIndividual": true,
             "role": "Concepteur et développeur principal. J'ai conçu l'interface utilisateur, développé les fonctionnalités de géolocalisation et de cartographie, et intégré les données des stations essence.",
             "languages": ["HTML", "CSS", "JavaScript"],
@@ -294,6 +302,7 @@
         "studentManagement": {
             "projectName": "Gestionnaire d'Étudiants",
             "description": "Le projet de Gestionnaire d'Étudiants consistait à créer une application de gestion des étudiants pour une université. Elle permet d'ajouter, modifier, supprimer des étudiants, gérer les absences et consulter leurs informations.",
+            "link": "",
             "isIndividual": false,
             "role": "Projet en équipe : conception de l'interface utilisateur, développement des fonctionnalités de gestion des étudiants et intégration des données.",
             "languages": ["C++", "Qt"],
@@ -312,6 +321,7 @@
         "websiteSAE": {
             "projectName": "Site Web SAE",
             "description": "Ce projet de SAE consistait à créer un site web présentant l'IUT d'Aix-Marseille, site d'Arles.",
+            "link": "",
             "isIndividual": false,
             "role": "Projet réalisé en groupe de 3 : conception de l'interface, développement des fonctionnalités de présentation et intégration des données des formations.",
             "languages": ["HTML", "CSS", "JavaScript"],
@@ -332,6 +342,7 @@
         "horaris": {
             "projectName": "Horaris",
             "description": "Horaris est une application de gestion des salles de réunion pour une entreprise. Elle permet de réserver des salles, consulter les disponibilités et gérer les réservations. Ce projet est en cours de développement et pourra servir dans le cadre d'Arles Creative.",
+            "link": "",
             "isIndividual": false,
             "role": "Scrum Master et développeur front-end dans une équipe Agile. Je suis responsable de la partie interface et de la coordination technique.",
             "languages": ["HTML", "CSS", "TypeScript", "React", "Electron"],

@@ -4,7 +4,6 @@ import { twMerge } from "tailwind-merge";
 import PMRBrandIcon from "./components/PMRBrandIcon";
 import {
     icons,
-    imageMap,
     JSONBrandIconProps,
     JSONIconProps,
     JSONProps,
@@ -75,7 +74,7 @@ export const loadImage = (
     options?: { width?: number; height?: number; className?: string }
 ) => {
     try {
-        const url = imageMap[projectId]?.[imageName];
+        const url = `/images/${projectId}/${imageName}.png`;
 
         return (
             <div className="w-full h-full relative" style={{ ...options }}>

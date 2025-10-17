@@ -312,6 +312,23 @@ export default function ProjectPage({ params }: PageProps) {
                     </p>
                 </motion.div>
 
+                {t.raw(`${projectId}.link`) && (
+                    <motion.div
+                        variants={itemVariants}
+                        className="flex items-center justify-center"
+                    >
+                        <a
+                            href={t.raw(`${projectId}.link`)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-xl font-semibold shadow hover:bg-primary/90 transition-all"
+                        >
+                            <Lightbulb className="w-5 h-5" />
+                            {t("visitProject")}
+                        </a>
+                    </motion.div>
+                )}
+
                 {/* Galerie d'images */}
                 {images.length > 0 && (
                     <motion.div variants={itemVariants} className="space-y-6">

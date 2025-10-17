@@ -1,0 +1,377 @@
+{
+    "PMRIcons": {
+        "javascript": "JavaScript Logo",
+        "typescript": "TypeScript Logo",
+        "python": "Python Logo",
+        "java": "Java Logo",
+        "cpp": "C++ Logo",
+        "html": "HTML Logo",
+        "css": "CSS Logo",
+        "php": "PHP Logo",
+        "react": "React Logo",
+        "nextjs": "Next.js Logo",
+        "nodejs": "Node.js Logo",
+        "tailwindcss": "Tailwind CSS Logo",
+        "electron": "Electron Logo",
+        "qt": "Qt Logo",
+        "laravel": "Laravel Logo",
+        "mysql": "MySQL Logo",
+        "postgresql": "PostgreSQL Logo",
+        "sqlite": "SQLite Logo",
+        "mongodb": "MongoDB Logo",
+        "git": "Git Logo",
+        "github": "GitHub Logo",
+        "docker": "Docker Logo",
+        "linux": "Linux Logo",
+        "vercel": "Vercel Logo",
+        "trello": "Trello Logo",
+        "jira": "Jira Logo",
+        "figma": "Figma Logo",
+        "instagram": "Instagram Logo",
+        "linkedin": "LinkedIn Logo",
+        "mcdonald": "McDonald's Logo",
+        "cpam": "CPAM Logo",
+        "weekera": "Weekera Logo",
+        "college": "Logo der Mittelschule Saint-Charles",
+        "lycee": "Logo des Gymnasiums Saint-Charles",
+        "university": "Logo der IUT Arles"
+    },
+    "PMRSidebarMenu": {
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "experiences": "Berufserfahrungen",
+        "education": "Ausbildung",
+        "portfolio": "Portfolio",
+        "section": "Sektionen",
+        "settings": "Einstellungen",
+        "title": "Mathis Ratron Portfolio",
+        "links": "Finde mich auf",
+        "copyright": "© 2025 Alle Rechte vorbehalten"
+    },
+    "PMRSelectLanguage": {
+        "select_language": "Sprache wählen",
+        "fr": "🇫🇷 Französisch",
+        "en": "🇬🇧 Englisch",
+        "es": "🇪🇸 Spanisch",
+        "de": "🇩🇪 Deutsch",
+        "it": "🇮🇹 Italienisch",
+        "pt": "🇵🇹 Portugiesisch"
+    },
+    "PMRSwitchTheme": {
+        "select_theme": "Theme wählen",
+        "light": "Heller Modus",
+        "dark": "Dunkler Modus",
+        "system": "Systemmodus"
+    },
+    "PMRAbout": {
+        "hello": "Hallo, ich bin ",
+        "name": "Mathis Ratron",
+        "description": "Ich bin ein ",
+        "developer": "Entwickler",
+        "student": "Student",
+        "about_me": "Ich bin derzeit im dritten Jahr meines Bachelorstudiums in Informatik in Arles. Ich bin leidenschaftlich an Videospielen, Programmierung und Sport interessiert und betreibe Boxen und Krafttraining. Ich besitze einen Führerschein der Klasse B, das BIA (Luftfahrtgrundkurs) sowie die PIX-Zertifizierung.",
+        "about_me_btn": "Über mich",
+        "contact": "Kontaktieren Sie mich"
+    },
+    "PMRSkills": {
+        "title": "Meine Fähigkeiten",
+        "description": "Hier sind einige meiner Fähigkeiten und Fachgebiete im Bereich Informatik:",
+        "programming_languages": "Programmiersprachen",
+        "frameworks_libraries": "Frameworks & Bibliotheken",
+        "database": "Datenbanken",
+        "devops_tools": "DevOps-Tools",
+        "management_tools": "Management-Tools",
+        "UX_UI_tools": "UX/UI-Tools",
+        "algorithmic_development": {
+            "title": "Entwicklung & Algorithmik",
+            "items": [
+                "Asynchrone Programmierung und Multithreading",
+                "Algorithmen: Graphen, Sortierung, algorithmische Komplexität, Kryptographie"
+            ]
+        },
+        "databases_architecture": {
+            "title": "Datenbanken & Architektur",
+            "items": [
+                "Datenbankdesign und -verwaltung",
+                "Architektur: Assembler, Logikgatter, Komponenten"
+            ]
+        },
+        "cybersecurity_networks": {
+            "title": "Cybersicherheit & Netzwerke",
+            "items": [
+                "Unix-Systeme und Kommandozeilenskripte",
+                "Verschlüsselung und Datensicherheit"
+            ]
+        },
+        "artificial_intelligence": {
+            "title": "Künstliche Intelligenz",
+            "items": [
+                "Deep Learning und Gradientenabstieg",
+                "Matrixmanipulation und Optimierung"
+            ]
+        },
+        "methodologies_management": {
+            "title": "Methoden & Management",
+            "items": [
+                "Klassische und agile Methoden (SCRUM, Kanban)",
+                "Unit- und Integrationstests",
+                "Versionskontrolle"
+            ]
+        },
+        "ui_ux_design": {
+            "title": "UI & UX Design",
+            "items": [
+                "Responsives und adaptives Design",
+                "Grafikdesign-Tools und Prototyping"
+            ]
+        },
+        "communication_languages": {
+            "title": "Kommunikation & Sprachen",
+            "items": [
+                "Teamarbeit und Schreibfähigkeiten",
+                "Mündliche und schriftliche Kommunikation in Englisch (Niveau B2)"
+            ]
+        },
+        "economics_digital_law": {
+            "title": "Wirtschaft & Digitales Recht",
+            "items": [
+                "Verständnis wirtschaftlicher Prinzipien",
+                "Kenntnisse digitaler Vorschriften"
+            ]
+        }
+    },
+    "PMRExperiences": {
+        "title": "Meine Berufserfahrungen",
+        "description": "Hier ist ein Überblick über meine beruflichen Erfahrungen im Bereich Informatik und darüber hinaus:",
+        "missions_title": "Aufgaben",
+        "skills_title": "Fähigkeiten",
+        "mcdonald": {
+            "title": "Mitarbeiter",
+            "company": "McDonald's",
+            "duration": "August 2024",
+            "location": "Saint-Martin-de-Crau, Frankreich",
+            "skills": [
+                "Anpassungsfähigkeit",
+                "Kommunikation",
+                "Zeitmanagement",
+                "Kundenservice",
+                "Teamarbeit"
+            ],
+            "missions": [
+                "Begrüßung und Kassieren der Kunden am Tresen",
+                "Vorbereitung von Bestellungen, Getränken, Desserts",
+                "Service am Tresen und im Speisesaal",
+                "Abwaschen und Reinigen",
+                "Teilnahme an einigen Schichtabschlüssen"
+            ]
+        },
+        "cpam": {
+            "title": "IT-Service-Assistent (Praktikum)",
+            "company": "CPAM Hérault",
+            "duration": "April 2025 - Juni 2025",
+            "location": "Béziers, Frankreich",
+            "skills": [
+                "Benutzersupport",
+                "Kommunikation",
+                "Entwicklung",
+                "Zeitmanagement",
+                "Wartung",
+                "Teamarbeit"
+            ],
+            "missions": [
+                "Wartung und Austausch von Geräten (Monitore, RAM, usw.)",
+                "Vorbereitung von Arbeitsplätzen für Remote-Arbeit",
+                "Entwicklung einer internen Anwendung in PowerShell/XAML",
+                "Verwendung von Verwaltungstools wie GLPI",
+                "Unterstützung des Personals bei der Lösung ihrer IT-Probleme"
+            ]
+        },
+        "weekera": {
+            "title": "Webentwickler (Ausbildung)",
+            "company": "Weekera",
+            "duration": "September 2025 - Gegenwart",
+            "location": "Nîmes, Frankreich",
+            "skills": [
+                "Anpassungsfähigkeit",
+                "Kommunikation",
+                "Entwicklung",
+                "Zeitmanagement",
+                "Teamarbeit"
+            ],
+            "missions": [
+                "Mitwirkung an der Erstellung einer Webanwendung",
+                "Entwicklung mit Svelte und PostgreSQL-Datenbank",
+                "Verwendung einer WQL-Abfragesprache ähnlich GraphQL"
+            ]
+        }
+    },
+    "PMREducation": {
+        "title": "Meine Ausbildung",
+        "description": "Hier ist ein Überblick über meinen Bildungsweg und erworbene Abschlüsse:",
+        "speciality_title": "Fachrichtung",
+        "mention_title": "Auszeichnung",
+        "college": {
+            "title": "Mittelschule Saint-Charles",
+            "duration": "2016 - 2020",
+            "location": "Arles, Frankreich",
+            "degree": "Diplôme National du Brevet (DNB)",
+            "mention": "Mit Auszeichnung"
+        },
+        "lycee": {
+            "title": "Gymnasium Saint-Charles",
+            "duration": "2020 - 2023",
+            "location": "Saint-Martin-de-Crau, Frankreich",
+            "degree": "Allgemeines Abitur",
+            "speciality": "Mathematik, Informatik",
+            "mention": "Mit Auszeichnung"
+        },
+        "university": {
+            "title": "IUT Arles",
+            "duration": "2023 - Laufend",
+            "location": "Arles, Frankreich",
+            "degree": "BUT Informatik (Bachelor of Technology)",
+            "speciality": "Digitale Bildverarbeitung",
+            "mention": "In Bearbeitung"
+        }
+    },
+    "PMRPortfolio": {
+        "title": "Mein Portfolio",
+        "description": "Hier sind einige meiner persönlichen und beruflichen Projekte:",
+        "more_info_btn": "Mehr erfahren",
+        "role": "Rolle",
+        "languages": "Sprachen",
+        "tools": "Werkzeuge",
+        "challenges": "Herausforderungen",
+        "solutions": "Lösungen",
+        "projectType": "Projekttyp",
+        "individualProject": "Einzelprojekt",
+        "teamProject": "Teamprojekt",
+        "visitProject": "Projekt besuchen",
+        "geoguide": {
+            "projectName": "Geoguide",
+            "description": "Ziel dieses Projekts war es, eine Software mit grafischer Oberfläche zu entwickeln, um die Fahrzeit zwischen zwei Städten in Frankreich zu berechnen. Die Vorgabe war, CSV-Dateien mit Fahrzeiten zwischen bestimmten Städten zu verwenden, um die kürzeste Route zu finden. Dieses Projekt wurde im Rahmen einer SAE im ersten Jahr meines Informatikstudiums durchgeführt.",
+            "link": "",
+            "isIndividual": true,
+            "role": "Designer und Hauptentwickler. Ich habe die Benutzeroberfläche entworfen, die Berechnung der Fahrzeiten und die Kartierungsfunktionen entwickelt sowie die Städtedaten integriert.",
+            "languages": ["C++", "Qt", "QML"],
+            "tools": ["GitLab", "Visual Studio Code", "Qt Creator"],
+            "toolsDescription": "Ich habe den Floyd-Warshall-Algorithmus implementiert, um fehlende Fahrzeiten zwischen anderen Städten zu berechnen. GitLab wurde für die Versionskontrolle, Visual Studio Code für die Codebearbeitung und Qt Creator für das UI-Design verwendet.",
+            "visualDescription": "Unten sehen Sie Screenshots meiner Anwendung. Die Karte ist interaktiv: Sie können zoomen, herauszoomen und sich bewegen.",
+            "challenges": "Die größte Herausforderung war die Einrichtung der interaktiven Karte mit QML und der grafische Aspekt der Anwendung. Ich wollte, dass meine Software optisch ansprechend ist.",
+            "solutions": "Die Lösungen bestanden darin, QML durch Videos und das Studium von Code anderer Entwickler auf GitHub zu erforschen.",
+            "impactDescription": "Durch dieses Projekt konnte ich meine Kenntnisse in Qt und QML vertiefen und meine C++-Kenntnisse erweitern. Nach der Präsentation erhielt ich die Note 18/20.",
+            "images": ["geoguide1", "geoguide2", "geoguide3", "geoguide4"]
+        },
+        "planifEasy": {
+            "projectName": "Planif'Easy",
+            "description": "Planif'Easy ist eine Konsolenanwendung zur Verwaltung von persönlichen Kalendern. Sie bietet auch die Möglichkeit, Kalender als HTML-Seiten zu exportieren, um sie einfach im Browser anzusehen.",
+            "link": "",
+            "isIndividual": true,
+            "role": "Hauptentwickler und Designer. Ich habe die Anwendung von A bis Z entworfen und entwickelt, einschließlich Anforderungsanalyse, Programmierung und Exportfunktionen.",
+            "languages": ["C++"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code wurde zum Bearbeiten und Debuggen des Codes verwendet, Git für die Versionskontrolle.",
+            "visualDescription": "Unten finden Sie Screenshots der Anwendung, die die verschiedenen Schritte zeigen: Kalendererstellung, Ereignisverwaltung und Export nach HTML.",
+            "challenges": "Die größte Herausforderung war das Design einer intuitiven Benutzeroberfläche trotz Konsolenformat sowie die dynamische Generierung von HTML-Dateien, die mit mehreren Browsern kompatibel sind.",
+            "solutions": "Für die Benutzeroberfläche habe ich eine einfache Navigation mit klaren Textmenüs gewählt. Für die HTML-Kompatibilität wurden vordefinierte Templates mit C++-Codegenerierung kombiniert.",
+            "impactDescription": "Planif'Easy vereinfacht die Kalenderverwaltung für nicht-technische Nutzer und bietet eine leichte und portable Lösung. Der HTML-Export ermöglicht große Zugänglichkeit und einfaches Teilen.",
+            "images": [
+                "planifEasy1",
+                "planifEasy2",
+                "planifEasy3",
+                "planifEasy4"
+            ]
+        },
+        "station": {
+            "projectName": "Tankstellen-Anwendung",
+            "description": "Dieses Projekt bestand darin, eine Webanwendung zu erstellen, um die nächstgelegenen Tankstellen von einer bestimmten Position aus zu finden. Die Anwendung zeigt die Stationen auf einer interaktiven Karte und bietet detaillierte Informationen zu jeder Station.",
+            "link": "",
+            "isIndividual": true,
+            "role": "Designer und Hauptentwickler. Ich habe die Benutzeroberfläche entworfen, Geolokalisierungs- und Kartierungsfunktionen entwickelt und die Tankstellendaten integriert.",
+            "languages": ["HTML", "CSS", "JavaScript"],
+            "tools": ["Visual Studio Code", "Leaflet.js", "Webpack", "Git"],
+            "toolsDescription": "Visual Studio Code für das Coding, Leaflet.js für die Kartierung, Webpack für das Modulmanagement und Git für die Versionskontrolle.",
+            "visualDescription": "Die Screenshots unten zeigen die Benutzeroberfläche der Anwendung mit der interaktiven Karte, die die Stationen und deren Informationen anzeigt.",
+            "challenges": "Die größte Herausforderung war die Integration der Tankstellendaten über eine externe API und deren klare Darstellung auf der Karte.",
+            "solutions": "Ich habe die OpenDataSoft-API verwendet, um die Daten abzurufen, und benutzerdefinierte Marker erstellt, um sie auf der Karte darzustellen.",
+            "impactDescription": "Diese Anwendung bietet eine einfache und effektive Lösung, um schnell die nächstgelegenen Tankstellen zu finden.",
+            "images": ["station1", "station2", "station3"]
+        },
+        "studentManagement": {
+            "projectName": "Studentenverwaltung",
+            "description": "Das Projekt Studentenverwaltung bestand darin, eine Anwendung zur Verwaltung von Studenten an einer Universität zu erstellen. Sie ermöglicht das Hinzufügen, Bearbeiten, Löschen von Studenten, die Verwaltung von Abwesenheiten und die Anzeige ihrer Informationen.",
+            "link": "",
+            "isIndividual": false,
+            "role": "Teamprojekt: UI-Design, Entwicklung der Verwaltungsfunktionen und Datenintegration.",
+            "languages": ["C++", "Qt"],
+            "tools": ["GitLab", "Visual Studio Code", "Qt Creator"],
+            "toolsDescription": "GitLab für die Versionskontrolle, VS Code für die Codebearbeitung und Qt Creator für das grafische Design.",
+            "visualDescription": "Die Screenshots unten zeigen die Hauptfunktionen zur Verwaltung von Studenten und Abwesenheiten.",
+            "challenges": "Die größte Herausforderung war das effiziente Datenmanagement und der Import/Export in CSV/JSON.",
+            "solutions": "Wir haben geeignete Datenstrukturen und robuste Funktionen zur Manipulation verwendet, um Informationen hinzuzufügen, zu bearbeiten und zu löschen.",
+            "impactDescription": "Die Anwendung bietet eine vollständige Lösung für die administrative Verwaltung von Studenten und Abwesenheiten und vereinfacht die Arbeit an der Universität.",
+            "images": [
+                "studentManagement1",
+                "studentManagement2",
+                "studentManagement3"
+            ]
+        },
+        "websiteSAE": {
+            "projectName": "SAE-Website",
+            "description": "Dieses SAE-Projekt bestand darin, eine Website zu erstellen, die den IUT Aix-Marseille, Campus Arles, präsentiert.",
+            "link": "",
+            "isIndividual": false,
+            "role": "Projekt in einer Gruppe von 3: UI-Design, Entwicklung der Präsentationsfunktionen und Integration der Kursdaten.",
+            "languages": ["HTML", "CSS", "JavaScript"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code wurde für das Coding und Git für die Versionskontrolle verwendet.",
+            "visualDescription": "Die Screenshots zeigen die Seiten der Website, die den IUT und die angebotenen Kurse präsentieren.",
+            "challenges": "Die größte Herausforderung war das Design einer ästhetischen Website bei klarer und hierarchischer Präsentation.",
+            "solutions": "Wir haben moderne Designvorlagen verwendet und die Informationen für eine reibungslose Navigation organisiert.",
+            "impactDescription": "Die Website bietet eine vollständige und klare Präsentation des IUT Aix-Marseille und erleichtert die Entdeckung der Einrichtung.",
+            "images": [
+                "websiteSAE1",
+                "websiteSAE2",
+                "websiteSAE3",
+                "websiteSAE4",
+                "websiteSAE5"
+            ]
+        },
+        "horaris": {
+            "projectName": "Horaris",
+            "description": "Horaris ist eine Anwendung zur Verwaltung von Besprechungsräumen für ein Unternehmen. Sie ermöglicht die Buchung von Räumen, die Überprüfung der Verfügbarkeit und die Verwaltung von Reservierungen. Dieses Projekt befindet sich in Entwicklung und könnte für Arles Creative verwendet werden.",
+            "link": "",
+            "isIndividual": false,
+            "role": "Scrum Master und Frontend-Entwickler in einem agilen Team. Ich bin für die Schnittstelle und die technische Koordination verantwortlich.",
+            "languages": ["HTML", "CSS", "TypeScript", "React", "Electron"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code für die Entwicklung und Git für die Versionskontrolle.",
+            "visualDescription": "Die Screenshots unten zeigen die Hauptseiten der Anwendung mit Buchungs- und Verfügbarkeitsmanagement.",
+            "challenges": "Die größte Herausforderung ist das Design einer ergonomischen und intuitiven Anwendung mit erweiterten Funktionen.",
+            "solutions": "Wir verwenden moderne Designvorlagen und eine klare Informationshierarchie für eine reibungslose Navigation.",
+            "impactDescription": "Horaris wird eine vollständige Lösung für die Verwaltung von Besprechungsräumen bieten und die Planung und Koordination vereinfachen.",
+            "images": [
+                "horaris1",
+                "horaris2",
+                "horaris3",
+                "horaris4",
+                "horaris5"
+            ]
+        },
+        "memoryGame": {
+            "projectName": "Memory Game",
+            "description": "Memory Game ist ein klassisches Gedächtnisspiel, bei dem der Spieler Karten umdrehen muss, um passende Paare zu finden. Dieses Projekt wurde im Rahmen eines Webentwicklungskurses durchgeführt.",
+            "link": "https://memory.mathis-ratron.fr",
+            "isIndividual": true,
+            "role": "Designer und Hauptentwickler. Ich habe die Benutzeroberfläche entworfen, die Spielfunktionen entwickelt und die Karten integriert.",
+            "languages": ["HTML", "CSS", "TypeScript", "React"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code für das Coding und Git für die Versionskontrolle.",
+            "visualDescription": "Die Screenshots unten zeigen die Spieloberfläche mit Karten zum Umdrehen und Paaren zum Finden.",
+            "challenges": "Die größte Herausforderung bei diesem Projekt war das Design eines interaktiven und flüssigen Spiels mit angenehmer Benutzererfahrung.",
+            "solutions": "Ich habe CSS-Animationen für Übergänge verwendet und eine reaktive Spiel-Logik in React implementiert, um Paare und Punkte zu verwalten.",
+            "impactDescription": "Memory Game bietet ein unterhaltsames und herausforderndes Spielerlebnis, das das Gedächtnis und die Konzentration der Spieler testet.",
+            "images": ["memoryGame1", "memoryGame2", "memoryGame3"]
+        }
+    }
+}

@@ -51,7 +51,11 @@
     "PMRSelectLanguage": {
         "select_language": "Select Language",
         "fr": "🇫🇷 French",
-        "en": "🇬🇧 English"
+        "en": "🇬🇧 English",
+        "es": "🇪🇸 Spanish",
+        "de": "🇩🇪 German",
+        "it": "🇮🇹 Italian",
+        "pt": "🇵🇹 Portuguese"
     },
     "PMRSwitchTheme": {
         "select_theme": "Select Theme",
@@ -242,9 +246,11 @@
         "projectType": "Project type",
         "individualProject": "Individual project",
         "teamProject": "Team project",
+        "visitProject": "Visit Project",
         "geoguide": {
             "projectName": "Geoguide",
             "description": "The goal of this project was to design software with a graphical interface to calculate driving time between two cities in France. The instructions were to use CSV files containing travel times between certain pairs of cities to find the shortest route. This project was carried out as part of a SAE during my first year of the Computer Science Bachelor's degree.",
+            "link": "",
             "isIndividual": true,
             "role": "Designer and lead developer. I designed the user interface, developed the travel time calculation and mapping features, and integrated city data.",
             "languages": ["C++", "Qt", "QML"],
@@ -259,6 +265,7 @@
         "planifEasy": {
             "projectName": "Planif'Easy",
             "description": "Planif'Easy is a console-based application for managing personalized agendas. It also offers the possibility to export agendas as HTML pages for easy viewing in a browser.",
+            "link": "",
             "isIndividual": true,
             "role": "Lead developer and designer. I designed and developed the application from A to Z, handling requirements analysis, programming, and creating export features.",
             "languages": ["C++"],
@@ -278,6 +285,7 @@
         "station": {
             "projectName": "Gas Station Application",
             "description": "This project involved creating a web application to locate the nearest gas stations from a given position. The application displays stations on an interactive map and provides detailed information about each one.",
+            "link": "",
             "isIndividual": true,
             "role": "Designer and lead developer. I designed the user interface, developed geolocation and mapping features, and integrated gas station data.",
             "languages": ["HTML", "CSS", "JavaScript"],
@@ -292,6 +300,7 @@
         "studentManagement": {
             "projectName": "Student Management",
             "description": "The Student Management project involved creating an application for managing students at a university. It allows adding, editing, deleting students, managing absences, and viewing their information.",
+            "link": "",
             "isIndividual": false,
             "role": "Team project: UI design, development of student management features, and data integration.",
             "languages": ["C++", "Qt"],
@@ -310,6 +319,7 @@
         "websiteSAE": {
             "projectName": "SAE Website",
             "description": "This SAE project involved creating a website presenting the IUT of Aix-Marseille, Arles campus.",
+            "link": "",
             "isIndividual": false,
             "role": "Project carried out in a group of 3: UI design, development of presentation features, and integration of course data.",
             "languages": ["HTML", "CSS", "JavaScript"],
@@ -330,6 +340,7 @@
         "horaris": {
             "projectName": "Horaris",
             "description": "Horaris is a meeting room management application for a company. It allows booking rooms, checking availability, and managing reservations. This project is under development and may be used for Arles Creative.",
+            "link": "",
             "isIndividual": false,
             "role": "Scrum Master and front-end developer in an Agile team. I am responsible for the interface and technical coordination.",
             "languages": ["HTML", "CSS", "TypeScript", "React", "Electron"],
