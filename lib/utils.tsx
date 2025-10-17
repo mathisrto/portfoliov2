@@ -1,8 +1,10 @@
 import { clsx, type ClassValue } from "clsx";
+import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import PMRBrandIcon from "./components/PMRBrandIcon";
 import {
     icons,
+    imageMap,
     JSONBrandIconProps,
     JSONIconProps,
     JSONProps,
@@ -62,3 +64,17 @@ export function localizeItems(items: JSONProps[], locale: string): JSONProps[] {
         url: item.url ? `/${locale}${item.url}` : item.url,
     }));
 }
+
+export const loadImage = async (
+    projectId: string,
+    imageName: string,
+    alt: string
+) => {
+    try {
+        const url = imageMap[projectId]?.[imageName];
+        return <Image src={url} alt={alt} />;
+    } catch (error) {
+        console.error("Error loading image:", error);
+        return <></>;
+    }
+};

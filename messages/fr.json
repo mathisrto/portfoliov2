@@ -230,5 +230,130 @@
             "speciality": "Imagerie numérique",
             "mention": "En cours"
         }
+    },
+
+    "PMRPortfolio": {
+        "title": "Mon Portfolio",
+        "description": "Voici quelques-uns de mes projets personnels et professionnels :",
+        "geoguide": {
+            "projectName": "Geoguide",
+            "description": "Le but de ce projet était de concevoir un logiciel avec une interface graphique pour calculer le temps de conduite entre deux villes en France. Les consignes étaient d'utiliser des fichiers CSV contenant les temps de trajet entre certaines paires de villes afin de trouver le trajet le plus court. Ce projet a été réalisé dans le cadre d'une SAE durant ma première année de BUT Informatique.",
+            "isIndividual": true,
+            "role": "Concepteur et développeur principal. J'ai conçu l'interface utilisateur, développé les fonctionnalités de calcul des temps de trajet et de cartographie, et intégré les données des villes.",
+            "languages": ["C++", "Qt", "QML"],
+            "tools": ["GitLab", "Visual Studio Code", "Qt Creator"],
+            "toolsDescription": "J'ai implémenté l'algorithme de Floyd-Warshall afin de compléter les informations manquantes sur les temps de trajets entre les autres paires de villes. J'ai utilisé GitLab pour la gestion de versions, Visual Studio Code pour l'édition du code, et Qt Creator pour la conception de l'interface utilisateur.",
+            "visualDescription": "Vous pouvez voir ci-dessous des captures d'écran de mon application. La carte est interactive : il est possible de zoomer, dézoomer et se déplacer dessus.",
+            "challenges": "Le plus difficile dans cette SAE a été la mise en place de la carte interactive avec QML et l’aspect graphique de l’application. Je voulais vraiment que mon logiciel soit esthétiquement réussi.",
+            "solutions": "Les solutions qui m'ont aidé à surmonter ces difficultés ont été de me documenter sur QML en regardant des vidéos et en étudiant le code d'autres développeurs sur GitHub afin de comprendre son fonctionnement.",
+            "impactDescription": "Réaliser ce projet m’a permis de développer mes connaissances sur Qt et QML, et d’approfondir ma maîtrise du C++. Après la soutenance, j’ai obtenu la note de 18/20.",
+            "images": ["geoguide1", "geoguide2", "geoguide3", "geoguide4"]
+        },
+        "planifEasy": {
+            "projectName": "Planif'Easy",
+            "description": "Planif'Easy est une application en mode console permettant de gérer des agendas personnalisés. Elle offre également la possibilité d'exporter les agendas sous forme de pages HTML pour une consultation facile sur un navigateur.",
+            "isIndividual": true,
+            "role": "Développeur principal et concepteur. J'ai conçu et développé l'application de A à Z, en m'occupant de l'analyse des besoins, de la programmation et de la création des fonctionnalités d'exportation.",
+            "languages": ["C++"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "J'ai utilisé Visual Studio Code pour l'édition et le débogage du code, et Git pour la gestion de versions et le suivi des modifications.",
+            "visualDescription": "Ci-dessous, vous trouverez des captures d'écran de l'application montrant les différentes étapes : création d'un agenda, gestion des événements et exportation vers HTML.",
+            "challenges": "Le principal défi était de concevoir une interface utilisateur intuitive malgré le format console, ainsi que la génération dynamique de fichiers HTML compatibles avec plusieurs navigateurs.",
+            "solutions": "Pour l'interface utilisateur, j'ai opté pour une navigation simple basée sur des menus textuels clairs. Pour la compatibilité HTML, j'ai utilisé des modèles prédéfinis combinés à de la génération de code C++.",
+            "impactDescription": "Planif'Easy simplifie la gestion d'agendas pour les utilisateurs non techniques, en offrant une solution légère et portable. L'exportation en HTML permet une grande accessibilité et un partage facile.",
+            "images": [
+                "planifEasy1",
+                "planifEasy2",
+                "planifEasy3",
+                "planifEasy4"
+            ]
+        },
+        "station": {
+            "projectName": "Application de Stations Essence",
+            "description": "Ce projet consistait à créer une application web permettant de localiser les stations essence les plus proches d'une position donnée. L'application affiche les stations sur une carte interactive et propose des informations détaillées sur chacune d'elles.",
+            "isIndividual": true,
+            "role": "Concepteur et développeur principal. J'ai conçu l'interface utilisateur, développé les fonctionnalités de géolocalisation et de cartographie, et intégré les données des stations essence.",
+            "languages": ["HTML", "CSS", "JavaScript"],
+            "tools": ["Visual Studio Code", "Leaflet.js", "Webpack", "Git"],
+            "toolsDescription": "J'ai utilisé Visual Studio Code pour le code, Leaflet.js pour la cartographie, Webpack pour la gestion des modules, et Git pour la gestion de versions.",
+            "visualDescription": "Les captures d'écran ci-dessous montrent l'interface de l'application avec la carte interactive affichant les stations et leurs informations.",
+            "challenges": "Le principal défi était d'intégrer les données des stations essence via une API externe et de les afficher clairement sur la carte.",
+            "solutions": "J'ai utilisé l'API OpenDataSoft pour récupérer les données, et créé des marqueurs personnalisés pour les afficher sur la carte.",
+            "impactDescription": "Cette application offre une solution simple et efficace pour trouver rapidement les stations essence les plus proches.",
+            "images": ["station1", "station2", "station3"]
+        },
+        "studentManagement": {
+            "projectName": "Gestionnaire d'Étudiants",
+            "description": "Le projet de Gestionnaire d'Étudiants consistait à créer une application de gestion des étudiants pour une université. Elle permet d'ajouter, modifier, supprimer des étudiants, gérer les absences et consulter leurs informations.",
+            "isIndividual": false,
+            "role": "Projet en équipe : conception de l'interface utilisateur, développement des fonctionnalités de gestion des étudiants et intégration des données.",
+            "languages": ["C++", "Qt"],
+            "tools": ["GitLab", "Visual Studio Code", "Qt Creator"],
+            "toolsDescription": "GitLab pour le suivi des versions, VS Code pour l'édition du code et Qt Creator pour la conception graphique.",
+            "visualDescription": "Les captures d'écran ci-dessous montrent les fonctionnalités principales de gestion des étudiants et des absences.",
+            "challenges": "Le principal défi était la gestion efficace des données et l'import/export en CSV/JSON.",
+            "solutions": "Nous avons utilisé des structures de données adaptées et des fonctions de manipulation robustes pour ajouter, modifier et supprimer des informations.",
+            "impactDescription": "L'application offre une solution complète pour la gestion administrative des étudiants et absences, simplifiant le travail des universités.",
+            "images": [
+                "student_management1",
+                "student_management2",
+                "student_management3"
+            ]
+        },
+        "websiteSAE": {
+            "projectName": "Site Web SAE",
+            "description": "Ce projet de SAE consistait à créer un site web présentant l'IUT d'Aix-Marseille, site d'Arles.",
+            "isIndividual": false,
+            "role": "Projet réalisé en groupe de 3 : conception de l'interface, développement des fonctionnalités de présentation et intégration des données des formations.",
+            "languages": ["HTML", "CSS", "JavaScript"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code a été utilisé pour le code et Git pour le suivi des modifications.",
+            "visualDescription": "Les captures d'écran montrent les pages du site web présentant l'IUT et les formations proposées.",
+            "challenges": "Le principal défi était de concevoir un site web esthétique tout en gardant une présentation claire et hiérarchisée.",
+            "solutions": "Nous avons utilisé des modèles de conception modernes et organisé les informations pour une navigation fluide.",
+            "impactDescription": "Le site web offre une présentation complète et claire de l'IUT d'Aix-Marseille, facilitant la découverte de l'établissement.",
+            "images": [
+                "website_SAE1",
+                "website_SAE2",
+                "website_SAE3",
+                "website_SAE4",
+                "website_SAE5"
+            ]
+        },
+        "horaris": {
+            "projectName": "Horaris",
+            "description": "Horaris est une application de gestion des salles de réunion pour une entreprise. Elle permet de réserver des salles, consulter les disponibilités et gérer les réservations. Ce projet est en cours de développement et pourra servir dans le cadre d'Arles Creative.",
+            "isIndividual": false,
+            "role": "Scrum Master et développeur front-end dans une équipe Agile. Je suis responsable de la partie interface et de la coordination technique.",
+            "languages": ["HTML", "CSS", "TypeScript", "React", "Electron"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code pour le développement et Git pour la gestion des versions.",
+            "visualDescription": "Les captures d'écran ci-dessous montrent les pages principales de l'application, avec les fonctionnalités de réservation et gestion des disponibilités.",
+            "challenges": "Le principal défi est de concevoir une application ergonomique et intuitive tout en offrant des fonctionnalités avancées.",
+            "solutions": "Nous utilisons des modèles de conception modernes et une hiérarchie claire des informations pour une navigation fluide.",
+            "impactDescription": "Horaris offrira une solution complète pour la gestion des salles de réunion, simplifiant la planification et la coordination des réunions.",
+            "images": [
+                "horaris1",
+                "horaris2",
+                "horaris3",
+                "horaris4",
+                "horaris5"
+            ]
+        },
+        "memoryGame": {
+            "projectName": "Memory Game",
+            "description": "Le Memory Game est un jeu de mémoire classique où le joueur doit retourner des cartes pour trouver les paires correspondantes. Ce projet a été réalisé dans le cadre d'un cours de développement web.",
+            "link": "https://memory.mathis-ratron.fr",
+            "isIndividual": true,
+            "role": "Concepteur et développeur principal. J'ai conçu l'interface utilisateur, développé les fonctionnalités de jeu et intégré les cartes.",
+            "languages": ["HTML", "CSS", "TypeScript", "React"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "J'ai utilisé Visual Studio Code pour le code et Git pour la gestion des versions.",
+            "visualDescription": "Les captures d'écran ci-dessous montrent l'interface du jeu, avec les cartes à retourner et les paires à trouver.",
+            "challenges": "Le principal défi de ce projet était de concevoir un jeu interactif et fluide, tout en offrant une expérience utilisateur agréable.",
+            "solutions": "J'ai utilisé des animations CSS pour les transitions et mis en place une logique de jeu réactive en React pour gérer les paires et les scores.",
+            "impactDescription": "Le Memory Game offre une expérience de jeu divertissante et stimulante, mettant à l'épreuve la mémoire et la concentration des joueurs.",
+            "images": ["memoryGame1", "memoryGame2", "memoryGame3"]
+        }
     }
 }
