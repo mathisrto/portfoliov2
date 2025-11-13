@@ -6,7 +6,7 @@ import {
     ZapIcon,
 } from "lucide-react";
 
-export const locales = ["fr", "en", "es", "de", "it", "pt"];
+export const locales = ["fr", "en"];
 
 export type JSONProps = {
     id: string;

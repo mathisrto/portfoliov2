@@ -72,7 +72,8 @@
         "student": "étudiant",
         "about_me": "Je poursuis actuellement ma 3ème année de BUT Informatique à Arles. Passionné par les jeux vidéo, la programmation et le sport, je pratique la boxe et la musculation. Je possède le permis B, le BIA (Brevet d'Initiation Aéronautique) ainsi que la certification PIX.",
         "about_me_btn": "À propos de moi",
-        "contact": "Contactez-moi"
+        "contact": "Contactez-moi",
+        "download_cv": "Télécharger mon CV"
     },
     "PMRSkills": {
         "title": "Mes Compétences",
@@ -190,7 +191,7 @@
         "weekera": {
             "title": "Développeur web (alternance)",
             "company": "Weekera",
-            "duration": "Septembre 2025 - Présent",
+            "duration": "Septembre 2025 - Maintenant",
             "location": "Nîmes, France",
             "skills": [
                 "Adaptabilité",
@@ -200,9 +201,12 @@
                 "Travail en équipe"
             ],
             "missions": [
-                "Participation à la création d’une application web",
-                "Développement avec Svelte et base de données PostgreSQL",
-                "Utilisation d’un langage de requête WQL similaire à GraphQL"
+                "Participation à la création d’une application web d'expert comptable / RH",
+                "Création et maintenance de fonctionnalités front-end avec Svelte",
+                "Création et maintenance de fonctionnalités back-end avec Typescript",
+                "Création de tests unitaires",
+                "Utilisation d’un langage de requête WQL similaire à GraphQL",
+                "Participation à la création de l'assistant AI grâce à l'API de OpenAI"
             ]
         }
     },

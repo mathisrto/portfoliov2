@@ -71,7 +71,8 @@
         "student": "student",
         "about_me": "I am currently in my 3rd year of a Bachelor's degree in Computer Science at Arles. Passionate about video games, programming, and sports, I practice boxing and weight training. I hold a category B driving license, the BIA (Brevet d'Initiation Aéronautique), as well as the PIX certification.",
         "about_me_btn": "About Me",
-        "contact": "Contact Me"
+        "contact": "Contact Me",
+        "download_cv": "Download my CV"
     },
     "PMRSkills": {
         "title": "My Skills",
@@ -189,7 +190,7 @@
         "weekera": {
             "title": "Web Developer (apprenticeship)",
             "company": "Weekera",
-            "duration": "September 2025 - Present",
+            "duration": "September 2025 - Now",
             "location": "Nîmes, France",
             "skills": [
                 "Adaptability",
@@ -199,9 +200,12 @@
                 "Teamwork"
             ],
             "missions": [
-                "Participating in the creation of a web application",
-                "Development with Svelte and PostgreSQL database",
-                "Using a WQL query language similar to GraphQL"
+                "Participation in the creation of a web application for accounting/HR expert",
+                "Creation and maintenance of front-end features with Svelte",
+                "Creation and maintenance of back-end features with TypeScript",
+                "Creation of unit tests",
+                "Use of a WQL query language similar to GraphQL",
+                "Participation in the creation of the AI assistant using the OpenAI API"
             ]
         }
     },

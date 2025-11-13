@@ -11,6 +11,8 @@ import { HomeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
+const CV = "/CV.pdf";
+
 export default function Home() {
     const t = useTranslations("PMRAbout");
     const words = [t("developer"), t("student")];
@@ -109,6 +111,7 @@ export default function Home() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1.2 }}
+                        className="flex gap-4"
                     >
                         <Popover>
                             <PopoverTrigger asChild>
@@ -168,6 +171,18 @@ export default function Home() {
                                 </motion.div>
                             </PopoverContent>
                         </Popover>
+                        <motion.a
+                            className="px-6 py-3 rounded-2xl bg-secondary text-primary font-medium shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            href={CV}
+                            download="CV-Mathis-Ratron.pdf"
+                        >
+                            <span className="relative z-10">
+                                {t("download_cv")}
+                            </span>
+                            <motion.div className="absolute inset-0 bg-tertiary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        </motion.a>
                     </motion.div>
                 </motion.div>
 

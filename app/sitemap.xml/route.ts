@@ -1,10 +1,6 @@
 // app/sitemap.xml/route.ts
-import { locales } from "@/lib/constants";
-import { PMRPortfolioController } from "@/lib/controllers/PMRPortfolioController";
 
 export async function GET() {
-    const projects = await new PMRPortfolioController("fr").loadProjects();
-
     const urls: string[] = [];
     const staticPages = [
         "about",
@@ -14,15 +10,8 @@ export async function GET() {
         "skills",
     ];
 
-    locales.forEach((locale) => {
-        staticPages.forEach((page) => {
-            urls.push(`https://mathis-ratron.fr/${locale}/${page}`);
-        });
-        projects.forEach((slug) => {
-            urls.push(
-                `https://mathis-ratron.fr/${locale}/portfolio/${slug.id}`
-            );
-        });
+    staticPages.forEach((page) => {
+        urls.push(`https://mathis-ratron.fr/fr/${page}`);
     });
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
