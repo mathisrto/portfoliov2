@@ -376,6 +376,27 @@
             "solutions": "I used CSS animations for transitions and implemented reactive game logic in React to manage pairs and scores.",
             "impactDescription": "Memory Game offers a fun and challenging gaming experience, testing players' memory and concentration.",
             "images": ["memoryGame1", "memoryGame2", "memoryGame3"]
+        },
+        "kubo": {
+            "projectName": "Kubo",
+            "description": "Kubo is a 3D model management application, a simplified web version of the Blender 3D model editor. This work was completed as part of my 3rd year SAE in Computer Science Bachelor's degree.",
+            "link": "",
+            "isIndividual": true,
+            "role": "In this project, I was the main designer and developer. I designed the user interface, developed 3D model management features, and integrated manipulation tools.",
+            "languages": [
+                "TypeScript",
+                "React",
+                "Next.js",
+                "Drei (Three.js)",
+                "MongoDB"
+            ],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code for development and Git for version control.",
+            "visualDescription": "The screenshots below show the main pages of the application, such as the home page, login page, registration page, and the main 3D model management page.",
+            "challenges": "The main challenge is designing a robust and scalable application while providing a smooth user experience. I stepped out of my comfort zone by implementing a hexagonal architecture for better maintainability and scalability.",
+            "solutions": "We use a modular architecture and modern development practices to ensure code quality and application maintainability.",
+            "impactDescription": "Kubo will provide a simple solution for quick access to 3D model visualization and management, with an intuitive interface and features tailored to user needs.",
+            "images": ["kubo1", "kubo2", "kubo3", "kubo4"]
         }
     }
 }

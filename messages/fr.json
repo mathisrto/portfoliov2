@@ -378,6 +378,27 @@
             "solutions": "J'ai utilisé des animations CSS pour les transitions et mis en place une logique de jeu réactive en React pour gérer les paires et les scores.",
             "impactDescription": "Le Memory Game offre une expérience de jeu divertissante et stimulante, mettant à l'épreuve la mémoire et la concentration des joueurs.",
             "images": ["memoryGame1", "memoryGame2", "memoryGame3"]
+        },
+        "kubo": {
+            "projectName": "Kubo",
+            "description": "Kubo est une application de gestion de modele 3D, c'est une version web simplifié de l'éditeur de modèle 3D Blender. Ce travail a été réalisé dans le cadre de ma SAE de 3ème année de BUT Informatique.",
+            "link": "",
+            "isIndividual": true,
+            "role": "Lors de ce projet, j'ai été le concepteur et développeur principal. J'ai conçu l'interface utilisateur, développé les fonctionnalités de gestion de modèles 3D et intégré les outils de manipulation.",
+            "languages": [
+                "TypeScript",
+                "React",
+                "Next.js",
+                "Drei (Three.js)",
+                "MongoDB"
+            ],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Visual Studio Code pour le développement et Git pour la gestion des versions.",
+            "visualDescription": "Les captures d'écran ci-dessous montrent les pages principales de l'application, comme la page d'acceuil, la page de connexion, d'enregistrement, et la page principale de gestion de modèles 3D.",
+            "challenges": "Le principal défi est de concevoir une application robuste et évolutive tout en offrant une expérience utilisateur fluide. Je suis sortie de ma zone de confort en mettant en place une architecture hexagonale pour une meilleure maintenabilité et évolutivité.",
+            "solutions": "Nous utilisons une architecture modulaire et des pratiques de développement modernes pour assurer la qualité du code et la maintenabilité de l'application.",
+            "impactDescription": "Kubo offrira une solution simple pour avoir accès rapidement à la visualisation et la gestion de modèles 3D, avec une interface intuitive et des fonctionnalités adaptées aux besoins des utilisateurs.",
+            "images": ["kubo1", "kubo2", "kubo3", "kubo4"]
         }
     }
 }
