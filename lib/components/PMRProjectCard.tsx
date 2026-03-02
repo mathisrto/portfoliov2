@@ -31,7 +31,7 @@ export default function PMRProjectCard({
     const { locale } = useLocale();
     const router = useRouter();
     const ref = useRef<HTMLDivElement | null>(null);
-    const isInView = useInView(ref, { once: false, amount: 0.3 });
+    const isInView = useInView(ref, { once: true, amount: 0.2 });
 
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
