@@ -19,11 +19,13 @@ import { useLocale } from "../contexts/PMRLocaleContext";
 interface PMRProjectCardProps {
     project: JSONProps;
     onImageClick: (projectId: string, images: string[]) => void;
+    compact?: boolean;
 }
 
 export default function PMRProjectCard({
     project,
     onImageClick,
+    compact = false,
 }: PMRProjectCardProps) {
     const t = useTranslations("PMRPortfolio");
     const { locale } = useLocale();
@@ -41,6 +43,78 @@ export default function PMRProjectCard({
     };
 
     const images = t.raw(`${project.id}.images`) || [];
+
+    if (compact) {
+        const firstImage = images.length > 0 ? images[0] : null;
+        return (
+            <motion.div
+                ref={ref}
+                id={project.id}
+                variants={itemVariants}
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                className="h-full"
+            >
+                <Card
+                    className="shadow-lg rounded-2xl overflow-hidden border-2 border-border hover:border-secondary transition-all duration-300 bg-card h-full cursor-pointer group"
+                    onClick={() =>
+                        router.push(`/${locale}/portfolio/${project.id}`)
+                    }
+                >
+                    <CardContent className="p-0 flex flex-col h-full">
+                        {/* Image de couverture */}
+                        <div className="relative w-full h-44 overflow-hidden bg-muted/50">
+                            {firstImage ? (
+                                <motion.div
+                                    className="w-full h-full"
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ duration: 0.3 }}
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        onImageClick(project.id, images);
+                                    }}
+                                >
+                                    {loadImage(
+                                        project.id,
+                                        firstImage,
+                                        t(`${project.id}.projectName`)
+                                    )}
+                                </motion.div>
+                            ) : (
+                                <div className="flex items-center justify-center h-full">
+                                    <p className="text-muted-foreground text-sm italic">
+                                        Aucune image
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                        {/* Infos */}
+                        <div className="p-4 flex flex-col flex-1">
+                            <h3 className="text-lg font-bold text-primary line-clamp-1 group-hover:text-secondary transition-colors">
+                                {t(`${project.id}.projectName`)}
+                            </h3>
+                            <p className="text-muted-foreground text-sm mt-1 line-clamp-3 flex-1">
+                                {t(`${project.id}.description`)}
+                            </p>
+                            <div className="mt-3 flex items-center text-secondary text-sm font-medium">
+                                {t("more_info_btn")}
+                                <motion.span
+                                    animate={{ x: [0, 4, 0] }}
+                                    transition={{
+                                        repeat: Infinity,
+                                        duration: 1.5,
+                                    }}
+                                    className="ml-1"
+                                >
+                                    →
+                                </motion.span>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
+            </motion.div>
+        );
+    }
 
     return (
         <motion.div
