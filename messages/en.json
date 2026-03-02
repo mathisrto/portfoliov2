@@ -397,6 +397,21 @@
             "solutions": "We use a modular architecture and modern development practices to ensure code quality and application maintainability.",
             "impactDescription": "Kubo will provide a simple solution for quick access to 3D model visualization and management, with an intuitive interface and features tailored to user needs.",
             "images": ["kubo1", "kubo2", "kubo3", "kubo4"]
+        },
+        "resonance": {
+            "projectName": "Resonance",
+            "description": "As part of an event called DevArt which consists of creating a digital artwork in 36 hours, my team and I created Resonance, an artwork on the theme of echo. It is a fun little game created on Unity where the principle is to pass through a series of obstacles by making them resonate. For this, we use a piano to find the right key that will make the obstacle resonate and thus make it disappear. This project was completed by a team of 4 people.",
+            "link": "",
+            "isIndividual": false,
+            "role": "I was a developer and game designer. I participated in creating the scenery and game elements, as well as programming the resonance mechanics and character movement.",
+            "languages": ["Unity", "C#"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "We used Visual Studio Code for coding and Git for version control.",
+            "visualDescription": "The screenshots below show the application interface, the scenery, and the game elements.",
+            "challenges": "The main challenge was the limited time of 36 hours to create a complete and functional artwork, as well as efficient coordination within the team to distribute tasks and ensure good communication.",
+            "solutions": "To ensure good communication, we organized regular short breaks to check on each person's progress and adjust tasks accordingly.",
+            "impactDescription": "To delve deeper into the lore of the artwork, the goal of this game is to teach music, or at least piano notes, in a fun and interactive way. To do this, we embody a small character who is searching for their soulmate. To find them, they must enter into resonance by passing through a succession of obstacles. This project was very enriching and allowed me to develop my video game development skills, as well as work in a team in a rapid creation context.",
+            "images": ["resonance1", "resonance2", "resonance3", "resonance4"]
         }
     }
 }

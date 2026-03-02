@@ -399,6 +399,21 @@
             "solutions": "Nous utilisons une architecture modulaire et des pratiques de développement modernes pour assurer la qualité du code et la maintenabilité de l'application.",
             "impactDescription": "Kubo offrira une solution simple pour avoir accès rapidement à la visualisation et la gestion de modèles 3D, avec une interface intuitive et des fonctionnalités adaptées aux besoins des utilisateurs.",
             "images": ["kubo1", "kubo2", "kubo3", "kubo4"]
+        },
+        "resonance": {
+            "projectName": "Résonance",
+            "description": "Dans le cadre d'un événement nommé DevArt qui consiste en la création d'une oeuvre numérique en 36 heures, moi et mon équipe avons créé Resonance qui est une oeuvre sur la theme de l'écho. C'est un petit jeu ludique créer sur Unity ou le principe est de passer une suite d'obstacle en les faisant résonner, pour cela on utilise un piano afin de trouver la bonne touche qui fera rentrée en résonance l'obstacle et ainsi le faire disparaître. Ce projet a été réalisé en équipe de 4 personnes.",
+            "link": "",
+            "isIndividual": false,
+            "role": "J'ai été développeur et game designer, j'ai participé à la création des décors et des éléments de jeu, ainsi qu'à la programmation des mécaniques de résonance et de déplacement du personnage.",
+            "languages": ["Unity", "C#"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Nous avons utilisé Visual Studio Code pour le code et Git pour la gestion des versions.",
+            "visualDescription": "Les captures d'écran ci-dessous montrent l'interface de l'application, le décor et les éléments de jeu.",
+            "challenges": "Le principal défi était le temps limité de 36h pour créer une oeuvre complète et fonctionnelle, ainsi que la coordination efficace au sein de l'équipe pour répartir les tâches et assurer une bonne communication.",
+            "solutions": "Afin d'assurer une bonne communication, nous avons organisé des petites pauses régulières pour faire le point sur l'avancement de chacun et ajuster les tâches en conséquence.",
+            "impactDescription": "Pour rentrer un peu plus dans le lore de l'oeuvre, le but de ce jeu est de faire apprendre la musique, du moins les notes de piano, de manière ludique et interactive. Pour cela nous incarnons un petit personnage qui est à la recherche de son ame soeur, afin de la retrouver ils doivent entré en resonance en passant une succession d'obstacles. Ce projet a été très enrichissant et m'a permis de développer mes compétences en développement de jeux vidéo, ainsi que de travailler en équipe dans un contexte de création rapide.",
+            "images": ["resonance1", "resonance2", "resonance3", "resonance4"]
         }
     }
 }
