@@ -31,7 +31,7 @@ export default function PMRProjectCard({
     const { locale } = useLocale();
     const router = useRouter();
     const ref = useRef<HTMLDivElement | null>(null);
-    const isInView = useInView(ref, { once: true, amount: 0.2 });
+    const isInView = useInView(ref, { once: true, amount: 0.05, margin: "100px 0px 0px 0px" });
 
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -90,9 +90,14 @@ export default function PMRProjectCard({
                         </div>
                         {/* Infos */}
                         <div className="p-4 flex flex-col flex-1">
-                            <h3 className="text-lg font-bold text-primary line-clamp-1 group-hover:text-secondary transition-colors">
-                                {t(`${project.id}.projectName`)}
-                            </h3>
+                            <div className="flex items-center justify-between gap-2">
+                                <h3 className="text-lg font-bold text-primary line-clamp-1 group-hover:text-secondary transition-colors">
+                                    {t(`${project.id}.projectName`)}
+                                </h3>
+                                <span className="shrink-0 text-xs font-semibold px-2 py-0.5 rounded-full bg-secondary/15 text-secondary">
+                                    {t(`${project.id}.date`)}
+                                </span>
+                            </div>
                             <p className="text-muted-foreground text-sm mt-1 line-clamp-3 flex-1">
                                 {t(`${project.id}.description`)}
                             </p>
@@ -130,6 +135,9 @@ export default function PMRProjectCard({
                             <h2 className="text-3xl font-bold text-primary">
                                 {t(`${project.id}.projectName`)}
                             </h2>
+                            <span className="text-sm font-semibold px-3 py-1 rounded-full bg-secondary/15 text-secondary">
+                                {t(`${project.id}.date`)}
+                            </span>
                         </div>
                         <p className="text-muted-foreground leading-relaxed pl-5">
                             {t(`${project.id}.description`)}

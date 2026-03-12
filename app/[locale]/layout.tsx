@@ -28,9 +28,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Portfolio de Mathis Ratron",
+    title: "Mathis Ratron · Portfolio/CV",
     description:
-        "Bienvenue sur le portfolio de Mathis Ratron, développeur et étudiant passionné.",
+        "Je m'appelle Mathis Ratron et je suis étudiant en informatique. Explorez mes projets, compétences et réalisations en développement.",
+    keywords: "Mathis Ratron, portfolio, CV, étudiant en informatique, projets de développement, compétences en programmation",
+    openGraph: {
+        title: "Mathis Ratron · Portfolio/CV",
+        description: "Je m'appelle Mathis Ratron et je suis étudiant en informatique. Explorez mes projets, compétences et réalisations en développement.",
+        url: "https://www.mathis-ratron.fr/",
+        siteName: "Mathis Ratron · Portfolio/CV",
+        images: ["https://www.mathis-ratron.fr/images/mathis-ratron.webp"],
+        type: "website",
+    },
+    alternates: {
+        canonical: "https://www.mathis-ratron.fr/",
+    },
+    icons: {
+        shortcut: "/favicon.ico",
+    },
 };
 
 export default async function LocaleLayout({
@@ -60,55 +75,7 @@ export default async function LocaleLayout({
                     `}
                 </Script>
 
-                <title>Mathis Ratron · Portfolio/CV</title>
-                <meta charSet="UTF-8" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
                 <meta name="robots" content="index, follow" />
-                <meta
-                    name="description"
-                    content="Je m'appelle Mathis Ratron et je suis étudiant en informatique. Explorez mes projets, compétences et réalisations en développement."
-                />
-                <meta
-                    name="keywords"
-                    content="Mathis Ratron, portfolio, CV, étudiant en informatique, projets de développement, compétences en programmation"
-                />
-                <meta
-                    httpEquiv="Content-Type"
-                    content="text/html;charset=UTF-8"
-                />
-
-                {/* Open Graph */}
-                <meta
-                    property="og:title"
-                    content="Mathis Ratron · Portfolio/CV"
-                />
-                <meta
-                    property="og:description"
-                    content="Je m'appelle Mathis Ratron et je suis étudiant en informatique. Explorez mes projets, compétences et réalisations en développement."
-                />
-                <meta
-                    property="og:image"
-                    content="https://www.mathis-ratron.fr/images/mathis-ratron.webp"
-                />
-                <meta
-                    property="og:url"
-                    content="https://www.mathis-ratron.fr/"
-                />
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:site_name"
-                    content="Mathis Ratron · Portfolio/CV"
-                />
-
-                <link
-                    rel="shortcut icon"
-                    href="/favicon.ico"
-                    type="image/x-icon"
-                />
-                <link rel="canonical" href="https://www.mathis-ratron.fr/" />
 
                 {/* Structured Data JSON-LD */}
                 <script

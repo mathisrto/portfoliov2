@@ -257,9 +257,11 @@
         "projectType": "Project type",
         "individualProject": "Individual project",
         "teamProject": "Team project",
+        "year": "Year",
         "visitProject": "Visit Project",
         "geoguide": {
             "projectName": "Geoguide",
+            "date": "2024",
             "description": "The goal of this project was to design software with a graphical interface to calculate driving time between two cities in France. The instructions were to use CSV files containing travel times between certain pairs of cities to find the shortest route. This project was carried out as part of a SAE during my first year of the Computer Science Bachelor's degree.",
             "link": "",
             "isIndividual": true,
@@ -275,6 +277,7 @@
         },
         "planifEasy": {
             "projectName": "Planif'Easy",
+            "date": "2024",
             "description": "Planif'Easy is a console-based application for managing personalized agendas. It also offers the possibility to export agendas as HTML pages for easy viewing in a browser.",
             "link": "",
             "isIndividual": true,
@@ -295,6 +298,7 @@
         },
         "station": {
             "projectName": "Gas Station Application",
+            "date": "2024",
             "description": "This project involved creating a web application to locate the nearest gas stations from a given position. The application displays stations on an interactive map and provides detailed information about each one.",
             "link": "",
             "isIndividual": true,
@@ -310,6 +314,7 @@
         },
         "studentManagement": {
             "projectName": "Student Management",
+            "date": "2024",
             "description": "The Student Management project involved creating an application for managing students at a university. It allows adding, editing, deleting students, managing absences, and viewing their information.",
             "link": "",
             "isIndividual": false,
@@ -329,6 +334,7 @@
         },
         "websiteSAE": {
             "projectName": "SAE Website",
+            "date": "2024",
             "description": "This SAE project involved creating a website presenting the IUT of Aix-Marseille, Arles campus.",
             "link": "",
             "isIndividual": false,
@@ -350,6 +356,7 @@
         },
         "horaris": {
             "projectName": "Horaris",
+            "date": "2025",
             "description": "Horaris is a meeting room management application for a company. It allows booking rooms, checking availability, and managing reservations. This project is under development and may be used for Arles Creative.",
             "link": "",
             "isIndividual": false,
@@ -371,6 +378,7 @@
         },
         "memoryGame": {
             "projectName": "Memory Game",
+            "date": "2025",
             "description": "Memory Game is a classic memory game where the player must flip cards to find matching pairs. This project was completed as part of a web development course.",
             "link": "https://memory.mathis-ratron.fr",
             "isIndividual": true,
@@ -386,6 +394,7 @@
         },
         "kubo": {
             "projectName": "Kubo",
+            "date": "2026",
             "description": "Kubo is a 3D model management application, a simplified web version of the Blender 3D model editor. This work was completed as part of my 3rd year SAE in Computer Science Bachelor's degree.",
             "link": "",
             "isIndividual": true,
@@ -407,6 +416,7 @@
         },
         "resonance": {
             "projectName": "Resonance",
+            "date": "2026",
             "description": "As part of an event called DevArt which consists of creating a digital artwork in 36 hours, my team and I created Resonance, an artwork on the theme of echo. It is a fun little game created on Unity where the principle is to pass through a series of obstacles by making them resonate. For this, we use a piano to find the right key that will make the obstacle resonate and thus make it disappear. This project was completed by a team of 4 people.",
             "link": "",
             "isIndividual": false,

@@ -259,9 +259,11 @@
         "projectType": "Type de projet",
         "individualProject": "Projet individuel",
         "teamProject": "Projet en équipe",
+        "year": "Année",
         "visitProject": "Visiter le projet",
         "geoguide": {
             "projectName": "Geoguide",
+            "date": "2024",
             "description": "Le but de ce projet était de concevoir un logiciel avec une interface graphique pour calculer le temps de conduite entre deux villes en France. Les consignes étaient d'utiliser des fichiers CSV contenant les temps de trajet entre certaines paires de villes afin de trouver le trajet le plus court. Ce projet a été réalisé dans le cadre d'une SAE durant ma première année de BUT Informatique.",
             "link": "",
             "isIndividual": true,
@@ -277,6 +279,7 @@
         },
         "planifEasy": {
             "projectName": "Planif'Easy",
+            "date": "2024",
             "description": "Planif'Easy est une application en mode console permettant de gérer des agendas personnalisés. Elle offre également la possibilité d'exporter les agendas sous forme de pages HTML pour une consultation facile sur un navigateur.",
             "link": "",
             "isIndividual": true,
@@ -297,6 +300,7 @@
         },
         "station": {
             "projectName": "Application de Stations Essence",
+            "date": "2024",
             "description": "Ce projet consistait à créer une application web permettant de localiser les stations essence les plus proches d'une position donnée. L'application affiche les stations sur une carte interactive et propose des informations détaillées sur chacune d'elles.",
             "link": "",
             "isIndividual": true,
@@ -312,6 +316,7 @@
         },
         "studentManagement": {
             "projectName": "Gestionnaire d'Étudiants",
+            "date": "2024",
             "description": "Le projet de Gestionnaire d'Étudiants consistait à créer une application de gestion des étudiants pour une université. Elle permet d'ajouter, modifier, supprimer des étudiants, gérer les absences et consulter leurs informations.",
             "link": "",
             "isIndividual": false,
@@ -331,6 +336,7 @@
         },
         "websiteSAE": {
             "projectName": "Site Web SAE",
+            "date": "2024",
             "description": "Ce projet de SAE consistait à créer un site web présentant l'IUT d'Aix-Marseille, site d'Arles.",
             "link": "",
             "isIndividual": false,
@@ -352,6 +358,7 @@
         },
         "horaris": {
             "projectName": "Horaris",
+            "date": "2025",
             "description": "Horaris est une application de gestion des salles de réunion pour une entreprise. Elle permet de réserver des salles, consulter les disponibilités et gérer les réservations. Ce projet est en cours de développement et pourra servir dans le cadre d'Arles Creative.",
             "link": "",
             "isIndividual": false,
@@ -373,6 +380,7 @@
         },
         "memoryGame": {
             "projectName": "Memory Game",
+            "date": "2025",
             "description": "Le Memory Game est un jeu de mémoire classique où le joueur doit retourner des cartes pour trouver les paires correspondantes. Ce projet a été réalisé dans le cadre d'un cours de développement web.",
             "link": "https://memory.mathis-ratron.fr",
             "isIndividual": true,
@@ -388,6 +396,7 @@
         },
         "kubo": {
             "projectName": "Kubo",
+            "date": "2026",
             "description": "Kubo est une application de gestion de modele 3D, c'est une version web simplifié de l'éditeur de modèle 3D Blender. Ce travail a été réalisé dans le cadre de ma SAE de 3ème année de BUT Informatique.",
             "link": "",
             "isIndividual": true,
@@ -409,6 +418,7 @@
         },
         "resonance": {
             "projectName": "Résonance",
+            "date": "2026",
             "description": "Dans le cadre d'un événement nommé DevArt qui consiste en la création d'une oeuvre numérique en 36 heures, moi et mon équipe avons créé Resonance qui est une oeuvre sur la theme de l'écho. C'est un petit jeu ludique créer sur Unity ou le principe est de passer une suite d'obstacle en les faisant résonner, pour cela on utilise un piano afin de trouver la bonne touche qui fera rentrée en résonance l'obstacle et ainsi le faire disparaître. Ce projet a été réalisé en équipe de 4 personnes.",
             "link": "",
             "isIndividual": false,

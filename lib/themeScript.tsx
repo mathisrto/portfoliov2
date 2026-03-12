@@ -1,5 +1,4 @@
 // components/ThemeScript.tsx
-"use client";
 
 export default function ThemeScript() {
     const code = `

@@ -13,6 +13,7 @@ import {
     LayoutGrid,
     Users,
     User,
+    Calendar,
     X,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -39,6 +40,7 @@ function PortfolioPage() {
     const [selectedLanguages, setSelectedLanguages] = useState<string[]>([]);
     const [projectTypeFilter, setProjectTypeFilter] =
         useState<ProjectTypeFilter>("all");
+    const [selectedYears, setSelectedYears] = useState<string[]>([]);
     const [showFilters, setShowFilters] = useState(false);
 
     // Repasser en mode colonne si on passe sous le breakpoint lg (1024px)
@@ -69,6 +71,16 @@ function PortfolioPage() {
         return Array.from(langs).sort();
     }, [projects, t]);
 
+    // Extraire toutes les années uniques depuis les traductions
+    const allYears = useMemo(() => {
+        const years = new Set<string>();
+        projects.forEach((project) => {
+            const date: string = t.raw(`${project.id}.date`) || "";
+            if (date) years.add(date);
+        });
+        return Array.from(years).sort();
+    }, [projects, t]);
+
     // Filtrer les projets
     const filteredProjects = useMemo(() => {
         return projects.filter((project) => {
@@ -92,9 +104,15 @@ function PortfolioPage() {
                 if (projectTypeFilter === "team" && isIndividual) return false;
             }
 
+            // Filtre par année
+            if (selectedYears.length > 0) {
+                const projectDate: string = t.raw(`${project.id}.date`) || "";
+                if (!selectedYears.includes(projectDate)) return false;
+            }
+
             return true;
         });
-    }, [projects, selectedLanguages, projectTypeFilter, t]);
+    }, [projects, selectedLanguages, projectTypeFilter, selectedYears, t]);
 
     const toggleLanguage = (lang: string) => {
         setSelectedLanguages((prev) =>
@@ -104,13 +122,22 @@ function PortfolioPage() {
         );
     };
 
+    const toggleYear = (year: string) => {
+        setSelectedYears((prev) =>
+            prev.includes(year)
+                ? prev.filter((y) => y !== year)
+                : [...prev, year]
+        );
+    };
+
     const clearFilters = () => {
         setSelectedLanguages([]);
         setProjectTypeFilter("all");
+        setSelectedYears([]);
     };
 
     const hasActiveFilters =
-        selectedLanguages.length > 0 || projectTypeFilter !== "all";
+        selectedLanguages.length > 0 || projectTypeFilter !== "all" || selectedYears.length > 0;
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -218,7 +245,8 @@ function PortfolioPage() {
                                         {selectedLanguages.length +
                                             (projectTypeFilter !== "all"
                                                 ? 1
-                                                : 0)}
+                                                : 0) +
+                                            selectedYears.length}
                                     </span>
                                 )}
                             </motion.button>
@@ -334,6 +362,37 @@ function PortfolioPage() {
                                         </div>
                                     </div>
 
+                                    {/* Filtre par année */}
+                                    <div className="space-y-2">
+                                        <p className="text-sm font-medium text-muted-foreground flex items-center gap-1.5">
+                                            <Calendar size={14} />
+                                            {t("year")}
+                                        </p>
+                                        <div className="flex flex-wrap gap-2">
+                                            {allYears.map((year) => (
+                                                <motion.button
+                                                    key={year}
+                                                    onClick={() =>
+                                                        toggleYear(year)
+                                                    }
+                                                    className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors duration-200 ${
+                                                        selectedYears.includes(
+                                                            year
+                                                        )
+                                                            ? "bg-gradient-to-r from-secondary to-tertiary text-primary-foreground"
+                                                            : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
+                                                    }`}
+                                                    whileHover={{
+                                                        scale: 1.03,
+                                                    }}
+                                                    whileTap={{ scale: 0.97 }}
+                                                >
+                                                    {year}
+                                                </motion.button>
+                                            ))}
+                                        </div>
+                                    </div>
+
                                     {/* Résultat du filtre */}
                                     <p className="text-xs text-muted-foreground text-right">
                                         {t("filterResult", {
@@ -348,7 +407,7 @@ function PortfolioPage() {
 
                     <AnimatePresence mode="wait">
                         <motion.div
-                            key={`${viewMode}-${selectedLanguages.join(",")}-${projectTypeFilter}`}
+                            key={`${viewMode}-${selectedLanguages.join(",")}-${projectTypeFilter}-${selectedYears.join(",")}`}
                             variants={containerVariants}
                             initial="hidden"
                             animate="visible"
