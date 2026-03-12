@@ -1,11 +1,12 @@
 {
     "items": [
+        
         {
-            "id": "college",
+            "id": "university",
             "icon": {
                 "isBrand": true,
-                "light": "college",
-                "dark": "college",
+                "light": "university",
+                "dark": "university",
                 "size": 64
             }
         },
@@ -19,11 +20,11 @@
             }
         },
         {
-            "id": "university",
+            "id": "college",
             "icon": {
                 "isBrand": true,
-                "light": "university",
-                "dark": "university",
+                "light": "college",
+                "dark": "college",
                 "size": 64
             }
         }

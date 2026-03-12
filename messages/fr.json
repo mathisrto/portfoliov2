@@ -41,8 +41,8 @@
         "about": "À propos de moi",
         "skills": "Compétences",
         "experiences": "Expériences professionnelles",
-        "education": "Parcours scolaire",
-        "portfolio": "Portfolio",
+        "education": "Mes études",
+        "portfolio": "Mes projets",
         "section": "Sections",
         "settings": "Paramètres",
         "title": "Portfolio de Mathis Ratron",
@@ -52,11 +52,7 @@
     "PMRSelectLanguage": {
         "select_language": "Choisir la langue",
         "fr": "🇫🇷 Français",
-        "en": "🇬🇧 Anglais",
-        "es": "🇪🇸 Espagnol",
-        "de": "🇩🇪 Allemand",
-        "it": "🇮🇹 Italien",
-        "pt": "🇵🇹 Portugais"
+        "en": "🇬🇧 Anglais"
     },
     "PMRSwitchTheme": {
         "select_theme": "Choisir un thème",
@@ -70,7 +66,7 @@
         "description": "Je suis un ",
         "developer": "développeur",
         "student": "étudiant",
-        "about_me": "Je poursuis actuellement ma 3ème année de BUT Informatique à Arles. Passionné par les jeux vidéo, la programmation et le sport, je pratique la boxe et la musculation. Je possède le permis B, le BIA (Brevet d'Initiation Aéronautique) ainsi que la certification PIX.",
+        "about_me": "Je poursuis actuellement ma 3ème année de BUT Informatique à l'IUT d'Aix-Marseille site d'Arles. Passionné par les jeux vidéo, la programmation et le sport, je pratique la boxe et la musculation. Je possède le permis B, le BIA (Brevet d'Initiation Aéronautique) ainsi que la certification PIX.",
         "about_me_btn": "À propos de moi",
         "contact": "Contactez-moi",
         "download_cv": "Télécharger mon CV"
@@ -211,8 +207,8 @@
         }
     },
     "PMREducation": {
-        "title": "Mon Parcours Scolaire",
-        "description": "Voici un aperçu de mon parcours scolaire et de mes diplômes obtenus :",
+        "title": "Mes études",
+        "description": "Voici un aperçu de mes études et de mes diplômes obtenus :",
         "speciality_title": "Spécialité",
         "mention_title": "Mention",
         "college": {
@@ -241,7 +237,7 @@
     },
 
     "PMRPortfolio": {
-        "title": "Mon Portfolio",
+        "title": "Mes projets",
         "description": "Voici quelques-uns de mes projets personnels et professionnels :",
         "more_info_btn": "En savoir plus",
         "filter": "Filtres",
