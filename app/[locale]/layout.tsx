@@ -3,12 +3,8 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { FloatingBlob } from "@/lib/components/PMRFloattingBlob";
 import PMRSidebarMenu from "@/lib/components/PMRSideMenu";
 import { PMRThemeProvider } from "@/lib/components/PMRThemeProvider";
-import { EducationsProviderClient } from "@/lib/contexts/PMREducationContext";
-import { ExperiencesProviderClient } from "@/lib/contexts/PMRExperiencesContext";
 import { LocaleProvider } from "@/lib/contexts/PMRLocaleContext";
-import { PortfolioProviderClient } from "@/lib/contexts/PMRPortfolio";
 import { SidebarProviderClient } from "@/lib/contexts/PMRSidebarContext";
-import { SkillsProviderClient } from "@/lib/contexts/PMRSkillsContext";
 import ThemeScript from "@/lib/themeScript";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -176,21 +172,13 @@ export default async function LocaleLayout({
                     <LocaleProvider initialLocale={locale}>
                         <PMRThemeProvider>
                             <SidebarProvider>
-                                <SkillsProviderClient>
-                                    <ExperiencesProviderClient>
-                                        <EducationsProviderClient>
-                                            <PortfolioProviderClient>
-                                                <SidebarProviderClient>
-                                                    <PMRSidebarMenu />
-                                                </SidebarProviderClient>
-                                                <main className="flex flex-1 flex-col transition-all z-10">
-                                                    <SidebarTrigger className="sticky top-0 z-20" />
-                                                    {children}
-                                                </main>
-                                            </PortfolioProviderClient>
-                                        </EducationsProviderClient>
-                                    </ExperiencesProviderClient>
-                                </SkillsProviderClient>
+                                <SidebarProviderClient>
+                                    <PMRSidebarMenu />
+                                </SidebarProviderClient>
+                                <main className="flex flex-1 flex-col transition-all z-10">
+                                    <SidebarTrigger className="sticky top-0 z-20" />
+                                    {children}
+                                </main>
                             </SidebarProvider>
                         </PMRThemeProvider>
                     </LocaleProvider>

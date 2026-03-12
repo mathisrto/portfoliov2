@@ -29,13 +29,12 @@ export function SidebarProviderClient({ children }: { children: ReactNode }) {
 
     useEffect(() => {
         async function fetchItems() {
-            const sidebar = await new PMRSidebarMenuController(
-                locale
-            ).loadItems();
+            const controller = new PMRSidebarMenuController(locale);
+            const [sidebar, footer] = await Promise.all([
+                controller.loadItems(),
+                controller.loadBrandItems(),
+            ]);
             setSidebarItems(sidebar);
-            const footer = await new PMRSidebarMenuController(
-                locale
-            ).loadBrandItems();
             setFooterLinks(footer);
         }
         fetchItems();
