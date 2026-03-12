@@ -2,7 +2,10 @@
 
 import PMRDialogPortfolio from "@/lib/components/PMRDialogPortfolio";
 import PMRProjectCard from "@/lib/components/PMRProjectCard";
-import { usePortfolio } from "@/lib/contexts/PMRPortfolio";
+import {
+    PortfolioProviderClient,
+    usePortfolio,
+} from "@/lib/contexts/PMRPortfolio";
 import { AnimatePresence, motion } from "framer-motion";
 import {
     Columns3,
@@ -18,7 +21,15 @@ import { useEffect, useMemo, useState } from "react";
 type ViewMode = "column" | "grid";
 type ProjectTypeFilter = "all" | "individual" | "team";
 
-export default function PortfolioPage() {
+export default function PortfolioPageWrapper() {
+    return (
+        <PortfolioProviderClient>
+            <PortfolioPage />
+        </PortfolioProviderClient>
+    );
+}
+
+function PortfolioPage() {
     const t = useTranslations("PMRPortfolio");
     const { projects } = usePortfolio();
     const [dialogOpen, setDialogOpen] = useState(false);
