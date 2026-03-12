@@ -2,7 +2,7 @@
 
 import PMRDialogPortfolio from "@/lib/components/PMRDialogPortfolio";
 import { useLocale } from "@/lib/contexts/PMRLocaleContext";
-import { usePortfolio } from "@/lib/contexts/PMRPortfolio";
+import { PortfolioProviderClient, usePortfolio } from "@/lib/contexts/PMRPortfolio";
 import { loadImage } from "@/lib/utils";
 import { easeOut, motion } from "framer-motion";
 import {
@@ -22,7 +22,15 @@ interface PageProps {
     params: Promise<{ projectId: string }>;
 }
 
-export default function ProjectPage({ params }: PageProps) {
+export default function ProjectPageWrapper({ params }: PageProps) {
+    return (
+        <PortfolioProviderClient>
+            <ProjectPage params={params} />
+        </PortfolioProviderClient>
+    );
+}
+
+function ProjectPage({ params }: PageProps) {
     const t = useTranslations("PMRPortfolio");
     const resolvedParams = use(params);
     const { projectId } = resolvedParams;

@@ -98,16 +98,9 @@ export default function PMRProjectCard({
                             </p>
                             <div className="mt-3 flex items-center text-secondary text-sm font-medium">
                                 {t("more_info_btn")}
-                                <motion.span
-                                    animate={{ x: [0, 4, 0] }}
-                                    transition={{
-                                        repeat: Infinity,
-                                        duration: 1.5,
-                                    }}
-                                    className="ml-1"
-                                >
+                                <span className="ml-1 inline-block animate-bounce-x">
                                     →
-                                </motion.span>
+                                </span>
                             </div>
                         </div>
                     </CardContent>
@@ -219,15 +212,9 @@ export default function PMRProjectCard({
                                 >
                                     <span className="relative z-10 flex items-center gap-2">
                                         {t("more_info_btn")}
-                                        <motion.span
-                                            animate={{ x: [0, 5, 0] }}
-                                            transition={{
-                                                repeat: Infinity,
-                                                duration: 1.5,
-                                            }}
-                                        >
+                                        <span className="inline-block animate-bounce-x">
                                             →
-                                        </motion.span>
+                                        </span>
                                     </span>
                                     <motion.div
                                         className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-20"
@@ -265,15 +252,9 @@ export default function PMRProjectCard({
                                 >
                                     <span className="relative z-10 flex items-center gap-2">
                                         {t("more_info_btn")}
-                                        <motion.span
-                                            animate={{ x: [0, 5, 0] }}
-                                            transition={{
-                                                repeat: Infinity,
-                                                duration: 1.5,
-                                            }}
-                                        >
+                                        <span className="inline-block animate-bounce-x">
                                             →
-                                        </motion.span>
+                                        </span>
                                     </span>
                                     <motion.div
                                         className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-20"
