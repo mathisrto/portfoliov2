@@ -69,7 +69,7 @@
         "description": "I am a ",
         "developer": "developer",
         "student": "student",
-        "about_me": "I am currently in my 3rd year of a Bachelor's degree in Computer Science at Arles. Passionate about video games, programming, and sports, I practice boxing and weight training. I hold a category B driving license, the BIA (Brevet d'Initiation Aéronautique), as well as the PIX certification.",
+        "about_me": "I am currently in my 1st year of an engineering program at IMT d'Alès. Passionate about video games, programming, and sports, I practice boxing and weight training. I hold a category B driving license, the BIA (Brevet d'Initiation Aéronautique), as well as the PIX certification.",
         "about_me_btn": "About Me",
         "contact": "Contact Me",
         "download_cv": "Download my CV"
@@ -235,7 +235,15 @@
             "location": "Arles, France",
             "degree": "BUT Computer Science (Bachelor of Technology)",
             "speciality": "Digital Imaging",
-            "mention": "In progress"
+            "mention": "Very favorable"
+        },
+        "ingenieur": {
+            "title": "IMT d'Alès",
+            "duration": "2026 - 2029",
+            "location": "Alès, France",
+            "degree": "Engineer's Degree in Computer Science (Apprenticeship)",
+            "speciality": "Software Development",
+            "mention": "In Progress"
         }
     },
     "PMRPortfolio": {

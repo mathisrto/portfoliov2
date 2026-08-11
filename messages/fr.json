@@ -70,7 +70,7 @@
         "description": "Je suis un ",
         "developer": "développeur",
         "student": "étudiant",
-        "about_me": "Je poursuis actuellement ma 3ème année de BUT Informatique à Arles. Passionné par les jeux vidéo, la programmation et le sport, je pratique la boxe et la musculation. Je possède le permis B, le BIA (Brevet d'Initiation Aéronautique) ainsi que la certification PIX.",
+        "about_me": "Je suis actuellement en 1ère année de cycle d'ingénieur à l'IMT d'Alès. Passionné par les jeux vidéo, la programmation et le sport, je pratique la boxe et la musculation. Je possède le permis B, le BIA (Brevet d'Initiation Aéronautique) ainsi que la certification PIX.",
         "about_me_btn": "À propos de moi",
         "contact": "Contactez-moi",
         "download_cv": "Télécharger mon CV"
@@ -236,6 +236,14 @@
             "location": "Arles, France",
             "degree": "BUT Informatique (Bachelor Universitaire de Technologie)",
             "speciality": "Imagerie numérique",
+            "mention": "Très favorable"
+        },
+        "ingenieur": {
+            "title": "IMT d'Alès",
+            "duration": "2026 - 2029",
+            "location": "Alès, France",
+            "degree": "Diplôme d'ingénieur en informatique (Alternance)",
+            "speciality": "Développement logiciel",
             "mention": "En cours"
         }
     },

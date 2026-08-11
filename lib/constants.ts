@@ -50,6 +50,7 @@ import GitIcon from "@/data/icons/git.svg";
 import GithubDarkIcon from "@/data/icons/github-dark.svg";
 import GithubLightIcon from "@/data/icons/github-light.svg";
 import HTMLIcon from "@/data/icons/html.svg";
+import IMTAlesIcon from "@/data/icons/imtales.jpg";
 import InstagramIcon from "@/data/icons/instagram.svg";
 import IUTIcon from "@/data/icons/iut.png";
 import JavaIcon from "@/data/icons/java.svg";
@@ -113,4 +114,5 @@ export const brandIcons = {
     college: SaintCharlesIcon,
     lycee: SaintCharlesIcon,
     university: IUTIcon,
+    ingenieur: IMTAlesIcon,
 };
