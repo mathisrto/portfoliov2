@@ -36,12 +36,13 @@
         "lycee": "Saint-Charles High School Logo",
         "university": "IUT of Arles Logo"
     },
+
     "PMRSidebarMenu": {
         "about": "About me",
         "skills": "Skills",
-        "experiences": "Work Experiences",
+        "experiences": "Professional Experiences",
         "education": "Education",
-        "portfolio": "Portfolio",
+        "portfolio": "My Projects",
         "section": "Sections",
         "settings": "Settings",
         "title": "Mathis Ratron's Portfolio",
@@ -49,19 +50,15 @@
         "copyright": "© 2025 All rights reserved"
     },
     "PMRSelectLanguage": {
-        "select_language": "Select Language",
+        "select_language": "Choose language",
         "fr": "🇫🇷 French",
-        "en": "🇬🇧 English",
-        "es": "🇪🇸 Spanish",
-        "de": "🇩🇪 German",
-        "it": "🇮🇹 Italian",
-        "pt": "🇵🇹 Portuguese"
+        "en": "🇬🇧 English"
     },
     "PMRSwitchTheme": {
-        "select_theme": "Select Theme",
-        "light": "Light Mode",
-        "dark": "Dark Mode",
-        "system": "System Mode"
+        "select_theme": "Choose an appearance",
+        "light": "Light mode",
+        "dark": "Dark mode",
+        "system": "System mode"
     },
     "PMRAbout": {
         "hello": "Hello, I am ",
@@ -76,7 +73,7 @@
     },
     "PMRSkills": {
         "title": "My Skills",
-        "description": "Here are some of my skills and areas of expertise in the field of computer science:",
+        "description": "Here are some of my skills and areas of expertise in computer science:",
         "programming_languages": "Programming Languages",
         "frameworks_libraries": "Frameworks & Libraries",
         "database": "Databases",
@@ -84,7 +81,7 @@
         "management_tools": "Management Tools",
         "UX_UI_tools": "UX/UI Tools",
         "algorithmic_development": {
-            "title": "Development & Algorithmics",
+            "title": "Development & Algorithms",
             "items": [
                 "Asynchronous programming and multithreading",
                 "Algorithms: graphs, sorting, algorithmic complexity, cryptography"
@@ -94,13 +91,13 @@
             "title": "Databases & Architecture",
             "items": [
                 "Database design and management",
-                "Architecture: assembler, logic gates, components"
+                "Architecture: assembly, logic gates, components"
             ]
         },
         "cybersecurity_networks": {
             "title": "Cybersecurity & Networks",
             "items": [
-                "Unix systems and command line scripts",
+                "Unix systems and command-line scripts",
                 "Encryption and data security"
             ]
         },
@@ -114,7 +111,7 @@
         "methodologies_management": {
             "title": "Methodologies & Management",
             "items": [
-                "Classical and agile methods (SCRUM, Kanban)",
+                "Classic and Agile methodologies (SCRUM, Kanban)",
                 "Unit and integration testing",
                 "Version control"
             ]
@@ -123,7 +120,7 @@
             "title": "UI & UX Design",
             "items": [
                 "Responsive and adaptive design",
-                "Graphic design tools and prototyping"
+                "Graphic design and prototyping tools"
             ]
         },
         "communication_languages": {
@@ -136,14 +133,14 @@
         "economics_digital_law": {
             "title": "Economics & Digital Law",
             "items": [
-                "Understanding economic principles",
+                "Understanding of economic principles",
                 "Knowledge of digital regulations"
             ]
         }
     },
     "PMRExperiences": {
-        "title": "My Professional Experiences",
-        "description": "Here is an overview of my professional experiences in the field of computer science and beyond:",
+        "title": "Professional Experiences",
+        "description": "Here is an overview of my professional experiences in IT and beyond:",
         "missions_title": "Missions",
         "skills_title": "Skills",
         "mcdonald": {
@@ -159,20 +156,20 @@
                 "Teamwork"
             ],
             "missions": [
-                "Welcoming and cashiering customers at the counter",
+                "Welcoming and cashing out customers at the counter",
                 "Preparing orders, drinks, desserts",
                 "Counter and dining room service",
                 "Dishwashing and cleaning",
-                "Participating in some closing shifts"
+                "Participating in some store closings"
             ]
         },
         "cpam": {
-            "title": "IT Service Assistant (internship)",
-            "company": "CPAM of Hérault",
+            "title": "IT Department Assistant (Internship)",
+            "company": "CPAM de l'Hérault",
             "duration": "April 2025 - June 2025",
             "location": "Béziers, France",
             "skills": [
-                "User support",
+                "Agent support",
                 "Communication",
                 "Development",
                 "Time management",
@@ -180,17 +177,17 @@
                 "Teamwork"
             ],
             "missions": [
-                "Maintenance and replacement of equipment (monitors, RAM sticks, etc.)",
-                "Preparing workstations for remote work",
-                "Developing an internal application in PowerShell/XAML",
-                "Using administration tools such as GLPI",
-                "Assisting staff in resolving their IT issues"
+                "Hardware maintenance and replacement (screens, RAM sticks, etc.)",
+                "Preparation of workstations for teleworking",
+                "Development of an internal application in PowerShell/XAML",
+                "Use of administration tools like GLPI",
+                "Assisting agents with resolving their IT issues"
             ]
         },
         "weekera": {
-            "title": "Web Developer (apprenticeship)",
+            "title": "Web Developer (Work-study)",
             "company": "Weekera",
-            "duration": "September 2025 - Now",
+            "duration": "September 2025 - Present",
             "location": "Nîmes, France",
             "skills": [
                 "Adaptability",
@@ -200,40 +197,40 @@
                 "Teamwork"
             ],
             "missions": [
-                "Participation in the creation of a web application for accounting/HR expert",
+                "Participation in the creation of a web application for accountants / HR",
                 "Creation and maintenance of front-end features with Svelte",
                 "Creation and maintenance of back-end features with TypeScript",
                 "Creation of unit tests",
                 "Use of a WQL query language similar to GraphQL",
-                "Participation in the creation of the AI assistant using the OpenAI API"
+                "Participation in creating the AI assistant using the OpenAI API"
             ]
         }
     },
     "PMREducation": {
-        "title": "My Education",
-        "description": "Here is an overview of my educational background and degrees obtained:",
+        "title": "Education",
+        "description": "Here is an overview of my studies and diplomas obtained:",
         "speciality_title": "Specialty",
         "mention_title": "Honors",
         "college": {
             "title": "Saint-Charles Middle School",
             "duration": "2016 - 2020",
             "location": "Arles, France",
-            "degree": "Diplôme National du Brevet (DNB)",
-            "mention": "High Honors"
+            "degree": "Middle School Diploma (DNB)",
+            "mention": "Highest Honors"
         },
         "lycee": {
             "title": "Saint-Charles High School",
             "duration": "2020 - 2023",
             "location": "Saint-Martin-de-Crau, France",
-            "degree": "General Baccalaureate",
+            "degree": "General High School Diploma",
             "speciality": "Mathematics, Computer Science",
-            "mention": "High Honors"
+            "mention": "Highest Honors"
         },
         "university": {
             "title": "IUT of Arles",
-            "duration": "2023 - Ongoing",
+            "duration": "2023 - Present",
             "location": "Arles, France",
-            "degree": "BUT Computer Science (Bachelor of Technology)",
+            "degree": "BUT in Computer Science (University Bachelor of Technology)",
             "speciality": "Digital Imaging",
             "mention": "Very favorable"
         },
@@ -246,47 +243,58 @@
             "mention": "In Progress"
         }
     },
+
     "PMRPortfolio": {
-        "title": "My Portfolio",
+        "title": "My Projects",
         "description": "Here are some of my personal and professional projects:",
         "more_info_btn": "Learn more",
+        "filter": "Filters",
+        "filterAll": "All",
+        "clearFilters": "Reset",
+        "filterResult": "{count} project(s) out of {total}",
+        "noResults": "No projects match the selected filters.",
+        "viewColumn": "Column view",
+        "viewGrid": "Grid view",
         "role": "Role",
         "languages": "Languages",
         "tools": "Tools",
-        "challenges": "Challenges encountered",
-        "solutions": "Solutions provided",
-        "projectType": "Project type",
+        "challenges": "Challenges faced",
+        "solutions": "Solutions applied",
+        "projectType": "Project Type",
         "individualProject": "Individual project",
         "teamProject": "Team project",
-        "visitProject": "Visit Project",
+        "year": "Year",
+        "visitProject": "Visit the project",
         "geoguide": {
             "projectName": "Geoguide",
-            "description": "The goal of this project was to design software with a graphical interface to calculate driving time between two cities in France. The instructions were to use CSV files containing travel times between certain pairs of cities to find the shortest route. This project was carried out as part of a SAE during my first year of the Computer Science Bachelor's degree.",
+            "date": "2024",
+            "description": "This project aimed to design software with a graphical interface to calculate driving times between two cities in France. The requirements were to use CSV files containing travel times between specific pairs of cities to find the shortest route. This project was completed as part of an assignment during my first year of the BUT Computer Science program.",
             "link": "",
             "isIndividual": true,
-            "role": "Designer and lead developer. I designed the user interface, developed the travel time calculation and mapping features, and integrated city data.",
+            "role": "Main designer and developer. I designed the user interface, developed the travel time calculation and mapping features, and integrated the city data.",
             "languages": ["C++", "Qt", "QML"],
             "tools": ["GitLab", "Visual Studio Code", "Qt Creator"],
-            "toolsDescription": "I implemented the Floyd-Warshall algorithm to complete missing travel time information between other city pairs. I used GitLab for version control, Visual Studio Code for code editing, and Qt Creator for UI design.",
-            "visualDescription": "Below you can see screenshots of my application. The map is interactive: you can zoom, unzoom, and move around.",
-            "challenges": "The most difficult part of this SAE was setting up the interactive map with QML and the graphical aspect of the application. I really wanted my software to look aesthetically pleasing.",
-            "solutions": "The solutions that helped me overcome these difficulties were researching QML by watching videos and studying other developers' code on GitHub to understand how it works.",
-            "impactDescription": "Completing this project allowed me to develop my knowledge of Qt and QML, and deepen my mastery of C++. After the presentation, I received a grade of 18/20.",
+            "toolsDescription": "I implemented the Floyd-Warshall algorithm to fill in the missing information regarding travel times between remaining pairs of cities. I used GitLab for version control, Visual Studio Code for editing the code, and Qt Creator for UI design.",
+            "visualDescription": "Below you can see screenshots of my application. The map is interactive: you can zoom in, zoom out, and move around.",
+            "challenges": "The hardest part of this assignment was setting up the interactive map with QML and the visual aspect of the application. I really wanted my software to be aesthetically pleasing.",
+            "solutions": "The solutions that helped me overcome these difficulties were researching QML by watching videos and studying code from other developers on GitHub to understand how it works.",
+            "impactDescription": "Completing this project allowed me to expand my knowledge of Qt and QML, and to deepen my mastery of C++. After the presentation, I received a grade of 18/20.",
             "images": ["geoguide1", "geoguide2", "geoguide3", "geoguide4"]
         },
         "planifEasy": {
             "projectName": "Planif'Easy",
-            "description": "Planif'Easy is a console-based application for managing personalized agendas. It also offers the possibility to export agendas as HTML pages for easy viewing in a browser.",
+            "date": "2024",
+            "description": "Planif'Easy is a console-based application for managing personalized schedules. It also offers the ability to export schedules as HTML pages for easy viewing in a browser.",
             "link": "",
             "isIndividual": true,
-            "role": "Lead developer and designer. I designed and developed the application from A to Z, handling requirements analysis, programming, and creating export features.",
+            "role": "Lead developer and designer. I designed and developed the app from scratch, handling the requirements analysis, programming, and creating the export features.",
             "languages": ["C++"],
             "tools": ["Visual Studio Code", "Git"],
-            "toolsDescription": "I used Visual Studio Code for editing and debugging code, and Git for version control and tracking changes.",
-            "visualDescription": "Below you will find screenshots of the application showing the different steps: creating an agenda, managing events, and exporting to HTML.",
-            "challenges": "The main challenge was designing an intuitive user interface despite the console format, as well as dynamically generating HTML files compatible with multiple browsers.",
+            "toolsDescription": "I used Visual Studio Code for coding and debugging, and Git for version control and change tracking.",
+            "visualDescription": "Below, you'll find screenshots of the application showing the different steps: schedule creation, event management, and HTML export.",
+            "challenges": "The main challenge was to design an intuitive user interface despite the console format, as well as the dynamic generation of cross-browser compatible HTML files.",
             "solutions": "For the user interface, I opted for simple navigation based on clear text menus. For HTML compatibility, I used predefined templates combined with C++ code generation.",
-            "impactDescription": "Planif'Easy simplifies agenda management for non-technical users, offering a lightweight and portable solution. HTML export allows great accessibility and easy sharing.",
+            "impactDescription": "Planif'Easy simplifies schedule management for non-technical users, offering a lightweight and portable solution. Exporting to HTML allows for great accessibility and easy sharing.",
             "images": [
                 "planifEasy1",
                 "planifEasy2",
@@ -295,33 +303,35 @@
             ]
         },
         "station": {
-            "projectName": "Gas Station Application",
-            "description": "This project involved creating a web application to locate the nearest gas stations from a given position. The application displays stations on an interactive map and provides detailed information about each one.",
+            "projectName": "Gas Station App",
+            "date": "2024",
+            "description": "This project involved creating a web application capable of locating the nearest gas stations to a given position. The application displays stations on an interactive map and provides detailed information about each one.",
             "link": "",
             "isIndividual": true,
-            "role": "Designer and lead developer. I designed the user interface, developed geolocation and mapping features, and integrated gas station data.",
+            "role": "Lead designer and developer. I designed the user interface, developed the geolocation and mapping features, and integrated the gas station data.",
             "languages": ["HTML", "CSS", "JavaScript"],
             "tools": ["Visual Studio Code", "Leaflet.js", "Webpack", "Git"],
-            "toolsDescription": "I used Visual Studio Code for coding, Leaflet.js for mapping, Webpack for module management, and Git for version control.",
-            "visualDescription": "The screenshots below show the application's interface with the interactive map displaying stations and their information.",
-            "challenges": "The main challenge was integrating gas station data via an external API and displaying them clearly on the map.",
-            "solutions": "I used the OpenDataSoft API to retrieve data and created custom markers to display them on the map.",
-            "impactDescription": "This application provides a simple and effective solution to quickly find the nearest gas stations.",
+            "toolsDescription": "I used Visual Studio Code for the code, Leaflet.js for mapping, Webpack for module management, and Git for version control.",
+            "visualDescription": "The screenshots below show the application interface with the interactive map displaying the stations and their information.",
+            "challenges": "The main challenge was integrating gas station data via an external API and clearly displaying them on the map.",
+            "solutions": "I used the OpenDataSoft API to retrieve the data, and created customized markers to display them on the map.",
+            "impactDescription": "This application offers a simple and efficient solution to quickly find the closest gas stations.",
             "images": ["station1", "station2", "station3"]
         },
         "studentManagement": {
-            "projectName": "Student Management",
-            "description": "The Student Management project involved creating an application for managing students at a university. It allows adding, editing, deleting students, managing absences, and viewing their information.",
+            "projectName": "Student Manager",
+            "date": "2024",
+            "description": "The Student Manager project aimed to create a student management app for a university. It is used to add, edit, delete students, manage absences, and check their details.",
             "link": "",
             "isIndividual": false,
-            "role": "Team project: UI design, development of student management features, and data integration.",
+            "role": "Team project: user interface design, development of student management features, and data integration.",
             "languages": ["C++", "Qt"],
             "tools": ["GitLab", "Visual Studio Code", "Qt Creator"],
-            "toolsDescription": "GitLab for version tracking, VS Code for code editing, and Qt Creator for graphical design.",
-            "visualDescription": "The screenshots below show the main features for managing students and absences.",
-            "challenges": "The main challenge was efficient data management and import/export in CSV/JSON.",
-            "solutions": "We used suitable data structures and robust manipulation functions to add, edit, and delete information.",
-            "impactDescription": "The application provides a complete solution for administrative management of students and absences, simplifying university work.",
+            "toolsDescription": "GitLab for version tracking, VS Code for code editing, and Qt Creator for UI design.",
+            "visualDescription": "The screenshots below display the core features for student and absence management.",
+            "challenges": "The major difficulty was effectively managing the data and CSV/JSON import/export.",
+            "solutions": "We used proper data structures and robust manipulation functions to add, edit, and delete data.",
+            "impactDescription": "The application delivers a complete solution for the administrative management of students and their absences, streamlining the work of universities.",
             "images": [
                 "studentManagement1",
                 "studentManagement2",
@@ -330,17 +340,18 @@
         },
         "websiteSAE": {
             "projectName": "SAE Website",
-            "description": "This SAE project involved creating a website presenting the IUT of Aix-Marseille, Arles campus.",
+            "date": "2024",
+            "description": "This SAE project involved creating a website showcasing the Aix-Marseille IUT, Arles campus.",
             "link": "",
             "isIndividual": false,
-            "role": "Project carried out in a group of 3: UI design, development of presentation features, and integration of course data.",
+            "role": "Project made in a group of 3: UI design, development of presentation features, and integration of educational programs data.",
             "languages": ["HTML", "CSS", "JavaScript"],
             "tools": ["Visual Studio Code", "Git"],
             "toolsDescription": "Visual Studio Code was used for coding and Git for tracking changes.",
-            "visualDescription": "The screenshots show the website pages presenting the IUT and the courses offered.",
-            "challenges": "The main challenge was designing an aesthetic website while keeping a clear and hierarchical presentation.",
-            "solutions": "We used modern design templates and organized information for smooth navigation.",
-            "impactDescription": "The website provides a complete and clear presentation of the IUT of Aix-Marseille, making it easier to discover the institution.",
+            "visualDescription": "The screenshots depict the pages of the website presenting the IUT and its available courses.",
+            "challenges": "The main challenge was to design a beautiful website while keeping a clear and hierarchical presentation.",
+            "solutions": "We used modern design patterns and organized the information to ensure smooth navigation.",
+            "impactDescription": "The website offers a thorough and clear presentation of the Aix-Marseille IUT, making it easy to discover the institution.",
             "images": [
                 "websiteSAE1",
                 "websiteSAE2",
@@ -351,17 +362,18 @@
         },
         "horaris": {
             "projectName": "Horaris",
-            "description": "Horaris is a meeting room management application for a company. It allows booking rooms, checking availability, and managing reservations. This project is under development and may be used for Arles Creative.",
+            "date": "2025",
+            "description": "Horaris is a meeting room management application for a company. It allows users to book rooms, check availability, and manage reservations. This project is currently in development and may be used as part of Arles Creative.",
             "link": "",
             "isIndividual": false,
-            "role": "Scrum Master and front-end developer in an Agile team. I am responsible for the interface and technical coordination.",
+            "role": "Scrum Master and front-end developer in an Agile team. I am responsible for the UI integration and technical coordination.",
             "languages": ["HTML", "CSS", "TypeScript", "React", "Electron"],
             "tools": ["Visual Studio Code", "Git"],
-            "toolsDescription": "Visual Studio Code for development and Git for version control.",
-            "visualDescription": "The screenshots below show the main pages of the application, with booking and availability management features.",
-            "challenges": "The main challenge is designing an ergonomic and intuitive application while offering advanced features.",
-            "solutions": "We use modern design templates and a clear information hierarchy for smooth navigation.",
-            "impactDescription": "Horaris will provide a complete solution for meeting room management, simplifying planning and coordination.",
+            "toolsDescription": "Visual Studio Code for development and Git for version management.",
+            "visualDescription": "The screenshots below feature the main pages of the app, highlighting the booking and availability management functionalities.",
+            "challenges": "The main issue is designing an ergonomic and intuitive application while providing advanced functionalities.",
+            "solutions": "We stick to modern design patterns and clear information hierarchy for a seamless navigation experience.",
+            "impactDescription": "Horaris will offer a comprehensive solution for managing meeting rooms, simplifying meeting planning and coordination.",
             "images": [
                 "horaris1",
                 "horaris2",
@@ -372,25 +384,27 @@
         },
         "memoryGame": {
             "projectName": "Memory Game",
-            "description": "Memory Game is a classic memory game where the player must flip cards to find matching pairs. This project was completed as part of a web development course.",
+            "date": "2025",
+            "description": "Memory Game is a classic matching game where the player has to turn over cards to find corresponding pairs. This project was built during a web development course.",
             "link": "https://memory.mathis-ratron.fr",
             "isIndividual": true,
-            "role": "Designer and lead developer. I designed the user interface, developed game features, and integrated the cards.",
+            "role": "Lead developer and designer. I designed the user interface, coded the game mechanisms, and embedded the cards.",
             "languages": ["HTML", "CSS", "TypeScript", "React"],
             "tools": ["Visual Studio Code", "Git"],
             "toolsDescription": "I used Visual Studio Code for coding and Git for version control.",
-            "visualDescription": "The screenshots below show the game interface, with cards to flip and pairs to find.",
-            "challenges": "The main challenge of this project was designing an interactive and smooth game while providing a pleasant user experience.",
-            "solutions": "I used CSS animations for transitions and implemented reactive game logic in React to manage pairs and scores.",
-            "impactDescription": "Memory Game offers a fun and challenging gaming experience, testing players' memory and concentration.",
+            "visualDescription": "The screenshots below show the game interface, with cards to flip and pairs to uncover.",
+            "challenges": "The main challenge in this project was creating a smooth and interactive game while keeping a delightful user experience.",
+            "solutions": "I used CSS animations for transitions and set up a reactive game logic using React to handle pairs and scores.",
+            "impactDescription": "Memory Game offers an entertaining and stimulating gameplay experience, testing players' memory and focus.",
             "images": ["memoryGame1", "memoryGame2", "memoryGame3"]
         },
         "kubo": {
             "projectName": "Kubo",
-            "description": "Kubo is a 3D model management application, a simplified web version of the Blender 3D model editor. This work was completed as part of my 3rd year SAE in Computer Science Bachelor's degree.",
+            "date": "2026",
+            "description": "Kubo is a 3D model management application, a simplified web version of the 3D editing tool Blender. This work was done as part of my 3rd year BUT Computer Science SAE assignment.",
             "link": "",
             "isIndividual": true,
-            "role": "In this project, I was the main designer and developer. I designed the user interface, developed 3D model management features, and integrated manipulation tools.",
+            "role": "During this project, I was the main designer and developer. I designed the UI, built the 3D model management features, and integrated the manipulating tools.",
             "languages": [
                 "TypeScript",
                 "React",
@@ -400,11 +414,27 @@
             ],
             "tools": ["Visual Studio Code", "Git"],
             "toolsDescription": "Visual Studio Code for development and Git for version control.",
-            "visualDescription": "The screenshots below show the main pages of the application, such as the home page, login page, registration page, and the main 3D model management page.",
-            "challenges": "The main challenge is designing a robust and scalable application while providing a smooth user experience. I stepped out of my comfort zone by implementing a hexagonal architecture for better maintainability and scalability.",
-            "solutions": "We use a modular architecture and modern development practices to ensure code quality and application maintainability.",
-            "impactDescription": "Kubo will provide a simple solution for quick access to 3D model visualization and management, with an intuitive interface and features tailored to user needs.",
+            "visualDescription": "The screenshots below display the app's main pages, such as the homepage, login page, registration page, and the main 3D model management dashboard.",
+            "challenges": "The primary obstacle was designing a robust and scalable application while delivering a smooth UX. I challenged myself by implementing a hexagonal architecture for better scalability and maintainability.",
+            "solutions": "We rely on a modular architecture and modern best practices to ensure code quality and application maintenance.",
+            "impactDescription": "Kubo will provide an easy-to-use solution to quickly access 3D model visualization and management, with a straightforward interface and features tailored to users' needs.",
             "images": ["kubo1", "kubo2", "kubo3", "kubo4"]
+        },
+        "resonance": {
+            "projectName": "Résonance",
+            "date": "2026",
+            "description": "During an event called DevArt, which consists of creating digital art within 36 hours, my team and I built Resonance, an artwork based on the theme of echo. It's a fun mini-game created on Unity where the goal is to pass through a series of obstacles by making them resonate. To do this, we use a piano to hit the correct key that makes the obstacle resonate, causing it to disappear. This project was built by a team of 4 people.",
+            "link": "",
+            "isIndividual": false,
+            "role": "I was a developer and game designer; I assisted in designing the sceneries and gameplay elements, and I programmed the character's resonance and movement mechanics.",
+            "languages": ["Unity", "C#"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "We used Visual Studio Code for coding and Git for version management.",
+            "visualDescription": "The screenshots below showcase the application interface, the scenery, and the gameplay items.",
+            "challenges": "The biggest challenge was the tight 36-hour deadline to build a full, playable piece of art, alongside the need for effective team coordination to split tasks and maintain solid communication.",
+            "solutions": "To maintain proper communication, we set up short, recurring check-ins to monitor everyone's progress and adjust tasks accordingly.",
+            "impactDescription": "To dive a bit deeper into the lore of the piece, the objective of the game is to teach music—at least piano notes—in a fun and interactive way. For this, we embody a little character searching for their soulmate, and to find them, they must enter into resonance while overcoming a series of roadblocks. This project was incredibly enriching, allowed me to improve my video game development skills, and taught me how to work as a team under fast-paced constraints.",
+            "images": ["resonance1", "resonance2", "resonance3", "resonance4"]
         }
     }
 }

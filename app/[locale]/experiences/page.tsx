@@ -1,10 +1,18 @@
 "use client";
 
-import { useExperiences } from "@/lib/contexts/PMRExperiencesContext";
+import { ExperiencesProviderClient, useExperiences } from "@/lib/contexts/PMRExperiencesContext";
 import { easeOut, motion, type Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-export default function Experiences() {
+export default function ExperiencesPage() {
+    return (
+        <ExperiencesProviderClient>
+            <Experiences />
+        </ExperiencesProviderClient>
+    );
+}
+
+function Experiences() {
     const t = useTranslations("PMRExperiences");
     const { experiences } = useExperiences();
 

@@ -29,12 +29,13 @@ export function SkillsProviderClient({ children }: { children: ReactNode }) {
 
     useEffect(() => {
         async function fetchItems() {
-            const skills = await new PMRSkillsController(locale).loadSkills();
-            setSkills(skills);
-            const skillsTools = await new PMRSkillsController(
-                locale
-            ).loadSkillsTools();
-            setSkillsTools(skillsTools);
+            const controller = new PMRSkillsController(locale);
+            const [loadedSkills, loadedTools] = await Promise.all([
+                controller.loadSkills(),
+                controller.loadSkillsTools(),
+            ]);
+            setSkills(loadedSkills);
+            setSkillsTools(loadedTools);
         }
         fetchItems();
     }, [locale]);

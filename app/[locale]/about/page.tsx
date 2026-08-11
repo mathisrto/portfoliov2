@@ -194,6 +194,7 @@ export default function Home() {
                     <motion.div className="relative w-full h-full">
                         <motion.div
                             className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-secondary/20 to-tertiary/20 rounded-3xl blur-xl"
+                            style={{ willChange: "transform" }}
                             animate={{
                                 rotate: [0, 180, 360],
                                 scale: [1, 1.1, 1],
@@ -218,11 +219,12 @@ export default function Home() {
                         >
                             <Image
                                 src={"/images/mathis-ratron.webp"}
-                                width={1024}
-                                height={1024}
+                                width={500}
+                                height={500}
                                 alt="Photo Mathis Ratron"
                                 className="relative rounded-2xl shadow-2xl object-cover w-full h-auto border border-border/20"
                                 priority
+                                sizes="(max-width: 1280px) 0px, 400px"
                             />
                         </motion.div>
                     </motion.div>

@@ -1,11 +1,19 @@
 "use client";
 
 import { JSONBrandIconProps, JSONProps } from "@/lib/constants";
-import { useSkills } from "@/lib/contexts/PMRSkillsContext";
+import { SkillsProviderClient, useSkills } from "@/lib/contexts/PMRSkillsContext";
 import { easeOut, motion, type Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-export default function Skills() {
+export default function SkillsPage() {
+    return (
+        <SkillsProviderClient>
+            <Skills />
+        </SkillsProviderClient>
+    );
+}
+
+function Skills() {
     const t = useTranslations("PMRSkills");
     const { skills, skillsTools } = useSkills();
 

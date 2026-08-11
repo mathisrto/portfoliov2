@@ -10,7 +10,6 @@ export default function PMRTypewriter({ words }: PMRTypewriterProps) {
     const [index, setIndex] = useState(0);
     const [subIndex, setSubIndex] = useState(0);
     const [reverse, setReverse] = useState(false);
-    const [blink, setBlink] = useState(true);
 
     useEffect(() => {
         if (index === words.length) return;
@@ -36,20 +35,14 @@ export default function PMRTypewriter({ words }: PMRTypewriterProps) {
         return () => clearTimeout(timeout);
     }, [subIndex, index, reverse, words]);
 
-    useEffect(() => {
-        const timeout2 = setInterval(() => {
-            setBlink((prev) => !prev);
-        }, 500);
-        return () => clearInterval(timeout2);
-    }, []);
-
     return (
         <motion.span
             key={words[index]}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
         >
-            {`${words[index].substring(0, subIndex)}${blink ? "_" : " "}`}
+            {words[index].substring(0, subIndex)}
+            <span className="animate-blink">_</span>
         </motion.span>
     );
 }

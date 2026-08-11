@@ -1,15 +1,15 @@
 {
     "items": [
         {
-            "id": "mcdonald",
+            "id": "weekera",
             "icon": {
                 "isBrand": true,
-                "light": "mcdonald",
-                "dark": "mcdonald",
+                "light": "weekera",
+                "dark": "weekera",
                 "size": 64
             }
         },
-        {
+                {
             "id": "cpam",
             "icon": {
                 "isBrand": true,
@@ -19,11 +19,11 @@
             }
         },
         {
-            "id": "weekera",
+            "id": "mcdonald",
             "icon": {
                 "isBrand": true,
-                "light": "weekera",
-                "dark": "weekera",
+                "light": "mcdonald",
+                "dark": "mcdonald",
                 "size": 64
             }
         }

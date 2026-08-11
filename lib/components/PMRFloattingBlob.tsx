@@ -17,6 +17,7 @@ export const FloatingBlob = ({
 }: FloatingBlobProps) => (
     <motion.div
         className={`absolute rounded-full blur-3xl ${className}`}
+        style={{ willChange: "transform, opacity" }}
         animate={animateProps}
         transition={transitionProps}
         initial={initialProps}

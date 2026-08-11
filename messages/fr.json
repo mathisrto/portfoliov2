@@ -41,8 +41,8 @@
         "about": "À propos de moi",
         "skills": "Compétences",
         "experiences": "Expériences professionnelles",
-        "education": "Parcours scolaire",
-        "portfolio": "Portfolio",
+        "education": "Mes études",
+        "portfolio": "Mes projets",
         "section": "Sections",
         "settings": "Paramètres",
         "title": "Portfolio de Mathis Ratron",
@@ -52,11 +52,7 @@
     "PMRSelectLanguage": {
         "select_language": "Choisir la langue",
         "fr": "🇫🇷 Français",
-        "en": "🇬🇧 Anglais",
-        "es": "🇪🇸 Espagnol",
-        "de": "🇩🇪 Allemand",
-        "it": "🇮🇹 Italien",
-        "pt": "🇵🇹 Portugais"
+        "en": "🇬🇧 Anglais"
     },
     "PMRSwitchTheme": {
         "select_theme": "Choisir un thème",
@@ -211,8 +207,8 @@
         }
     },
     "PMREducation": {
-        "title": "Mon Parcours Scolaire",
-        "description": "Voici un aperçu de mon parcours scolaire et de mes diplômes obtenus :",
+        "title": "Mes études",
+        "description": "Voici un aperçu de mes études et de mes diplômes obtenus :",
         "speciality_title": "Spécialité",
         "mention_title": "Mention",
         "college": {
@@ -249,9 +245,16 @@
     },
 
     "PMRPortfolio": {
-        "title": "Mon Portfolio",
+        "title": "Mes projets",
         "description": "Voici quelques-uns de mes projets personnels et professionnels :",
         "more_info_btn": "En savoir plus",
+        "filter": "Filtres",
+        "filterAll": "Tous",
+        "clearFilters": "Réinitialiser",
+        "filterResult": "{count} projet(s) sur {total}",
+        "noResults": "Aucun projet ne correspond aux filtres sélectionnés.",
+        "viewColumn": "Vue colonne",
+        "viewGrid": "Vue grille",
         "role": "Rôle",
         "languages": "Langages",
         "tools": "Outils",
@@ -260,9 +263,11 @@
         "projectType": "Type de projet",
         "individualProject": "Projet individuel",
         "teamProject": "Projet en équipe",
+        "year": "Année",
         "visitProject": "Visiter le projet",
         "geoguide": {
             "projectName": "Geoguide",
+            "date": "2024",
             "description": "Le but de ce projet était de concevoir un logiciel avec une interface graphique pour calculer le temps de conduite entre deux villes en France. Les consignes étaient d'utiliser des fichiers CSV contenant les temps de trajet entre certaines paires de villes afin de trouver le trajet le plus court. Ce projet a été réalisé dans le cadre d'une SAE durant ma première année de BUT Informatique.",
             "link": "",
             "isIndividual": true,
@@ -278,6 +283,7 @@
         },
         "planifEasy": {
             "projectName": "Planif'Easy",
+            "date": "2024",
             "description": "Planif'Easy est une application en mode console permettant de gérer des agendas personnalisés. Elle offre également la possibilité d'exporter les agendas sous forme de pages HTML pour une consultation facile sur un navigateur.",
             "link": "",
             "isIndividual": true,
@@ -298,6 +304,7 @@
         },
         "station": {
             "projectName": "Application de Stations Essence",
+            "date": "2024",
             "description": "Ce projet consistait à créer une application web permettant de localiser les stations essence les plus proches d'une position donnée. L'application affiche les stations sur une carte interactive et propose des informations détaillées sur chacune d'elles.",
             "link": "",
             "isIndividual": true,
@@ -313,6 +320,7 @@
         },
         "studentManagement": {
             "projectName": "Gestionnaire d'Étudiants",
+            "date": "2024",
             "description": "Le projet de Gestionnaire d'Étudiants consistait à créer une application de gestion des étudiants pour une université. Elle permet d'ajouter, modifier, supprimer des étudiants, gérer les absences et consulter leurs informations.",
             "link": "",
             "isIndividual": false,
@@ -332,6 +340,7 @@
         },
         "websiteSAE": {
             "projectName": "Site Web SAE",
+            "date": "2024",
             "description": "Ce projet de SAE consistait à créer un site web présentant l'IUT d'Aix-Marseille, site d'Arles.",
             "link": "",
             "isIndividual": false,
@@ -353,6 +362,7 @@
         },
         "horaris": {
             "projectName": "Horaris",
+            "date": "2025",
             "description": "Horaris est une application de gestion des salles de réunion pour une entreprise. Elle permet de réserver des salles, consulter les disponibilités et gérer les réservations. Ce projet est en cours de développement et pourra servir dans le cadre d'Arles Creative.",
             "link": "",
             "isIndividual": false,
@@ -374,6 +384,7 @@
         },
         "memoryGame": {
             "projectName": "Memory Game",
+            "date": "2025",
             "description": "Le Memory Game est un jeu de mémoire classique où le joueur doit retourner des cartes pour trouver les paires correspondantes. Ce projet a été réalisé dans le cadre d'un cours de développement web.",
             "link": "https://memory.mathis-ratron.fr",
             "isIndividual": true,
@@ -389,6 +400,7 @@
         },
         "kubo": {
             "projectName": "Kubo",
+            "date": "2026",
             "description": "Kubo est une application de gestion de modele 3D, c'est une version web simplifié de l'éditeur de modèle 3D Blender. Ce travail a été réalisé dans le cadre de ma SAE de 3ème année de BUT Informatique.",
             "link": "",
             "isIndividual": true,
@@ -407,6 +419,22 @@
             "solutions": "Nous utilisons une architecture modulaire et des pratiques de développement modernes pour assurer la qualité du code et la maintenabilité de l'application.",
             "impactDescription": "Kubo offrira une solution simple pour avoir accès rapidement à la visualisation et la gestion de modèles 3D, avec une interface intuitive et des fonctionnalités adaptées aux besoins des utilisateurs.",
             "images": ["kubo1", "kubo2", "kubo3", "kubo4"]
+        },
+        "resonance": {
+            "projectName": "Résonance",
+            "date": "2026",
+            "description": "Dans le cadre d'un événement nommé DevArt qui consiste en la création d'une oeuvre numérique en 36 heures, moi et mon équipe avons créé Resonance qui est une oeuvre sur la theme de l'écho. C'est un petit jeu ludique créer sur Unity ou le principe est de passer une suite d'obstacle en les faisant résonner, pour cela on utilise un piano afin de trouver la bonne touche qui fera rentrée en résonance l'obstacle et ainsi le faire disparaître. Ce projet a été réalisé en équipe de 4 personnes.",
+            "link": "",
+            "isIndividual": false,
+            "role": "J'ai été développeur et game designer, j'ai participé à la création des décors et des éléments de jeu, ainsi qu'à la programmation des mécaniques de résonance et de déplacement du personnage.",
+            "languages": ["Unity", "C#"],
+            "tools": ["Visual Studio Code", "Git"],
+            "toolsDescription": "Nous avons utilisé Visual Studio Code pour le code et Git pour la gestion des versions.",
+            "visualDescription": "Les captures d'écran ci-dessous montrent l'interface de l'application, le décor et les éléments de jeu.",
+            "challenges": "Le principal défi était le temps limité de 36h pour créer une oeuvre complète et fonctionnelle, ainsi que la coordination efficace au sein de l'équipe pour répartir les tâches et assurer une bonne communication.",
+            "solutions": "Afin d'assurer une bonne communication, nous avons organisé des petites pauses régulières pour faire le point sur l'avancement de chacun et ajuster les tâches en conséquence.",
+            "impactDescription": "Pour rentrer un peu plus dans le lore de l'oeuvre, le but de ce jeu est de faire apprendre la musique, du moins les notes de piano, de manière ludique et interactive. Pour cela nous incarnons un petit personnage qui est à la recherche de son ame soeur, afin de la retrouver ils doivent entré en resonance en passant une succession d'obstacles. Ce projet a été très enrichissant et m'a permis de développer mes compétences en développement de jeux vidéo, ainsi que de travailler en équipe dans un contexte de création rapide.",
+            "images": ["resonance1", "resonance2", "resonance3", "resonance4"]
         }
     }
 }

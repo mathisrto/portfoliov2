@@ -1,10 +1,18 @@
 "use client";
 
-import { useEducations } from "@/lib/contexts/PMREducationContext";
+import { EducationsProviderClient, useEducations } from "@/lib/contexts/PMREducationContext";
 import { easeOut, motion, type Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-export default function Education() {
+export default function EducationPage() {
+    return (
+        <EducationsProviderClient>
+            <Education />
+        </EducationsProviderClient>
+    );
+}
+
+function Education() {
     const t = useTranslations("PMREducation");
     const { educations } = useEducations();
 

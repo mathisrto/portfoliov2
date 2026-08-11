@@ -10,11 +10,16 @@ import {
 import { Monitor, Moon, Sun } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const PMRSwitchTheme: React.FC = () => {
     const { theme, setTheme } = useTheme();
     const t = useTranslations("PMRSwitchTheme");
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     const handleChange = (value: string) => {
         setTheme(value);
@@ -22,7 +27,7 @@ const PMRSwitchTheme: React.FC = () => {
     };
 
     return (
-        <Select value={theme} onValueChange={handleChange}>
+        <Select value={mounted ? theme : undefined} onValueChange={handleChange}>
             <SelectTrigger className="w-[200px]">
                 <SelectValue placeholder={t("select_theme")} />
             </SelectTrigger>
