@@ -1,6 +1,14 @@
 {
     "items": [
-        
+        {
+            "id": "ingenieur",
+            "icon": {
+                "isBrand": true,
+                "light": "ingenieur",
+                "dark": "ingenieur",
+                "size": 64
+            }
+        },
         {
             "id": "university",
             "icon": {
@@ -25,15 +33,6 @@
                 "isBrand": true,
                 "light": "college",
                 "dark": "college",
-                "size": 64
-            }
-        },
-        {
-            "id": "ingenieur",
-            "icon": {
-                "isBrand": true,
-                "light": "ingenieur",
-                "dark": "ingenieur",
                 "size": 64
             }
         }
